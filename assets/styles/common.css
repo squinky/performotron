@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Englebert);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+@media only screen and (max-width: 800px) {
+	body { font-size: 70%; }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+	body { font-size: 100%; }
+}
+
+@media only screen and (min-width: 1025px) {
+	body { font-size: 135%; }
+}
+
+body {
+	font-family: 'Englebert', 'sans-serif';
+	background: #333;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.grid-item-wrapper {
+    float: left;
+    position: relative;
+}
+.grid-item-wrapper-100 {
+    width: 100%;
+}
+.grid-item-wrapper-75 {
+    width: 75%;
+}
+.grid-item-wrapper-50 {
+    width: 50%;
+}
+.grid-item-wrapper-33 {
+    width: 33.3333333333%;
+}
+.grid-item-wrapper-25 {
+    width: 25%;
+}
+
+.grid-item-content {
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.grid-item-scale {
+    height: 0;
+}
+.grid-item-scale-iphone {
+    padding-bottom: 175.5%;
+}
+.grid-item-scale-ipad {
+    padding-bottom: 75%;
+}
+.grid-item-scale-12 {
+    padding-bottom: 12%;
+}
+.grid-item-scale-40 {
+    padding-bottom: 40%;
+}
+.grid-item-scale-66 {
+    padding-bottom: 66.6666666667%;
+}
+.grid-item-scale-83 {
+    padding-bottom: 83.4%;
+}
+.grid-item-scale-100 {
+    padding-bottom: 100%;
+}
+
+.grid-item-content, .box {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden !important;
+}
+
+.box {
+	border: 2px solid;
+	border-radius: 15px;
+	height: 100%;
+	padding: 20px;
+	overflow: scroll;
+}

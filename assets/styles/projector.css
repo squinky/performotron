@@ -1,0 +1,130 @@
+#characters {
+}
+
+#background {
+	display: none;
+}
+
+#achievements {
+	display: none;
+}
+
+body {
+	overflow: hidden;
+}
+
+#titleBox {
+	padding: 1% 3%;
+}
+
+#title {
+	font-family: 'Lobster', 'cursive';
+	font-size: 4em;
+	color: #ffdf8a;
+}
+
+#subtitle {
+	font-size: 3em;
+	color: #dedede;
+}
+
+#artemisContainer {
+	padding: 5% 2% 5% 15%;
+}
+
+#zeffContainer {
+	padding: 5% 15% 5% 2%;
+}
+
+.portrait {
+	position: absolute;
+	width: 37.5%;
+	height: 50%;
+}
+
+#artemisPortrait {
+	background: url('../img/artemis_neutral.png');
+	background-size: 100% auto;
+	margin: 3% 0 0 -20%;
+}
+
+#zeffPortrait {
+	background: url('../img/zeff_neutral.png');
+	background-size: 100% auto;
+	margin: 3% 0 0 65%;
+}
+
+.name {
+	position: absolute;
+	height: auto;
+	font-size: 1.8em;
+	line-height: 1em;
+	padding: 3% 3% 0;
+}
+
+#artemisName {
+	background: #016fde;
+	margin: 60% 30%;
+}
+
+#zeffName {
+	background: #72bd02;
+	margin: 60% 35%;
+}
+
+.choices {
+	line-height: 1.3em;
+}
+
+#artemisChoices {
+	padding: 5% 5% 5% 17%;
+	background: #489dff;
+}
+
+#zeffChoices {
+	padding: 5% 17% 5% 5%;
+	background: #a3d771;
+}
+
+#narrationContainer {
+	padding: 8%;
+}
+
+#narration {
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
+	padding: 4%;
+	background: #9a6dff;
+}
+
+#achievementContainer {
+	padding: 2% 25%;
+}
+
+#achievement {
+	background: #ffd44d;
+	text-align: center;
+	padding: 3% 8%;
+}
+
+#achievementTitle {
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+.star {
+	background: url('../img/star.png');
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.25%;
+	height: 47%;
+}
+
+#leftStar {
+	margin: 1% 0 0 -2%;
+}
+
+#rightStar {
+	margin: 1% 0 0 46%;
+}

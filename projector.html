@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<title>Perform-O-Tron&trade;</title>
+	<link rel="stylesheet" href="styles/common.css" type="text/css">
+	<link rel="stylesheet" href="styles/projector.css" type="text/css">
+</head>
+<body>
+	<div class="grid-item-wrapper grid-item-wrapper-100">
+		<div class="grid-item-scale grid-item-scale-12">&nbsp;</div>
+		<div class="grid-item-content">
+			<div id="titleBox">
+				<span id="title">Coffee!&nbsp;</span>
+				<span id="subtitle">A Misunderstanding</span>
+			</div>
+		</div>
+	</div>
+	<div id="characters">
+		<div class="grid-item-wrapper grid-item-wrapper-50">
+			<div class="grid-item-scale grid-item-scale-ipad">&nbsp;</div>
+			<div class="grid-item-content" id="artemisContainer">
+				<div id="artemisPortrait" class="portrait"></div>
+				<div id="artemisName" class="name box">ARTEMIS</div>
+				<div id="artemisChoices" class="choices box">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-wrapper grid-item-wrapper-50">
+			<div class="grid-item-scale grid-item-scale-ipad">&nbsp;</div>
+			<div class="grid-item-content" id="zeffContainer">
+				<div id="zeffPortrait" class="portrait"></div>
+				<div id="zeffName" class="name box">ZEFF</div>
+				<div id="zeffChoices" class="choices box">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="background">
+		<div class="grid-item-wrapper grid-item-wrapper-100">
+			<div class="grid-item-scale grid-item-scale-40">&nbsp;</div>
+			<div class="grid-item-content" id="narrationContainer">
+				<div id="narration" class="box">
+					At a neighbouring table, one slick-looking man in a well-tailored business suit gives a pitch on dream-based marketing to another almost-identical slick-looking man in a well-tailored business suit.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="achievements">
+		<div class="grid-item-wrapper grid-item-wrapper-100">
+			<div class="grid-item-scale grid-item-scale-12">&nbsp;</div>
+			<div class="grid-item-content" id="achievementContainer">
+				<div id="leftStar" class="star"></div>
+				<div id="rightStar" class="star"></div>
+				<div id="achievement" class="box">
+					<span id="achievementTitle">ACHIEVEMENT UNLOCKED</span><br>
+					Revealed something really embarrassing about yourself
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="projector.js" type="text/javascript"></script>
+</body>
+</html>

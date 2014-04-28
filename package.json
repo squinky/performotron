@@ -1,0 +1,10 @@
+{
+    "name": "PerformOTron",
+    "version": "0.0.1",
+    "description": "PerformOTron",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest"
+    },
+    "author": "squinky"
+}

@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Englebert);
+
+body {
+	font-family: 'Englebert', 'sans-serif';
+	font-size: 100%;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#artemisSpeech, #zeffSpeech
+{
+	font-size: 6em;
+	line-height: 1.3em;
+	padding: 20px;
+}
+
+#artemisChoices, #zeffChoices
+{
+	font-size: 4em;
+	line-height: 1.3em;
+	padding: 20px;
+}

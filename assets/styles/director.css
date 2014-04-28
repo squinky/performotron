@@ -1,0 +1,55 @@
+#artemisSpeech, #artemisChoices {
+	background: #489dff;
+}
+
+#zeffSpeech, #zeffChoices {
+	background: #a3d771;
+}
+
+#artemisSpeech, #zeffSpeech {
+	line-height: 1.3em;
+}
+
+#artemisChoices, #zeffChoices {
+	font-size: 0.8em;
+	line-height: 1.3em;
+}
+
+#nextButton {
+	font-size: 5em;
+	line-height: 1.6em;
+	text-align: center;
+	background: #ed588d;
+}
+
+#narration {
+	background: #9a6dff;
+}
+
+#wrapUpButtonGood {
+	background: #86c351;
+}
+
+#wrapUpButtonNeutral {
+	background: #fff67e;
+}
+
+#wrapUpButtonBad {
+	background: #ff7964;
+}
+
+#backgroundEventButton {
+	background: #ffbf4d;
+}
+
+#weirdnessLevelButton {
+	background: #762c90;
+}
+
+#band {
+	background: #dc76ff;
+}
+
+#queuedTopics, #achievements {
+	background: #747474;
+}
