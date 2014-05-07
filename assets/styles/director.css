@@ -24,6 +24,8 @@
 
 #narration {
 	background: #9a6dff;
+	line-height: 1.3em;
+	text-align: center;
 }
 
 #wrapUpButtonGood {
@@ -39,14 +41,23 @@
 }
 
 #backgroundEventButton {
-	background: #ffbf4d;
+	background: ##7f5d20;
+	font-size: 1.4em;
+	line-height: 1.3em;
+	text-align: center;
 }
 
 #weirdnessLevelButton {
 	background: #762c90;
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
 }
 
 #band {
+	font-size: 1.7em;
+	line-height: 1.3em;
+	text-align: center;
 	background: #dc76ff;
 }
 

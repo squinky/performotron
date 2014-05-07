@@ -4,6 +4,7 @@ socket.on('clearSpeeches', function (data)
 {
 	$("#artemisSpeech").html('');
 	$("#zeffSpeech").html('');
+	$("#narration").html('');
 });
 
 socket.on('clearChoices', function (data)
@@ -58,9 +59,50 @@ socket.on('updateZeffChoices', function (data)
 	});
 });
 
+socket.on('updateNarration', function (data)
+{
+	$("#narration").append(data.line);
+});
+
+socket.on('updateMusic', function (data)
+{
+	$("#band").html('');
+	$("#band").append(data.line);
+});
+
+socket.on('updateBackgroundButton', function (data)
+{
+	if (data.yay)
+	{
+		$("#backgroundEventButton").css("background", "#ffbf4d");
+		$("#backgroundEventButton").css("cursor", "pointer");
+	}
+	else
+	{
+		$("#backgroundEventButton").css("background", "#7f5d20");
+		$("#backgroundEventButton").css("cursor", "default");
+	}
+});
+
+socket.on('updateWeirdness', function (data)
+{
+	$("#weirdnessLevelButton").html('');
+	$("#weirdnessLevelButton").append("WEIRDNESS LEVEL = "+data.weirdnessLevel);
+});
+
 $("#nextButton").click(function()
 {
 	socket.emit("clickNext");
+});
+
+$("#backgroundEventButton").click(function()
+{
+	socket.emit("clickBackground");
+});
+
+$("#weirdnessLevelButton").click(function()
+{
+	socket.emit("clickWeirdness");
 });
 
 function clickChoice(e, speech)

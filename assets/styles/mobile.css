@@ -24,3 +24,11 @@ a {
 	line-height: 1.3em;
 	padding: 20px;
 }
+
+#band
+{
+	font-size: 10em;
+	line-height: 1.3em;
+	text-align: center;
+	padding: 20px;
+}

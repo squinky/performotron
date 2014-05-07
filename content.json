@@ -55,8 +55,26 @@
 		]
 	},
 	
+	"background":
+	[
+		[
+			{ "type": "narration", "line": "A person wearing a full-on GloomBorg suit, complete with a screen-accurate helmet mask and chest panel, walks into the coffee shop and up to the counter." },
+			{ "type": "narration", "line": "GloomBorg orders a large double mint mocha to go, pays for it, and leaves." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Outside, a marching band passes by, playing a rousing rendition of Adele's Rolling in the Deep mashed up with Gnarls Barkley's Crazy." },
+			
+			{ "type": "showAvailableTopics" }
+		]
+	],
+	
 	"zeffIntro":
 	[
+		{ "type": "music", "line": "Boring café music" },
+	
+		{ "type": "narration", "line": "It's mid-afternoon at Cuthbert's Coffee, a relatively quiet cafe outside the hustle and bustle of the Terminal City Convention Centre, where AwesomeCon 2014 is being held." },
 		{ "type": "speech", "speaker": "artemis", "line": "(Sip your coffee while staring at your smartphone.)" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Approach Artemis nervously", "leadsTo": "zeffIntro-nervous" },
@@ -64,12 +82,16 @@
 	],	
 	"zeffIntro-nervous":
 	[
+		{ "type": "music", "line": "Timid" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, fidgeting nervously.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Notice someone approaching", "leadsTo": "zeffIntro-hello" }
 	],
 	"zeffIntro-confident":
 	[
+		{ "type": "music", "line": "Overcompensating for something" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, feigning confidence to mask the nervousness you feel.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Notice someone approaching", "leadsTo": "zeffIntro-hello" }
@@ -92,7 +114,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Hah. Popular. That's hilarious." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" },
-		{ "type": "unlockTopics", "category": "confrontation" },
+		{ "type": "unlockTopics", "category": "confrontation", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
 	"zeffIntro-fan":
@@ -137,7 +159,7 @@
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "(Sit down at the table across from Artemis.)" },
 		
-		{ "type": "unlockTopics", "category": "smallTalk" },
+		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
 		{ "type": "showAvailableTopics" }
 	],
 	
