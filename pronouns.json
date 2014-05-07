@@ -1,0 +1,34 @@
+{
+    "they":
+    {
+    	"sub": "they",
+    	"obj": "them",
+    	"det": "their",
+    	"pos": "theirs",
+    	"ref": "themself"
+    },
+    "ze":
+    {
+    	"sub": "ze",
+    	"obj": "zir",
+    	"det": "zir",
+    	"pos": "zirs",
+    	"ref": "zirself"
+    },
+    "she":
+    {
+    	"sub": "she",
+    	"obj": "her",
+    	"det": "her",
+    	"pos": "hers",
+    	"ref": "herself"
+    },
+    "he":
+    {
+    	"sub": "he",
+    	"obj": "him",
+    	"det": "his",
+    	"pos": "his",
+    	"ref": "himself"
+    }
+}

@@ -87,7 +87,7 @@ socket.on('updateBackgroundButton', function (data)
 socket.on('updateWeirdness', function (data)
 {
 	$("#weirdnessLevelButton").html('');
-	$("#weirdnessLevelButton").append("WEIRDNESS LEVEL = "+data.weirdnessLevel);
+	$("#weirdnessLevelButton").append("WEIRD-NESS LEVEL = "+data.weirdnessLevel);
 });
 
 $("#nextButton").click(function()
@@ -103,6 +103,11 @@ $("#backgroundEventButton").click(function()
 $("#weirdnessLevelButton").click(function()
 {
 	socket.emit("clickWeirdness");
+});
+
+$("#resetButton").click(function()
+{
+	socket.emit("clickReset");
 });
 
 function clickChoice(e, speech)

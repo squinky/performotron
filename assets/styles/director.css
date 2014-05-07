@@ -42,15 +42,22 @@
 
 #backgroundEventButton {
 	background: ##7f5d20;
-	font-size: 1.4em;
-	line-height: 1.3em;
+	font-size: 1.3em;
+	line-height: 1.0em;
 	text-align: center;
 }
 
 #weirdnessLevelButton {
 	background: #762c90;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+#resetButton {
+	background: #ab3862;
 	font-size: 2em;
-	line-height: 1.3em;
+	line-height: 1.4em;
 	text-align: center;
 }
 

@@ -57,6 +57,25 @@ io.sockets.on('connection', function (socket)
     	weirdnessLevel++;
     	io.sockets.emit("updateWeirdness", { weirdnessLevel: weirdnessLevel });
     });
+    
+    socket.on("clickReset", function()
+    {
+    	currentLine = 0;
+    	choicesA = 0;
+    	choicesZ = 0;
+    	queuedLines = new Array();
+    	queuedTopics = new Array();
+    	
+    	backgroundEvents = new Array();
+		backgroundEvents = backgroundEvents.concat(content.background);
+    	
+		io.sockets.emit("clearSpeeches");
+		io.sockets.emit("clearChoices");
+		io.sockets.emit("updateMusic", { line: null });
+		
+		addSpeechToQueue(startWith);
+		io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
+    });
 });
 
 var content = require('./content.json');
@@ -69,6 +88,11 @@ var weirdnessLevel = 1;
 
 var backgroundEvents = new Array();
 backgroundEvents = backgroundEvents.concat(content.background);
+
+var allPronouns = require('./pronouns.json');
+var pronouns = { "artemis": null, "zeff": null }
+setPronoun("artemis", "they");
+setPronoun("zeff", "ze");
 
 var startWith = "zeffIntro";
 addSpeechToQueue(startWith);
@@ -124,7 +148,7 @@ function addNextLine()
 		
 		if (queuedLines[currentLine].type == "speech")
 		{
-			nextLine = queuedLines[currentLine].line;
+			nextLine = pronounify(queuedLines[currentLine].line);
 			if (queuedLines[currentLine].speaker == "artemis")
 			{
 				io.sockets.emit("updateArtemisSpeech", { line: nextLine });
@@ -140,7 +164,7 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "choice")
 		{
-			var line = queuedLines[currentLine].line;
+			var line = pronounify(queuedLines[currentLine].line);
 			var leadsTo = queuedLines[currentLine].leadsTo;
 		
 			if (queuedLines[currentLine].speaker == "artemis" && choicesA < 5)
@@ -160,7 +184,7 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "music")
 		{
-			var line = queuedLines[currentLine].line;
+			var line = pronounify(queuedLines[currentLine].line);
 			io.sockets.emit("updateMusic", { line: line });
 			currentLine++;
 			addNextLine();
@@ -172,6 +196,16 @@ function addNextLine()
 			var emotion = queuedLines[currentLine].emotion;
 			
 			io.sockets.emit("updatePortraits", { speaker: speaker, emotion:emotion });
+			currentLine++;
+			addNextLine();
+			return;
+		}
+		if (queuedLines[currentLine].type == "setPronoun")
+		{
+			var speaker = queuedLines[currentLine].speaker;
+			var pronoun = queuedLines[currentLine].pronoun;
+			
+			setPronoun(speaker, pronoun);
 			currentLine++;
 			addNextLine();
 			return;
@@ -203,7 +237,7 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "narration")
 		{
-			var line = queuedLines[currentLine].line;
+			var line = pronounify(queuedLines[currentLine].line);
 			io.sockets.emit("updateNarration", { line: line });
 			
 			currentLine++;
@@ -216,4 +250,25 @@ function addNextLine()
 function getRandomInt(min, max)
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function setPronoun(who, what)
+{
+	pronouns[who] = allPronouns[what];
+}
+
+function pronounify(str)
+{
+	var newStr = str;
+	newStr = newStr.replace(/#artemisSub#/g, pronouns.artemis.sub);
+	newStr = newStr.replace(/#artemisObj#/g, pronouns.artemis.obj);
+	newStr = newStr.replace(/#artemisDet#/g, pronouns.artemis.det);
+	newStr = newStr.replace(/#artemisPos#/g, pronouns.artemis.pos);
+	newStr = newStr.replace(/#artemisRef#/g, pronouns.artemis.ref);
+	newStr = newStr.replace(/#zeffSub#/g, pronouns.zeff.sub);
+	newStr = newStr.replace(/#zeffObj#/g, pronouns.zeff.obj);
+	newStr = newStr.replace(/#zeffDet#/g, pronouns.zeff.det);
+	newStr = newStr.replace(/#zeffPos#/g, pronouns.zeff.pos);
+	newStr = newStr.replace(/#zeffRef#/g, pronouns.zeff.ref);
+	return newStr;
 }

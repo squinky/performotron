@@ -3,7 +3,7 @@
 	{
 		"smallTalk":
 		[
-			{ "type": "choice", "speaker": "zeff", "line": "Ask how AwesomeCon is treating Artemis", "leadsTo": "awesomeCon" },
+			{ "type": "choice", "speaker": "zeff", "line": "Ask how AwesomeCon is treating #artemisObj#", "leadsTo": "awesomeCon" },
 			{ "type": "choice", "speaker": "zeff", "line": "Comment on the weather", "leadsTo": "weather" },
 			{ "type": "choice", "speaker": "zeff", "line": "Comment on the coffee shop", "leadsTo": "coffeeShops" }
 		],
@@ -15,20 +15,20 @@
 		],
 		"aboutZeff":
 		[
-			{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff had to travel to get to AwesomeCon", "leadsTo": "zeffTravel" },
+			{ "type": "choice", "speaker": "artemis", "line": "Ask if #zeffSub# had to travel to get to AwesomeCon", "leadsTo": "zeffTravel" },
 			{ "type": "choice", "speaker": "artemis", "line": "Ask what Zeff does other than go to conventions", "leadsTo": "zeffMusic" }
 		],
 		"chiptuneStuff":
 		[
-			{ "type": "choice", "speaker": "artemis", "line": "Ask if you can hear some of Zeff's music", "leadsTo": "zeffMusic-listen" },
-			{ "type": "choice", "speaker": "artemis", "line": "Ask if chiptunes are what Zeff does for a living", "leadsTo": "zeffMusic-job" },
-			{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff ever performs his music live", "leadsTo": "zeffMusic-live" },
+			{ "type": "choice", "speaker": "artemis", "line": "Ask if you can hear some of #zeffDet# music", "leadsTo": "zeffMusic-listen" },
+			{ "type": "choice", "speaker": "artemis", "line": "Ask if chiptunes are what #zeffSub# does for a living", "leadsTo": "zeffMusic-job" },
+			{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff ever performs #zeffDet# music live", "leadsTo": "zeffMusic-live" },
 			{ "type": "choice", "speaker": "zeff", "line": "Ask what kinds of music Artemis listens to", "leadsTo": "artemisMusic" }
 		],
 		"aboutArtemis":
 		[
 			{ "type": "choice", "speaker": "zeff", "line": "Ask about the new job Artemis mentioned on Twitter recently", "leadsTo": "artemisJob" },
-			{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis is her real name", "leadsTo": "artemisName" },
+			{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis is #artemisDet# real name", "leadsTo": "artemisName" },
 			{ "type": "choice", "speaker": "zeff", "line": "Ask some questions about Bacteria Stories", "leadsTo": "bacteria" }
 		],
 		"travelStuff":
@@ -43,7 +43,7 @@
 		],
 		"artemisAnxieties":
 		[
-			{ "type": "choice", "speaker": "artemis", "line": "Mention how people treat you as a non-male webcomic artist", "leadsTo": "criticism" }
+			{ "type": "choice", "speaker": "artemis", "line": "Mention how weirdly people treat you as a non-male webcomic artist", "leadsTo": "criticism" }
 		],
 		"confrontation":
 		[
@@ -109,8 +109,8 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. That's me." },
 		{ "type": "speech", "speaker": "zeff", "line": "I'm Zeff. Zeff Boggs." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Mention you follow her on Twitter", "leadsTo": "zeffIntro-twitter" },
-		{ "type": "choice", "speaker": "zeff", "line": "Mention you're a fan of her work", "leadsTo": "zeffIntro-fan" }
+		{ "type": "choice", "speaker": "zeff", "line": "Mention you follow #artemisObj# on Twitter", "leadsTo": "zeffIntro-twitter" },
+		{ "type": "choice", "speaker": "zeff", "line": "Mention you're a fan of #artemisDet# work", "leadsTo": "zeffIntro-fan" }
 	],
 	"zeffIntro-twitter":
 	[
@@ -123,7 +123,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "I understand. I mean, someone as popular as you probably has a lot of followers, huh?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Hah. Popular. That's hilarious." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with #artemisObj#", "leadsTo": "zeffIntro-okayToSit" },
 		{ "type": "unlockTopics", "category": "confrontation", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
@@ -144,7 +144,7 @@
 		
 		{ "type": "speech", "speaker": "artemis", "line": "In that case, I apologise in advance for not updating it as often since then. As you can imagine, life got in the way." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" }
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with #artemisObj#", "leadsTo": "zeffIntro-okayToSit" }
 	],
 	"zeffIntro-flattered":
 	[
@@ -152,7 +152,7 @@
 		
 		{ "type": "speech", "speaker": "artemis", "line": "Thanks. I'm super flattered." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" }
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with #artemisObj#", "leadsTo": "zeffIntro-okayToSit" }
 	],
 	"zeffIntro-okayToSit":
 	[
@@ -161,8 +161,8 @@
 		
 		{ "type": "speech", "speaker": "zeff", "line": "So... is it okay if I sit here?" },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Let him sit with you, enthusiastically", "leadsTo": "zeffIntro-yeahSure" },
-		{ "type": "choice", "speaker": "artemis", "line": "Let him sit with you, noncommittally", "leadsTo": "zeffIntro-iGuess" }
+		{ "type": "choice", "speaker": "artemis", "line": "Let #zeffObj# sit with you, enthusiastically", "leadsTo": "zeffIntro-yeahSure" },
+		{ "type": "choice", "speaker": "artemis", "line": "Let #zeffObj# sit with you, noncommittally", "leadsTo": "zeffIntro-iGuess" }
 	],
 	"zeffIntro-yeahSure":
 	[
