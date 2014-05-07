@@ -30,6 +30,30 @@ socket.on('updateNarration', function (data)
 	$("#narration").append(data.line);
 });
 
+var artemisCurrentEmotion = null;
+var zeffCurrentEmotion = null;
+socket.on('updatePortraits', function (data)
+{
+	if (data.speaker == "artemis")
+	{
+		$("#artemisPortrait").addClass("artemis_"+data.emotion);
+		if (artemisCurrentEmotion && artemisCurrentEmotion != data.emotion)
+		{
+			$("#artemisPortrait").removeClass("artemis_"+artemisCurrentEmotion);
+		}
+		artemisCurrentEmotion = data.emotion;
+	}
+	else if (data.speaker == "zeff")
+	{
+		$("#zeffPortrait").addClass("zeff_"+data.emotion);
+		if (zeffCurrentEmotion && zeffCurrentEmotion != data.emotion)
+		{
+			$("#zeffPortrait").removeClass("zeff_"+zeffCurrentEmotion);
+		}
+		zeffCurrentEmotion = data.emotion;
+	}
+});
+
 $(function()
 {
 	$("#characters").hide();

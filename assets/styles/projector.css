@@ -32,16 +32,32 @@ body {
 }
 
 #artemisPortrait {
-	background: url('../img/artemis_neutral.png');
 	background-size: 100% auto;
 	margin: 3% 0 0 -20%;
 }
 
 #zeffPortrait {
-	background: url('../img/zeff_neutral.png');
 	background-size: 100% auto;
 	margin: 3% 0 0 65%;
 }
+
+.artemis_amused { background: url('../img/artemis_amused.png'); }
+.artemis_angry { background: url('../img/artemis_angry.png'); }
+.artemis_annoyed { background: url('../img/artemis_annoyed.png'); }
+.artemis_embarrassed { background: url('../img/artemis_embarrassed.png'); }
+.artemis_happy { background: url('../img/artemis_happy.png'); }
+.artemis_pleased { background: url('../img/artemis_pleased.png'); }
+.artemis_sad { background: url('../img/artemis_sad.png'); }
+.artemis_neutral { background: url('../img/artemis_neutral.png'); }
+
+.zeff_amused { background: url('../img/zeff_amused.png'); }
+.zeff_angry { background: url('../img/zeff_angry.png'); }
+.zeff_annoyed { background: url('../img/zeff_annoyed.png'); }
+.zeff_embarrassed { background: url('../img/zeff_embarrassed.png'); }
+.zeff_happy { background: url('../img/zeff_happy.png'); }
+.zeff_pleased { background: url('../img/zeff_pleased.png'); }
+.zeff_sad { background: url('../img/zeff_sad.png'); }
+.zeff_neutral { background: url('../img/zeff_neutral.png'); }
 
 .name {
 	position: absolute;
@@ -116,4 +132,9 @@ body {
 
 #rightStar {
 	margin: 1% 0 0 46%;
+}
+
+#preload {
+	background-repeat: no-repeat;
+	background-position: -9000px;
 }

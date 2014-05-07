@@ -166,6 +166,16 @@ function addNextLine()
 			addNextLine();
 			return;
 		}
+		if (queuedLines[currentLine].type == "emote")
+		{
+			var speaker = queuedLines[currentLine].speaker;
+			var emotion = queuedLines[currentLine].emotion;
+			
+			io.sockets.emit("updatePortraits", { speaker: speaker, emotion:emotion });
+			currentLine++;
+			addNextLine();
+			return;
+		}
 		if (queuedLines[currentLine].type == "unlockTopics")
 		{
 			if (queuedLines[currentLine].weirdnessLevel <= weirdnessLevel)

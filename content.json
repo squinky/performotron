@@ -72,6 +72,8 @@
 	
 	"zeffIntro":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "music", "line": "Boring café music" },
 	
 		{ "type": "narration", "line": "It's mid-afternoon at Cuthbert's Coffee, a relatively quiet cafe outside the hustle and bustle of the Terminal City Convention Centre, where AwesomeCon 2014 is being held." },
@@ -82,6 +84,7 @@
 	],	
 	"zeffIntro-nervous":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "music", "line": "Timid" },
 		
 		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, fidgeting nervously.)" },
@@ -90,6 +93,7 @@
 	],
 	"zeffIntro-confident":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "music", "line": "Overcompensating for something" },
 		
 		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, feigning confidence to mask the nervousness you feel.)" },
@@ -98,6 +102,8 @@
 	],
 	"zeffIntro-hello":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "(Look up.)" },
 		{ "type": "speech", "speaker": "zeff", "line": "Uh, excuse me... are you Artemis Fiddler of Bacteria Stories?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. That's me." },
@@ -108,6 +114,10 @@
 	],
 	"zeffIntro-twitter":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "music", "line": "Chirp like a bird" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "I hope this isn't too awkward, but, uh, I follow you on Twitter. I'm @ZeffOMatic on there." },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh! Right! Uh... yeah. It's hard to keep track of who's on Twitter. I mean, there are so many people on it and all..." },
 		{ "type": "speech", "speaker": "zeff", "line": "I understand. I mean, someone as popular as you probably has a lot of followers, huh?" },
@@ -119,6 +129,9 @@
 	],
 	"zeffIntro-fan":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "music", "line": "Excitement you can hardly contain!" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "I'm a huge fan of your webcomic. It's been on my news feed since 2011." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Apologise for the lull in updates", "leadsTo": "zeffIntro-lull" },
@@ -126,18 +139,26 @@
 	],
 	"zeffIntro-lull":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "music", "line": "The excitement fizzles away" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "In that case, I apologise in advance for not updating it as often since then. As you can imagine, life got in the way." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" }
 	],
 	"zeffIntro-flattered":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "Thanks. I'm super flattered." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with her", "leadsTo": "zeffIntro-okayToSit" }
 	],
 	"zeffIntro-okayToSit":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "music", "line": "Permission?" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "So... is it okay if I sit here?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Let him sit with you, enthusiastically", "leadsTo": "zeffIntro-yeahSure" },
@@ -145,6 +166,9 @@
 	],
 	"zeffIntro-yeahSure":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
+		{ "type": "music", "line": "Permission granted!" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, sure!" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Sit down", "leadsTo": "zeffIntro-sitDown" }
@@ -152,11 +176,14 @@
 	"zeffIntro-iGuess":
 	[
 		{ "type": "speech", "speaker": "artemis", "line": "I guess? Sure. Go ahead." },
+		{ "type": "music", "line": "Permission... granted?" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Sit down", "leadsTo": "zeffIntro-sitDown" }
 	],
 	"zeffIntro-sitDown":
 	[
+		{ "type": "music", "line": "Back to boring café music" },
+	
 		{ "type": "speech", "speaker": "zeff", "line": "(Sit down at the table across from Artemis.)" },
 		
 		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
