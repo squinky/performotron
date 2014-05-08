@@ -28,6 +28,12 @@ io.sockets.on('connection', function (socket)
 
 	socket.on("clickNext", function()
     {
+        if (achievementJustUnlocked)
+        {
+        	io.sockets.emit("updateMusic", { line: currentMusic });
+        	achievementJustUnlocked = false;
+        }
+        
     	io.sockets.emit("clearSpeeches");
         addNextLine();
 		io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
@@ -72,6 +78,7 @@ io.sockets.on('connection', function (socket)
 		io.sockets.emit("clearSpeeches");
 		io.sockets.emit("clearChoices");
 		io.sockets.emit("updateMusic", { line: null });
+		listTopicQueue();
 		
 		addSpeechToQueue(startWith);
 		io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
@@ -85,9 +92,11 @@ var choicesZ = 0;
 var queuedLines = new Array();
 var queuedTopics = new Array();
 var weirdnessLevel = 1;
-
+var achievements = new Array();
 var backgroundEvents = new Array();
 backgroundEvents = backgroundEvents.concat(content.background);
+var currentMusic = "";
+var achievementJustUnlocked = false;
 
 var allPronouns = require('./pronouns.json');
 var pronouns = { "artemis": null, "zeff": null }
@@ -100,11 +109,13 @@ addSpeechToQueue(startWith);
 function unlockTopics(category)
 {
 	queuedTopics = content.topics[category].concat(queuedTopics);
+	listTopicQueue();
 }
 
 function flushTopics()
 {
 	queuedTopics = new Array();
+	listTopicQueue();
 }
 
 function addTopicsToQueue()
@@ -121,9 +132,56 @@ function addSpeechToQueue(speech)
 		if (queuedTopics[i].leadsTo == speech)
 		{
 			queuedTopics.splice(i, 1);
+			listTopicQueue();
 			return;
 		}
 	}
+}
+
+function listTopicQueue()
+{
+	var topics = "";
+	var lineLength = 30;
+	for (var i = 0; i < queuedTopics.length; i++)
+	{
+		if (queuedTopics[i].line.length <= lineLength)
+		{
+			topics = topics.concat(queuedTopics[i].line);
+		}
+		else
+		{
+			topics = topics.concat(queuedTopics[i].line.substring(0, lineLength), "...");
+		}
+		if (i < queuedTopics.length - 1)
+		{
+			topics = topics.concat("<br>");
+		}
+	}
+	
+	io.sockets.emit("updateQueuedTopics", { topics: topics });
+}
+
+function listAchievements()
+{
+	var topics = "";
+	var lineLength = 30;
+	for (var i = 0; i < achievements.length; i++)
+	{
+		if (achievements[i].length <= lineLength)
+		{
+			topics = topics.concat(achievements[i]);
+		}
+		else
+		{
+			topics = topics.concat(achievements[i].substring(0, lineLength), "...");
+		}
+		if (i < achievements.length - 1)
+		{
+			topics = topics.concat("<br>");
+		}
+	}
+	
+	io.sockets.emit("updateAchievements", { topics: topics });
 }
 
 function backgroundEventsEnabled()
@@ -146,6 +204,29 @@ function addNextLine()
 	{
 		var nextLine = "";
 		
+		if (queuedLines[currentLine].type == "unlockAchievement")
+		{
+			var description = pronounify(queuedLines[currentLine].description);
+			
+			if (achievements.indexOf(description) < 0)
+			{
+				achievements.unshift(description);
+				io.sockets.emit("unlockAchievement", { description: description });
+				io.sockets.emit("updateMusic", { line: "Achievement Unlocked!!!" });
+				listAchievements();
+				achievementJustUnlocked = true;
+				currentLine++;
+				choicesA = 0;
+				choicesZ = 0;
+				return;
+			}
+			else
+			{
+				currentLine++;
+				addNextLine();
+				return;
+			}
+		}
 		if (queuedLines[currentLine].type == "speech")
 		{
 			nextLine = pronounify(queuedLines[currentLine].line);
@@ -184,8 +265,8 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "music")
 		{
-			var line = pronounify(queuedLines[currentLine].line);
-			io.sockets.emit("updateMusic", { line: line });
+			currentMusic = pronounify(queuedLines[currentLine].line);
+			io.sockets.emit("updateMusic", { line: currentMusic });
 			currentLine++;
 			addNextLine();
 			return;
@@ -195,7 +276,7 @@ function addNextLine()
 			var speaker = queuedLines[currentLine].speaker;
 			var emotion = queuedLines[currentLine].emotion;
 			
-			io.sockets.emit("updatePortraits", { speaker: speaker, emotion:emotion });
+			io.sockets.emit("updatePortraits", { speaker: speaker, emotion: emotion });
 			currentLine++;
 			addNextLine();
 			return;

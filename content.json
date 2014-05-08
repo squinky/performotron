@@ -186,6 +186,8 @@
 	
 		{ "type": "speech", "speaker": "zeff", "line": "(Sit down at the table across from Artemis.)" },
 		
+		{ "type": "unlockAchievement", "description": "Sat down with Artemis" },
+		
 		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
 		{ "type": "showAvailableTopics" }
 	],

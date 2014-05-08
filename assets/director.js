@@ -90,6 +90,18 @@ socket.on('updateWeirdness', function (data)
 	$("#weirdnessLevelButton").append("WEIRD-NESS LEVEL = "+data.weirdnessLevel);
 });
 
+socket.on('updateQueuedTopics', function (data)
+{
+	$("#queuedTopics").html('');
+	$("#queuedTopics").append(data.topics);
+});
+
+socket.on('updateAchievements', function (data)
+{
+	$("#achievements").html('');
+	$("#achievements").append(data.topics);
+});
+
 $("#nextButton").click(function()
 {
 	socket.emit("clickNext");

@@ -54,6 +54,13 @@ socket.on('updatePortraits', function (data)
 	}
 });
 
+socket.on('unlockAchievement', function (data)
+{
+	$("#achievement").html('');
+	$("#achievement").append("<span id=\"achievementTitle\">ACHIEVEMENT UNLOCKED</span><br>"+data.description);
+	$("#achievements").fadeIn('slow').delay(3000).fadeOut('slow');
+});
+
 $(function()
 {
 	$("#characters").hide();

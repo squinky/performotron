@@ -69,5 +69,7 @@
 }
 
 #queuedTopics, #achievements {
+	font-size: 0.8em;
+	line-height: 1.3em;
 	background: #747474;
 }
