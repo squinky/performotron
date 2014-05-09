@@ -141,7 +141,7 @@ function addSpeechToQueue(speech)
 function listTopicQueue()
 {
 	var topics = "";
-	var lineLength = 30;
+	var lineLength = 35;
 	for (var i = 0; i < queuedTopics.length; i++)
 	{
 		if (queuedTopics[i].line.length <= lineLength)
@@ -150,7 +150,7 @@ function listTopicQueue()
 		}
 		else
 		{
-			topics = topics.concat(queuedTopics[i].line.substring(0, lineLength), "...");
+			topics = topics.concat(queuedTopics[i].line.substring(0, lineLength).trim(), "...");
 		}
 		if (i < queuedTopics.length - 1)
 		{
@@ -164,7 +164,7 @@ function listTopicQueue()
 function listAchievements()
 {
 	var topics = "";
-	var lineLength = 30;
+	var lineLength = 35;
 	for (var i = 0; i < achievements.length; i++)
 	{
 		if (achievements[i].length <= lineLength)
@@ -173,7 +173,7 @@ function listAchievements()
 		}
 		else
 		{
-			topics = topics.concat(achievements[i].substring(0, lineLength), "...");
+			topics = topics.concat(achievements[i].substring(0, lineLength).trim(), "...");
 		}
 		if (i < achievements.length - 1)
 		{
@@ -227,6 +227,24 @@ function addNextLine()
 				return;
 			}
 		}
+		if (queuedLines[currentLine].type == "emote")
+		{
+			var speaker = queuedLines[currentLine].speaker;
+			var emotion = queuedLines[currentLine].emotion;
+			
+			io.sockets.emit("updatePortraits", { speaker: speaker, emotion: emotion });
+			currentLine++;
+			addNextLine();
+			return;
+		}
+		if (queuedLines[currentLine].type == "music")
+		{
+			currentMusic = pronounify(queuedLines[currentLine].line);
+			io.sockets.emit("updateMusic", { line: currentMusic });
+			currentLine++;
+			addNextLine();
+			return;
+		}
 		if (queuedLines[currentLine].type == "speech")
 		{
 			nextLine = pronounify(queuedLines[currentLine].line);
@@ -259,24 +277,6 @@ function addNextLine()
 				choicesZ++;
 			}
 			
-			currentLine++;
-			addNextLine();
-			return;
-		}
-		if (queuedLines[currentLine].type == "music")
-		{
-			currentMusic = pronounify(queuedLines[currentLine].line);
-			io.sockets.emit("updateMusic", { line: currentMusic });
-			currentLine++;
-			addNextLine();
-			return;
-		}
-		if (queuedLines[currentLine].type == "emote")
-		{
-			var speaker = queuedLines[currentLine].speaker;
-			var emotion = queuedLines[currentLine].emotion;
-			
-			io.sockets.emit("updatePortraits", { speaker: speaker, emotion: emotion });
 			currentLine++;
 			addNextLine();
 			return;

@@ -1,5 +1,3 @@
-var socket = io.connect('http://performotron.ngrok.com');
-
 socket.on('clearSpeeches', function (data)
 {
 	$("#artemisSpeech").html('');
