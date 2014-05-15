@@ -1399,7 +1399,11 @@
 	
 	"roadTrip":
 	[
+		{ "type": "music", "line": "Road music" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "The road trip over here was a lot of fun." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh yeah? What was fun about it?" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I drove here with my friends, Sparrow and Robin. They're a married couple, kind of older than me, and Sparrow runs a tabletop RPG that I'm part of, so that's how we know each other." },
 		
@@ -1409,15 +1413,22 @@
 	],
 	"roadTrip-birds":
 	[
+		{ "type": "music", "line": "Chirp chirp" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "Sparrow and Robin, huh? Do they both have bird names on purpose?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't think so. Well, I know Sparrow changed his name legally from something more conventional sounding, but I think that happened before he met Robin. And Robin, as far as I know, was always named Robin." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "But they call their house the Rookery, and decorate their house with bird things, so I guess they just took that coincidence and ran with it." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Bring the conversation back to the road trip", "leadsTo": "roadTrip-veruca" }
 	],
 	"roadTrip-tabletop":
 	[
+		{ "type": "music", "line": "Epic win music" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "Tabletop RPG?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Role-playing game. You sit around the table, tell a story together, and occasionally roll dice to decide how things turn out." },
 		{ "type": "speech", "speaker": "zeff", "line": "Usually, there are snacks on hand, traditionally of the junk food variety, though Sparrow and Robin aren't into junk food, so we get things like artisanal cheeses and homemade coconut milk ice cream instead." },
 		{ "type": "speech", "speaker": "zeff", "line": "Basically, Sparrow's created this universe where everyone has superpowers, and every character's power is connected to a single element. And we must use these powers to fight against ignorance and hegemonic power structures." },
@@ -1428,6 +1439,9 @@
 	],
 	"roadTrip-veruca":
 	[
+		{ "type": "music", "line": "Road music" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "Anyway, so, the road trip. We decided to have lunch in this restaurant and pub-type place inside a super gaudy tourist-trap hotel." },
 		{ "type": "speech", "speaker": "zeff", "line": "It was called the Chateau Veruca. I don't know if you're familiar with it?" },
 		
@@ -1436,8 +1450,12 @@
 	],
 	"roadTrip-family":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I think I might have passed by that place on family trips we took when I was a little kid? But I've never been inside." },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, it's practically in the middle of nowhere, and it's famous for having these ridiculous theme rooms." },
+		
+		{ "type": "music", "line": "My Heart Will Go On" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room -- apparently, that last one was specifically built at an angle to simulate the sinking ship." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds really impressive and really awful at the same time", "leadsTo": "roadTrip-awful" },
@@ -1445,8 +1463,12 @@
 	],
 	"roadTrip-nope":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Nope. Never been there." },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, it's practically in the middle of nowhere, and it's famous for having these ridiculous theme rooms." },
+		
+		{ "type": "music", "line": "My Heart Will Go On" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room -- apparently, that last one was specifically built at an angle to simulate the sinking ship." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds really impressive and really awful at the same time", "leadsTo": "roadTrip-awful" },
@@ -1454,6 +1476,7 @@
 	],
 	"roadTrip-awful":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wow. That sounds really impressive and really awful at the same time. How do they stay in business?" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think the owners are a super duper rich old-money family or something. Their budget's practically unlimited." },
 		{ "type": "speech", "speaker": "zeff", "line": "And the hotel's a surprisingly popular vacation destination for people living out in the boonies, so it's not like they're losing much in the way of money, either." },
@@ -1464,6 +1487,9 @@
 	],
 	"roadTrip-pub":
 	[
+		{ "type": "music", "line": "Country music from the 1950s" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, the restaurant and pub. It couldn't decide whether it wanted to be a 1950s malt shop diner or an Old West saloon, so it was this weird mix of waitresses in poodle skirts and cowboy hats serving sarsaparilla milkshakes." },
 		{ "type": "speech", "speaker": "zeff", "line": "But they also have this famous policy of being rude to customers on purpose. Like, if you don't finish all the food on your plate, they make fun of you and force you donate the cost of the wasted food to starving kids in Africa." },
 		
@@ -1473,7 +1499,9 @@
 	],
 	"roadTrip-rudeness":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, it's weird, but I'd find that kind of refreshing. I hate how service industry people are so polite to the point that I feel like they're actively bothering me. It feels so insincere and forced." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, it felt a bit forced there, too, in that a lot of the staff didn't really want to be rude but were just following a script." },
 		{ "type": "speech", "speaker": "zeff", "line": "Sparrow and Robin mostly found it annoying rather than funny, but we were all kind of tired from driving, so maybe it would be more fun under better circumstances. I don't know." },
 		
@@ -1482,10 +1510,14 @@
 	],
 	"roadTrip-africa":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Actually, the donation thing sounds like a good idea. When I was a kid, my parents used the starving kids in Africa line on me, and I recall asking them on more than one occasion why I couldn't just mail them my leftovers." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Of course, back then, I had no concept of food spoiling, but still." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah. But then, sometimes it's hard to tell where the money's really going, when it comes to those sorts of charities." },
 		{ "type": "speech", "speaker": "zeff", "line": "Robin actually looked up the name of the charity listed on the menu, and apparently, it's one of those Christian organisations that's super homophobic. Neither of us felt comfortable donating there, and they didn't give us any other options. So much for that." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Gross. That's too bad." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask how the rest of the road trip went", "leadsTo": "roadTrip-theRest" },
@@ -1493,7 +1525,11 @@
 	],
 	"roadTrip-theRest":
 	[
+		{ "type": "music", "line": "Back on the road" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "How was the rest of your road trip?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, we played a lot of car games. I had them pretty stumped when we were playing Botticelli and I picked MC Frontalot." },
 		{ "type": "speech", "speaker": "zeff", "line": "Of course, once it got late, we devolved into the Anal Game." },
 		
@@ -1512,16 +1548,25 @@
 	],
 	"roadTrip-anal":
 	[
+		{ "type": "music", "line": "Farting" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anal Game? I'm almost afraid to ask." },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, it's really juvenile. You take the names of passing cars and add Anal to them with hilarious results. Like for instance, Anal Safari, Anal Escape, Anal Probe, Anal Windstar, that sort of thing. " },
 		{ "type": "speech", "speaker": "zeff", "line": "It's funniest with American-made cars, not so much with German or Japanese ones. Anal Corolla and Anal X5 just don't have the same ring to them. " },
+		
+		{ "type": "unlockAchievement", "description": "Eww, toilet humour? What are you, five?" },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	
 	"superpower":
 	[
+		{ "type": "music", "line": "Superhero music!" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, riddle me this. If you had a superpower, what would it be?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Do you mean, what superpower do I wish I had, or what superpower do I actually have?" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say the one Artemis wishes #artemisSub# had", "leadsTo": "superpower-wish" },
@@ -1529,6 +1574,7 @@
 	],
 	"superpower-wish":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "The one you wish you had." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say telekinesis", "leadsTo": "superpower-telekinesis" },
@@ -1536,9 +1582,12 @@
 	],
 	"superpower-telekinesis":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, that's easy. Telekinesis." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Interesting choice! And why is that?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, the ability to move objects with one's mind is by far the coolest thing ever, and would make a lot of things in life so much easier. Not to mention completely freak out your enemies." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Then again, it could be that I read Roald Dahl's Matilda one too many times as a kid. And now that I think about it, Stephen King's Carrie probably made an impression as well..." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask what superpower Zeff wishes #zeffSub# had", "leadsTo": "superpower-zeff" },
@@ -1546,10 +1595,13 @@
 	],
 	"superpower-immortality":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Hmm. I think... immortality." },
 		{ "type": "speech", "speaker": "zeff", "line": "Really? I wouldn't want to be immortal. I'd feel like eventually, I'd just want to die already, especially if my health were failing." },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, since I'd be superpowered and all, I'd assume I'd still be in perfect health the whole time." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah, but still. Wouldn't you be interested in knowing what happens after you die?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Not really. As far as the best evidence shows, what happens is that you absolutely cease to exist." },
 		{ "type": "speech", "speaker": "artemis", "line": "Meanwhile, there's so much to do here in this world that you can't spend an entire lifetime doing it. I mean, if I were immortal, I could read every book ever published and learn every skill there was to learn. And I wouldn't even come close to running out of material." },
 		
@@ -1559,16 +1611,21 @@
 	],
 	"superpower-zeff":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Why? What superpower do you wish you had?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "Honestly, I've always wanted to be able to fly. Now that would be really cool." },
 		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I have dreams where I'm flying up in the air and amidst the clouds, and it's so beautiful and amazing and freeing that when I wake up, I'm sad that it wasn't real." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I don't know. I think that would freak me out. I'm scared of heights, and I think I'd be too terrified of getting hit by something and falling to actually exercise my flying superpower." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "But the point of the superpower is that you wouldn't have to be scared because you'd already be good at dodging obstacles and stuff. It's not really suppposed to be a practical exercise." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"superpower-actually":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "The one you actually have." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say you've never really considered yourself superpowered", "leadsTo": "superpower-mundane" },
@@ -1576,6 +1633,9 @@
 	],
 	"superpower-mundane":
 	[
+		{ "type": "music", "line": "Boring mundane human music" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I've never really considered myself superpowered. I'm more of a mundane human. It's boring, I know, but it's true." },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, come on, there's got to be something. For instance, I've got a ridiculously good memory for numbers. I once memorised pi to five hundred decimal places." },
 		
@@ -1584,6 +1644,9 @@
 	],
 	"superpower-demonstration":
 	[
+		{ "type": "music", "line": "Mathemagical music" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh yeah? Care to give me a demonstration?" },
 		{ "type": "speech", "speaker": "zeff", "line": "Okay... Three point one four one five nine two six five three five eight nine seven nine..." },
 		
@@ -1593,12 +1656,16 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Three two three eight four six two six four three three eight three two seven nine..." },
 		{ "type": "speech", "speaker": "zeff", "line": "Five zero two eight eight four one seven nine six nine three nine nine three seven five..." },
 		{ "type": "speech", "speaker": "zeff", "line": "One zero five eight two zero nine seven four nine four four five nine two three zero..." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Seven eight one six four zero six two eight six two zero eight nine nine eight six two eight zero..." },
 		{ "type": "speech", "speaker": "zeff", "line": "Three four eight two five three four two one one seven zero six seven nine eight two one four eight..." },
 		{ "type": "speech", "speaker": "zeff", "line": "Zero eight six five one three two eight two three zero six six four seven zero nine three eight... four? Aw crap, I lost it." }
+		
+		{ "type": "unlockAchievement", "description": "Recited pi without getting stopped" },
 	],
 	"superpower-wow":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Okay, okay, wow. That's enough. I believe you." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if he's really into math", "leadsTo": "superpower-math" },
@@ -1607,7 +1674,9 @@
 	],
 	"superpower-faking":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wait a minute, how do I know you're not making all that up?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, you can't really make up strings of random numbers on the spot. It's impossible. After a while, you just start repeating yourself, unless you memorise some numbers ahead of time. So I say, why not just remember the actual numbers?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if he's really into math", "leadsTo": "superpower-math" },
@@ -1616,8 +1685,11 @@
 	],
 	"superpower-math":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "So, are you like really into math, then?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Not really. I mean, I was okay at it in high school, but I didn't go so far as to major in math or anything like that. I just figured out I have a good memory for numbers, and I wanted to challenge myself to memorise pi just to see if I could do it." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "As it turns out, it's really just like remembering a bunch of phone numbers in order." },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but people don't even do that anymore, now that we all have smartphones that can remember numbers way better than we can." },
 		{ "type": "speech", "speaker": "zeff", "line": "True." },
@@ -1627,7 +1699,9 @@
 	],
 	"superpower-noNeed":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "I guess I probably shouldn't ask you for a demonstration, or else we'll be here all night, won't we?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Most people make me shut up after about twenty. That's still more than most engineers say is necessary for practical applications of pi. Oh well." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Segue back to #artemisDet# superpower", "leadsTo": "superpower-segue" },
@@ -1635,12 +1709,14 @@
 	],
 	"superpower-segue":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Anyway, we were going to talk about your superpower, weren't we?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that your superpower is invisibility", "leadsTo": "superpower-invisibility" }
 	],
 	"superpower-invisibility":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. Hmm. I guess it would have to be invisibility. But it doesn't really make me feel powerful. It feels more like something out of my control." },
 		
 		{ "type": "showAvailableTopics" }
@@ -1648,6 +1724,9 @@
 	
 	"cyclists":
 	[
+		{ "type": "music", "line": "An angry car" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I almost got hit by a car on my bike ride over here." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Express amazement that #artemisSub# rode #artemisDet# bike here", "leadsTo": "cyclists-scared" },
@@ -1655,6 +1734,7 @@
 	],
 	"cyclists-scared":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "You rode your bike here? Wow. I'd be scared to ride a bike in Terminal City traffic. Like, seriously." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say you ride your bike pretty much everywhere and are used to it", "leadsTo": "cyclists-usedToIt" },
@@ -1662,6 +1742,9 @@
 	],
 	"cyclists-careful":
 	[
+		{ "type": "music", "line": "Traffic jam" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yikes! That's awful! I know how aggressive those Terminal City drivers can be. I hope you're being careful." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say you ride your bike pretty much everywhere and are used to it", "leadsTo": "cyclists-usedToIt" },
@@ -1669,7 +1752,9 @@
 	],
 	"cyclists-usedToIt":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, I'm used to it. I've been riding my bike pretty much everywhere lately. I can't afford a car, and public transit around here is pretty damn slow." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah, having a car and living in Terminal City is pretty expensive, I guess." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Tell the story about that asshole who almost hit you with his car", "leadsTo": "cyclists-asshole" },
@@ -1677,8 +1762,10 @@
 	],
 	"cyclists-asshole":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anyway, the guy in the car that almost hit me starts yelling at me for going too slow and being in the way or whatever. He's all like, learn to ride, dumbass. And I wasn't doing anything wrong!" },
 		{ "type": "speech", "speaker": "artemis", "line": "So, of course, as he passes, I flip him the bird, because he's being an asshole. And then, get this, he stops. And starts driving in reverse towards me." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm totally freaked out, so I ride into a side street to avoid him, and then -- what the hell -- he follows me. Starts calling me a fucking bitch. I was in so much shock that I just let him continue yelling at me until he finally decided to leave." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Agree that the guy was an asshole", "leadsTo": "cyclists-wow" },
@@ -1688,6 +1775,7 @@
 	],
 	"cyclists-wow":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Wow. You said it: what an asshole." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Point out the hilarity in the driver going out of his way when he was already in a hurry", "leadsTo": "cyclists-hilarity" },
@@ -1695,6 +1783,7 @@
 	],
 	"cyclists-ofCourse":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "You flipped the bird at an already pissed off driver? Of course he's going to get even more pissed off." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Point out the hilarity in the driver going out of his way when he was already in a hurry", "leadsTo": "cyclists-hilarity" },
@@ -1702,6 +1791,7 @@
 	],
 	"cyclists-hilarity":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "The hilarious thing is, he was angry at me in the first place because he was in a hurry, but he goes out of his way to stop, turn into a side street, and yell at me? Won't that make him even more late to wherever it is he's trying to get to? Sheesh." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say it seems like drivers in this city are getting angrier and angrier at cyclists", "leadsTo": "cyclists-angrier" },
@@ -1709,6 +1799,7 @@
 	],
 	"cyclists-angrier":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, it really seems like drivers in this city are getting angrier and angrier, now that bike commuting is becoming more of a popular means of transport. It's like they have it in for us or something." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Point out that you see a lot of reckless cyclists on the road", "leadsTo": "cyclists-reckless" },
@@ -1716,9 +1807,15 @@
 	],
 	"cyclists-reckless":
 	[
+		{ "type": "music", "line": "Honk honk" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I'm not saying you do this, but I see a lot of reckless cyclists on the road. Running red lights and blowing right through stop signs, that sort of thing. I'd get angry at anyone not following the rules of the road." },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, I try to follow the rules of the road as best as I can, but the fact is, the rules were made for drivers, and so were the roads themselves, and it's not really fair to hold cyclists to the same standard." },
 		{ "type": "speech", "speaker": "artemis", "line": "See, when a cyclist comes to a complete stop and puts their foot down, it takes a lot of time to accelerate back to full speed again. It's like if a driver had to put the car in park, open the door, and check their blind spots at every stop sign. That would just hold up traffic." },
+		
+		{ "type": "unlockAchievement", "description": "Lectured someone on the fine points of urban cycling" },
+		
 		{ "type": "speech", "speaker": "artemis", "line": "They should just enact one of those laws that allows bikes to make rolling stops at intersections. That would make things a lot better." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say that Artemis makes a good point", "leadsTo": "cyclists-goodPoint" },
@@ -1726,24 +1823,35 @@
 	],
 	"cyclists-goodPoint":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "That's a good point. If the roads were friendlier to both drivers and cyclists, we'd have a lot fewer problems." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"cyclists-confuse":
 	[
+		{ "type": "music", "line": "A confused car" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Wouldn't drivers get confused if they see bikes not stopping at stop signs? Wouldn't that be too unpredictable and cause more accidents?" },
 		{ "type": "speech", "speaker": "zeff", "line": "Also, if you allow bikes to not make a complete stop, what's stopping them from not slowing down at all and just blasting at full speed into the intersection?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "See, the thing is, regardless of the law, cyclists already behave this way. The law would just be codifying what already happens naturally. And would, ideally, give stiffer penalties to drivers for hitting cyclists." },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't really see how stiffer penalties for drivers will go over well." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, let's put it this way. Cars can actually kill people. Bikes, not so much. Drivers are the ones with the most privilege. Ergo, they should be the ones held accountable. End of story." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"cyclists-cars":
 	[
+		{ "type": "music", "line": "A stubborn car" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, we're all so used to cars in cities and not so used to bicycles. Most people don't respond well to change." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Maybe, but in this case, change is necessary. Since the recession's happened, people just can't afford cars as much anymore." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Plus, the environment's going down the toilet and if we keep doing what we're doing, this earth won't even be habitable anymore." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis thinks you're a bad person for driving a car", "leadsTo": "cyclists-badGuy" },
@@ -1751,14 +1859,20 @@
 	],
 	"cyclists-badGuy":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "You don't think I'm a bad person for driving a car, do you?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "No, I never said that. I mean, people have their reasons for needing to drive. I don't judge individuals. I'm just worried about the big picture, is all." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"cyclists-need":
 	[
+		{ "type": "music", "line": "A whiny car" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "If it were possible for me to not have to drive a car, I'd get rid of mine. But I live all the way in Denny, and if I don't have a car, I'm practically stuck at home. Not everyone's able to live in a densely populated city." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Right, and please know that I'm not judging you specifically. If you have your reasons, they're your reasons. I'm just worried about the big picture, is all." },
 		
 		{ "type": "showAvailableTopics" }
@@ -1766,10 +1880,16 @@
 	
 	"terminalCity":
 	[
+		{ "type": "music", "line": "Annoyingly cheerful" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "It feels kinda weird that this city's become so friendly, since AwesomeCon's been happening. You don't really see people wandering around being nice to each other on a regular day, that's for sure." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, since I only come here for AwesomeCon, it feels like it's like this all the time. How is it usually like?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Enh. People mostly keep to themselves, I guess. Especially in the winter months, when it's grey and raining all the time. Sometimes, I feel like Terminal City suffers from collective seasonal affective disorder." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "And I mean, even if you do have friends in town, they seem to flake out a lot. Like, on my last birthday, I decided to throw a get together party-like thing, and a bunch of people RSVPed, but all but two of them flaked out at the last minute. And the ones who did show up were like 2 hours late." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Wow, that's too bad. I guess cities can be pretty alienating, huh?" },
 		
 		{ "type": "unlockTopics", "category": "raceStuff", "weirdnessLevel": 1 },
@@ -1781,8 +1901,11 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. Feels like there are too many condos and not enough community. Plus, everything's expensive, so no one can really afford to go out a lot." },
 		{ "type": "speech", "speaker": "artemis", "line": "To make it worse, there's barely any reason to go out. A real city would have more nightlife; everything around here closes at like 11 PM." },
 		{ "type": "speech", "speaker": "zeff", "line": "It must be better than living out in the boonies, at least. I feel so isolated from everything. I don't even have enough friends I could invite to a party, except if it were held in Epic Fantasy Online." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "I have to admit, sometimes I wonder about going off to live somewhere more secluded, where I don't have to pay as much rent and can sit around and make art all day." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's a someday maybe thing, though. Right now, I like being able to bike commute everywhere and have a grocery store within walking distance of my apartment." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think I'd just settle for living somewhere where I knew more people close to my age who had the same geeky interests as me, so that I wouldn't have to travel so far to see friends." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Wonder if maybe it's just your fault for being boring", "leadsTo": "terminalCity-boring" },
@@ -1790,6 +1913,7 @@
 	],
 	"terminalCity-boring":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Of course, it could also be my fault. I'm not great at throwing parties. Maybe I project some kind of aura of this is probably going to be boring and not worth your time. Maybe I'm just not a very exciting person." },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't think you're boring at all! If you invited me to a party, I'd probably go. If I weren't six hours away, that is." },
 		
@@ -1798,12 +1922,14 @@
 	],
 	"terminalCity-thanks":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Thanks. That's nice of you to say." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"terminalCity-fishing":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh, I wasn't fishing for compliments. I made peace with my relatively antisocial nature a long time ago." },
 		
 		{ "type": "showAvailableTopics" }
@@ -1811,7 +1937,11 @@
 	
 	"diversity":
 	[
+		{ "type": "music", "line": "Stuff white people like" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, is it just me, or is AwesomeCon an overwhelmingly white convention? Besides myself, I think I could count the other people of colour I saw on one hand." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Hmm. I actually didn't notice that, but now that you mention it, you're right. There isn't a lot of ethnic diversity here at all." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say of course #zeffSub# didn't notice, being white", "leadsTo": "diversity-ofCourse" },
@@ -1833,6 +1963,7 @@
 	],
 	"diversity-whereYouFrom":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anyway, I can't even count the number of times people come up to my table, ask me where I'm from, and when I tell them, are like, no really, where are you from?" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say that must get annoying", "leadsTo": "diversity-annoying" },
@@ -1854,6 +1985,7 @@
 	],
 	"diversity-dareIAsk":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Wait, I don't think you actually told me where you're from. Dare I ask?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say you come from your mother's uterus", "leadsTo": "diversity-uterus" },
@@ -1861,6 +1993,7 @@
 	],
 	"diversity-uterus":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "My mother's uterus. There, happy?" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Laugh", "leadsTo": "diversity-lol" },
@@ -1868,18 +2001,21 @@
 	],
 	"diversity-lol":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "(Laugh.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Wonder why people just don't believe you've lived in Cascadia your entire life", "leadsTo": "diversity-entireLife" }
 	],
 	"diversity-okay":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Okay, maybe I shouldn't have asked." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Wonder why people just don't believe you've lived in Cascadia your entire life", "leadsTo": "diversity-entireLife" }
 	],
 	"diversity-parents":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh, I'm from here. But I'm guessing what you're really asking is where my parents are from." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Tell Zeff about where your parents are from", "leadsTo": "artemisParents" },
@@ -1887,7 +2023,9 @@
 	],
 	"diversity-entireLife":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I mean, I tell them I was born in Douglas, moved to St. Helens when I was six, then moved to the greater Terminal City area during high school. What more do they want?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Can they just not believe I've lived in Cascadia my entire life just because my melanin levels are more concentrated than theirs? Seriously." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say you see Artemis not as a person of colour, but a person", "leadsTo": "dontSeeColour" },
@@ -1896,8 +2034,11 @@
 	],
 	"diversity-immigrants":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know that people really mean anything bad by it. We're a nation of immigrants. My great-grandparents came from Scotland and Ireland, and I have a bit of Native blood in me, too." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but do people come up to you and ask you about that on a regular basis?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Uh... no. No, they don't. Wow, that was insensitive of me." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about people coming up and speaking to you in Spanish", "leadsTo": "diversity-spanish" },
@@ -1905,10 +2046,18 @@
 	],
 	"diversity-space":
 	[
+		{ "type": "music", "line": "Stuff aliens like" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe you should tell them you're from outer space? That might shut them up." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'll be lying if I said the thought didn't occur to me. Sometimes I also think about pretending I'm a time traveller from the future, where everyone's so interbred that race doesn't exist anymore." },
+		
+		{ "type": "unlockAchievement", "description": "Suggested a time travel scenario" },
+		
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, the horror! But how will we oppress people who look different from us?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, we can always continue subjugating women. Unless we also decide that gender no longer exists. Wouldn't that be nice?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, that would be kind of nice! I've always thought gender was pretty pointless." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about people coming up and speaking to you in Spanish", "leadsTo": "diversity-spanish" },
@@ -1916,7 +2065,11 @@
 	],
 	"diversity-spanish":
 	[
+		{ "type": "music", "line": "Stuff white people dislike" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "What's also weird is that people around here who look like me always come up to me and start speaking Spanish. I don't even know Spanish, except for basic tourist stuff like asking where to find el baño." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe you should learn some Spanish to mess with their heads." },
 		{ "type": "speech", "speaker": "artemis", "line": "I've thought about it, and I just don't have time to pick up more languages. I mean, I barely feel like I'm good enough at English as it is." },
 		
@@ -1926,8 +2079,11 @@
 	],
 	"diversity-english":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "But you speak English just fine." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I mean as a writer. There's so much language in there to master, and I feel like I'm barely any of the way there." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "What's more is whenever I've tried picking up another language, I'd feel so uncomfortably limited in self-expression. It's so hard to go through that learning curve. So, I feel like I'd rather stick with the one language I know best." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say that you think learning new languages is fun", "leadsTo": "diversity-languages" },
@@ -1935,13 +2091,16 @@
 	],
 	"diversity-languages":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think learning new languages is fun. I took a couple of Japanese classes in college. I was pretty bad at it, but I really liked learning about how different the vocabulary is from English, and how it changes the way people think." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"diversity-european":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I can see that. I'm always really intimidated when I'm playing games with folks from Germany or France or Sweden, and it turns out that not only can they speak English better than me, they also speak like four or five other languages just as well." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Tell me about it. Now I feel so uncultured." },
 		
 		{ "type": "showAvailableTopics" }
@@ -1949,7 +2108,11 @@
 	
 	"criticism":
 	[
+		{ "type": "music", "line": "Cynical and wary" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know what's really bizarre about being a webcomic artist who isn't a straight white guy? You don't just get criticism; you get annoying people constantly trying to help you." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "How does that work?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Like, random dudes -- and 99% of the time, it's a dude -- say they love my comic and then offer to help with my drawing. By giving me art tips, or offering to draw the comic for me." },
 		{ "type": "speech", "speaker": "artemis", "line": "Or, sometimes, they do the same with my writing... they'll give me so-called helpful pointers, or rewrite entire strips to make the dialogue more punchy or whatever." },
@@ -1960,8 +2123,11 @@
 	],
 	"criticism-better":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, that's, uh, nice of them, I guess. Better than being all like, your comic sucks! Goodness knows I get enough of that with my music." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "See, the thing is, it would be nice if I actually asked for feedback. But this just comes out of nowhere!" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's like, by trying to help me when I don't ask for it, what they're saying is that I need help, and am therefore not good at what I do." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask why they would help you if they didn't want you to get better", "leadsTo": "criticism-cynicism" },
@@ -1971,6 +2137,7 @@
 	"criticism-cynicism":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "But if they're helping you, doesn't that mean they want you to get better?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's the thing. Maybe they want me to get better, but so long as they're the ones giving me the advice, they still get to posture themselves as the more talented, knowledgeable person in the exchange." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Wonder if they're doing it because they like Artemis", "leadsTo": "criticism-like" },
@@ -1979,8 +2146,10 @@
 	],
 	"criticism-like":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe they're doing it because they like you? Sometimes, people show they like other people by helping them." },
 		{ "type": "speech", "speaker": "artemis", "line": "I don't get that. If you like people, why don't you respect them as equals? Why do you have to constantly prove that you know more than they do?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I don't try to help people I like unless they ask for it. That's how it should be." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say it's more of a thing that guys do", "leadsTo": "criticism-guys" },
@@ -1988,6 +2157,7 @@
 	],
 	"criticism-guys":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think it's more of a thing that guys do. I mean, it makes sense; we're socialised to want to protect women and all." },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, well, I'm not a damsel in distress, and any guy who can't realise that is, quite frankly, a stereotyping dumbass." },
 		
@@ -1995,9 +2165,12 @@
 	],
 	"criticism-pseudonym":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, the same thing happened to me when I wrote some music and released it under a female pseudonym." },
 		{ "type": "speech", "speaker": "zeff", "line": "Suddenly, instead of being all like YOUR MUSIC SUCKS, people suddenly got nicer and started giving me constructive criticism." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh yeah. And how did that make you feel?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know. Good, mostly. I mean, I know my music needs to improve, so it's good to have people offering to help. But I felt weird that they were only doing it because they thought I was a girl." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that said weirdness never goes away", "leadsTo": "criticism-weirdness" },
@@ -2005,13 +2178,16 @@
 	],
 	"criticism-weirdness":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm sad to say that said weirdness doesn't really go away. Or maybe that's just me. Maybe women are just supposed to get used to it and I'm defective. I don't know." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"criticism-surprise":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Huh. I guess some people like getting unsolicited advice. I feel like it expresses a lack of respect, so I'm uncomfortable with it." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, when it's between being told your stuff is crap and being told how you can improve it, I'd much rather be told how I can improve it." },
 		
 		{ "type": "showAvailableTopics" }
