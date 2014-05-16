@@ -1659,9 +1659,9 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Seven eight one six four zero six two eight six two zero eight nine nine eight six two eight zero..." },
 		{ "type": "speech", "speaker": "zeff", "line": "Three four eight two five three four two one one seven zero six seven nine eight two one four eight..." },
-		{ "type": "speech", "speaker": "zeff", "line": "Zero eight six five one three two eight two three zero six six four seven zero nine three eight... four? Aw crap, I lost it." }
+		{ "type": "speech", "speaker": "zeff", "line": "Zero eight six five one three two eight two three zero six six four seven zero nine three eight... four? Aw crap, I lost it." },
 		
-		{ "type": "unlockAchievement", "description": "Recited pi without getting stopped" },
+		{ "type": "unlockAchievement", "description": "Recited pi without getting stopped" }
 	],
 	"superpower-wow":
 	[
@@ -2195,6 +2195,9 @@
 	
 	"ideas":
 	[
+		{ "type": "music", "line": "Repetitive and stale" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, what if it's true and I'm really not good enough to make webcomics? I think about that all the time." },
 		{ "type": "speech", "speaker": "artemis", "line": "Like, sometimes, I worry that one day, I'm going to completely run out of ideas. And that scares me. I'm not sure what I'd do with myself if that happened." },
 		
@@ -2204,6 +2207,7 @@
 	],
 	"ideas-possible":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Is it even possible to run out of ideas?" },
 		{ "type": "speech", "speaker": "artemis", "line": "I don't know. Maybe it isn't. But then again, maybe it is. And that kind of scares me." },
 		
@@ -2212,8 +2216,10 @@
 	],
 	"ideas-meaning":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "What does it even mean to run out of ideas, anyway?" },
 		{ "type": "speech", "speaker": "artemis", "line": "I was thinking along the lines of, what if I couldn't come up with stories to write for my webcomic anymore? Or with any new creative projects after that? What if my inspiration just completely dried up?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Ah. I don't really think I'm afraid of running out of ideas for making music. There are just so many sounds to be heard and thoughts to express with them, I think." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say you're also worried that none of your ideas are original", "leadsTo": "ideas-original" },
@@ -2229,6 +2235,7 @@
 	],
 	"ideas-encouraging":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, come on, don't say that! Your stuff's awesome! Who cares if it's completely original or whatever that means? What matters is that it's something you made, and there is only one of you in the world." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that's nice of #zeffObj# to say", "leadsTo": "ideas-nice" },
@@ -2236,20 +2243,24 @@
 	],
 	"ideas-nice":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's... nice of you to say." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"ideas-duplicates":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but is there really? Maybe there are in fact duplicates of me everywhere, of whom I'm completely unaware." },
 		{ "type": "speech", "speaker": "artemis", "line": "Maybe I'm nothing more than a data file, executing the same set of instructions over and over again." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe we all are. So what? I still happen to think you're really talented." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"ideas-practice":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, it's been said that with every art form, the first ten thousand hours you spend on it will result in mostly mediocre crap. To be truly brilliant and original, you have to keep at it for long time. Then you can break through." },
 		{ "type": "speech", "speaker": "zeff", "line": "So, all that is to say is, keep at it." },
 		
@@ -2258,8 +2269,10 @@
 	],
 	"ideas-died":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, well, what if I never get there in time? What if, say, I die before I get that far? Won't that make it all pointless?" },
 		{ "type": "speech", "speaker": "zeff", "line": "No, of course not. You'll still be a person, and most people don't have ten thousand hours of practice doing anything, and I'd be very hard pressed to say their lives are all pointless." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "It's one thing to be down on yourself, but being down on everyone else takes a special kind of misanthropy." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that maybe you do hate everyone", "leadsTo": "ideas-hate" },
@@ -2267,6 +2280,7 @@
 	],
 	"ideas-hate":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, maybe I do hate everyone. So there." },
 		{ "type": "speech", "speaker": "zeff", "line": "If that's really the case, you're being awfully nice about it." },
 		
@@ -2275,14 +2289,18 @@
 	],
 	"ideas-redeeming":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "But the thing is, I don't think I have any other redeeming qualities, other than making art and writing. I'm not like a super charismatic person everyone loves or anything like that." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I haven't invented anything useful, either, or made any scientific discoveries. So, I'm hard pressed to think of any other possible ways I could contribute to society." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I happen to think you're pretty awesome, and I'm really glad I'm having this conversation right here with you. I don't know if that counts for anything, but there you have it." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"ideas-talent":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "What about people who seem to just be born really, really talented? Like prodigies? People even younger than me? I have a hard time believing they've had any more time than I've had..." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Suggest that maybe they secretly have time travel talent", "leadsTo": "ideas-timeTravel" },
@@ -2290,16 +2308,20 @@
 	],
 	"ideas-timeTravel":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Could be that they also have secret time travel talent, maybe?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, and secret anti-aging talent, too. Though I shouldn't be one to talk; judging by my genetics, I'm going to look eighteen years old until I'm forty." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"ideas-family":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Ah, but there's also whatever your family pushes you to do in your early formative years." },
 		{ "type": "speech", "speaker": "zeff", "line": "Take Mozart, for example. If that movie from the eighties is any indication, he came out a brilliant genius, but didn't he also come from a family of musicians?" },
 		{ "type": "speech", "speaker": "zeff", "line": "And when you learn to do things as a little kid, it's practically second nature to the point that it looks natural. That's why it's easier to teach, say, new languages to a toddler. I guess the same would apply to art and music." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Okay, but does this mean that if I didn't learn to be a webcomic artist in the womb or whatever, there's no point in me starting later?" },
 		{ "type": "speech", "speaker": "zeff", "line": "No, it just means you get a later start. It's not a race! And as far as I'm concerned, you're doing fine." },
 		
@@ -2309,12 +2331,14 @@
 	"ideas-race":
 	[
 		{ "type": "speech", "speaker": "artemis", "line": "Sometimes it feels like a race, though. It's all about who had the ideas first, it seems. Everyone else... well, people stop caring after they've seen it before." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, that's a really cynical way of looking at one's audience." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"ideas-history":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, there are speculations that this entire time and place we're living in now has happened before, and so has all of human history." },
 		{ "type": "speech", "speaker": "zeff", "line": "And that we're constantly forgetting what happened before, because all our memories have been erased and so has the bulk of human history, so we have to keep on reliving everything over and over." },
 		
@@ -2323,7 +2347,9 @@
 	],
 	"ideas-reincarnation":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "You mean like a reincarnation kind of concept?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe. Something like that." },
 		
 		{ "type": "showAvailableTopics" }
@@ -2331,7 +2357,11 @@
 	
 	"artemisParents":
 	[
+		{ "type": "music", "line": "Duty and obligation" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "They grew up in the Philippines. They came here before I was born, though, so I've lived here my entire life." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "It feels like my relationship with my folks is all about annoying culture clashes." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask what sorts of culture clashes", "leadsTo": "artemisParents-clashes" },
@@ -2339,6 +2369,7 @@
 	],
 	"artemisParents-clashes":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "What sorts of culture clashes?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about how it was hard to move out of their house", "leadsTo": "artemisParents-independent" },
@@ -2347,6 +2378,7 @@
 	"artemisParents-independent":
 	[
 		{ "type": "speech", "speaker": "artemis", "line": "Well, for starters, they come from a place and time where you basically lived with your parents until you got married and probably even after, raising your own family under the same roof." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "When I wanted to move out for college and be independent, they couldn't understand why." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Point out that most of the world can't even afford independence", "leadsTo": "artemisParents-afford" },
@@ -2356,9 +2388,13 @@
 	],
 	"artemisParents-afford":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I can see their point. Independence is largely a Western ideal, isn't it? And most of the world can't even afford to live alone, so it's no wonder it's unheard of in a lot of cultures." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but I wonder how many people in those cultures would live independently if they had the chance. My family is pretty extroverted, and I feel like the odd one out because I need to have peace and quiet." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "I know for a fact that I have a way better relationship with them if we don't have to live together or see each other every day." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Then again, maybe I just wouldn't know better. I don't know." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say it's wasteful that rich people have so much space all for themselves", "leadsTo": "artemisParents-wasteful" },
@@ -2368,7 +2404,9 @@
 	],
 	"artemisParents-wasteful":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I feel like it's also kind of wasteful that rich people can afford such huge spaces just for themselves. Not just their houses, but their cars, too. Especially with overpopulation and overcrowding everywhere else." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "You're probably right. And I don't think it's that I want a lot of space, or to live any kind of an extravagant lifestyle. I just want a space that's all mine. It can be a closet, for all I care." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's annoying that your little brother still lives at home", "leadsTo": "artemisParents-brother" },
@@ -2378,6 +2416,7 @@
 	],
 	"artemisParents-brother":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The most annoying part is, my little brother still lives at home, and they keep heaping favouritism on him because of it. Then again, they've always been so much less strict with him because he's a boy." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff has any siblings", "leadsTo": "zeffParents-siblings" },
@@ -2386,6 +2425,7 @@
 	],
 	"artemisParents-queer":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The queer thing is a big one. They keep freaking out and asking me if I'm a lesbian. I've tried explaining bisexuality to them, but they don't understand it. They're always like, if you like men, why don't you just date men?" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Point out that sometimes that is in fact what people do", "leadsTo": "artemisParents-biInvisibility" },
@@ -2394,6 +2434,7 @@
 	],
 	"artemisParents-biInvisibility":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, that is in fact what people do: just date people of the socially sanctioned gender, because it's the easiest way out. It's the whole bisexual invisibility thing." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Compare the situation to interracial dating", "leadsTo": "artemisParents-interracial" },
@@ -2401,6 +2442,7 @@
 	],
 	"artemisParents-suck":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "I'm sorry. That must suck." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Compare the situation to interracial dating", "leadsTo": "artemisParents-interracial" },
@@ -2409,7 +2451,9 @@
 	],
 	"artemisParents-interracial":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "It doesn't make any sense to me, though! It's like saying, if you like white people, why don't you just date white people? It's awful! People are people." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Granted, interracial dating is still an issue for some people, but at least most of civilised society recognises it for the racist bullshit it is." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Voice some of your worries about denying your cultural heritage", "leadsTo": "artemisParents-heritage" },
@@ -2417,7 +2461,9 @@
 	],
 	"artemisParents-heritage":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "The thing is, sometimes, by breaking away from my parents' traditional values, I worry that I'm denying my cultural heritage. And I feel it's important to honour where we came from." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Sometimes, my family makes comments to me about being white on the inside, which I hate. I mean, I'm not white, which is obvious to anyone looking at me. I don't get to have white privilege." },
 		{ "type": "speech", "speaker": "artemis", "line": "But at the same time, I don't really feel like I get to be Filipino either." },
 		
@@ -2426,15 +2472,20 @@
 	],
 	"artemisParents-rough":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "That must be rough. I can't even imagine what it would feel like not to belong. Well, actually, I can, but not like this. So... yeah. I'm sorry." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Ah, it's nothing to apologise about. It's just life. At least it is for me. I'm used to being the odd one out everywhere I go." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"artemisParents-whiteness":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know that whiteness is such an obvious concept. It used to be that Jewish and Irish folks were considered non-white." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah, well, I'm pretty clearly on the person of colour side of that grey area, and I feel it." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's not fun when you're in kindergarten and someone asks you why you pronounce words funny because you learned them from your mom and dad. Or when you bring food to school and everyone complains that it stinks." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Sympathetically say that must be rough", "leadsTo": "artemisParents-rough" },
@@ -2443,7 +2494,11 @@
 	
 	"zeffParents":
 	[
+		{ "type": "music", "line": "Laissez-faire" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I can relate to wanting to be away from family. I'm living with my mom at the moment. I love her, but sometimes she can be a bit too much to take on a regular basis." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "That said, as far as roommate situations, it's not the worst I've ever been in. It's just been us two for most of my life, anyway, so it's comfortable." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's good that they get along", "leadsTo": "zeffParents-getAlong" },
@@ -2451,6 +2506,7 @@
 	],
 	"zeffParents-getAlong":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's good that you get along. I mean, whatever works, right?" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah. It's nice that I actually have some time to work on my music. I mean, I know people who have to be working almost 16 hours a day to be able to afford to live. The housing market is pretty ridiculous nowadays." },
 		
@@ -2459,7 +2515,11 @@
 	],
 	"zeffParents-siblings":
 	[
+		{ "type": "music", "line": "Laissez-faire" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Do you have any siblings?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Nope. Not that I know of, anyway." },
 		{ "type": "speech", "speaker": "zeff", "line": "It's possible that the Neanderthal who sired me probably went on to sow his wild oats and produce biologically related siblings who for all I know could be anywhere in the world, but as far as real family is concerned, it's just me and my mom." },
 		
@@ -2477,6 +2537,7 @@
 	],
 	"zeffParents-showedUp":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, but one time, when I was like 14 or thereabouts, suddenly, this guy shows up at our house saying he's my dad and he wants to get to know me. I was really weirded out." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask what #zeffDet# mom had to say about that", "leadsTo": "zeffParents-mom" },
@@ -2486,20 +2547,26 @@
 	"zeffParents-mom":
 	[
 		{ "type": "speech", "speaker": "artemis", "line": "What did your mom have to say about that?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "She was mostly neutral. She'd long since forgiven him for leaving, or at least, stopped caring enough to be civil with him as an acquaintance. And she figured it might be good for me to know who my dad was, I guess." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you learned you had nothing in common with your dad", "leadsTo": "zeffParents-nothing" }
 	],
 	"zeffParents-imagine":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wow, I can imagine." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you learned you had nothing in common with your dad", "leadsTo": "zeffParents-nothing" }
 	],
 	"zeffParents-nothing":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Anyway, he takes me out to a football game and talks about hunting and beer and all these laughably stereotypical manly things, and I remember just see the increasing disappointment in his eyes as it dawned on him that we had absolutely nothing in common." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
 		{ "type": "speech", "speaker": "zeff", "line": "He dropped me off at home, and I swear he muttered something along the lines of pathetic little faggot when he thought I couldn't hear him. I never heard or saw from him again." },
+		
+		{ "type": "unlockAchievement", "description": "Told a story about your deadbeat dad" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Express your disgust for Zeff's father", "leadsTo": "zeffParents-asswipe" },
 		{ "type": "choice", "speaker": "artemis", "line": "Rant about the idea of traditional marriage and its supposed superiority", "leadsTo": "zeffParents-twoParent" },
@@ -2507,8 +2574,11 @@
 	],
 	"zeffParents-asswipe":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's disgusting. What an asswipe. Who would say that to their own child? Seriously." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Eh, I guess it helps that I'm not his child, and he was nothing to me but a sperm donor. I mean, the way I see it, I'm glad I didn't have to spend my childhood being raised by a guy like him. I feel like I dodged a bullet." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Good point." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Rant about the idea of traditional marriage and its supposed superiority", "leadsTo": "zeffParents-twoParent" },
@@ -2516,7 +2586,11 @@
 	],
 	"zeffParents-twoParent":
 	[
-		{ "type": "speech", "speaker": "artemis", "line": "You know, I've always thought it was bullshit how all those conservative family values people always stress the importance of having two-parent households and preserving heterosexual marriage and all that, when they conveniently forget that it's better for kids to have one parent who's a decent human being than two parents where at least one is an abusive shithead." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I've always thought it was bullshit how all those conservative family values people always stress the importance of having two-parent households and preserving heterosexual marriage and all that." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "They conveniently forget that it's better for kids to have one parent who's a decent human being than two parents where at least one is an abusive shithead." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Mind you, two parents who are decent human beings aren't necessarily perfect and non-dysfunctional, either, and I speak from experience." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the kid you know who has three parents", "leadsTo": "zeffParents-polyamory" },
@@ -2525,6 +2599,7 @@
 	],
 	"zeffParents-polyamory":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I know a kid who has three parents, all of whom are decent human beings. She's probably got the best deal of the lot. Having more adults around makes things easier, I guess. At least that's what the parents say." },
 		{ "type": "speech", "speaker": "zeff", "line": "Not that there isn't dysfunction in polyamorous relationships too, but you know. They seem generally happy" },
 		
@@ -2533,7 +2608,9 @@
 	],
 	"zeffParents-tolstoy":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Was it Tolstoy who said that thing about how all dysfunctional families are dysfunctional in their own way?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think he was talking about unhappy families, but I guess the same thing applies. I don't know. I haven't actually read the book." },
 		
 		{ "type": "showAvailableTopics" }
@@ -2541,21 +2618,31 @@
 	
 	"dontSeeColour":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "This may sound a bit daft, but I don't see you as a person of colour. I see you as a person." },
+		
+		{ "type": "music", "line": "Grating and annoying" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's... that's well-meaning of you, but it feels like I'm trying to explain my experience and you're trying to erase it." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I've heard the I don't see colour argument from white people before, and it's never helped before, and it isn't helping now. So I'd appreciate it if you stopped, okay?" },
+		
+		{ "type": "unlockAchievement", "description": "Whitesplained" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Apologise and stop", "leadsTo": "artemisParents-stop" },
 		{ "type": "choice", "speaker": "zeff", "line": "Try to explain yourself", "leadsTo": "artemisParents-explain" }
 	],
 	"dontSeeColour-stop":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Okay, I'll stop. Sorry. That was a really ignorant thing to say." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"dontSeeColour-explain":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, what I really meant is that I believe in treating everyone equally, and I see you as... you know what, forget it. Clearly, I suck at explaining myself." },
 		
 		{ "type": "showAvailableTopics" }
@@ -2563,8 +2650,12 @@
 	
 	"religion":
 	[
+		{ "type": "music", "line": "A choir singing an ominous Gregorian chant" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The thing is, I'm kinda allergic to the supernatural, and ideas about life after death and God and such." },
 		{ "type": "speech", "speaker": "artemis", "line": "I was raised pretty religious, but after it became clear to me that being queer and not a feminine stereotype wasn't going to fly in the church in which I was raised... yeah, not so much." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "But even before that, I never really felt the presence of any kind of god figure in my life, like other religious people said they did. I never felt anything when, say, praying or anything like that." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about how your mom was really into hippie new age spirituality", "leadsTo": "religion-mom" },
@@ -2573,6 +2664,7 @@
 	],
 	"religion-mom":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "My mom was always into a lot of hippie new agey spirituality. She'd get really into a new belief system every year or so -- Buddhism, Taoism, Sufism, Christian mysticism, you name it." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff believes in some kind of God", "leadsTo": "religion-god" },
@@ -2581,8 +2673,11 @@
 	],
 	"religion-god":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "What about you? Do you believe in some kind of God-like figure?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Hmm. Yes and no. It's complicated." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think it depends on whoever's doing the believing. If you believe in the Judeo-Christian God, he exists. If you believe in the Flying Spaghetti Monster or Zeus, then they exist. If you believe in nothing, then nothing exists. I think it's in the eye of the beholder." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Suggest Zeff believes in the placebo effect", "leadsTo": "religion-placebo" },
@@ -2597,9 +2692,12 @@
 	],
 	"religion-personally":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Okay... but what do you personally believe?" },
 		{ "type": "speech", "speaker": "zeff", "line": "See, I don't know. Sometimes, I like to believe there's some kind of higher power or mystical force that makes everything make sense somehow. But sometimes, I feel like it's all just random nonsense." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "So, you believe in some sort of Schroedinger's Cat god." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I guess you could say that." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about the conversation you had with your super religious aunt recently", "leadsTo": "religion-aunt" },
@@ -2607,9 +2705,12 @@
 	],
 	"religion-aunt":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I was talking to my super religious aunt about the story of Adam and Eve the other week. And it got me thinking about how I can't really relate to the message people seem to get from it." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "You mean like the whole idea of original sin?" },
 		{ "type": "speech", "speaker": "artemis", "line": "To put it in broader terms, the idea that curiosity and knowledge are evil, and that you're better off being ignorant as long as it means you can be safe." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I've never been in any kind of a situation where I'd rather not have known. Even if whatever it was I knew was terrible. To me, it's still better than not knowing." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Say you're not entirely sure if you would agree", "leadsTo": "religion-notSure" },
@@ -2618,7 +2719,9 @@
 	"religion-notSure":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "I'm not entirely sure about that. Sometimes, I wonder if I really would be happier if I grew up in a simpler era, when my life and my path were all laid out for me." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe I'd live in a tiny community where I knew everyone, marry some woman who was chosen for me, pop out a bunch of kids, and not know any better." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "It would save me the pain of having to question the point of it all, you know? Probably involve fewer nights in which I cry myself to sleep in frustration. Sometimes, I wonder about that." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Point out that if you lived in a so-called simpler era, you'd definitely be worse off", "leadsTo": "religion-burned" },
@@ -2626,23 +2729,172 @@
 	],
 	"religion-burned":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The problem with that is, I know damn well that if I grew up in a so-called simpler era, I'd be burned at the stake or worse. Things really weren't great for women at all, let alone women of colour, or women who just couldn't fit the standard ideal of femininity." },
 		{ "type": "speech", "speaker": "artemis", "line": "And I've tried fitting in in this world, and it never worked. So I really don't see how it would be any better in another time." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe you're right. Maybe I wouldn't be happier at all. Maybe it's impossible for me to be completely happy. I don't know." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	"religion-makesSense":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "That makes sense, I guess. Don't they say knowledge is power? I mean, power is a mixed blessing, but then again, powerlessness is worse, I think." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. If there were some way of abolishing the concept of power altogether, that would be nice, wouldn't it?" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"zeffDream":
+	[
+		{ "type": "music", "line": "Surrealist and dreamy" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "So, I had this dream last night. I was here at AwesomeCon, only for some reason, it actually looked more like a cross between my old high school and this casino I went to a couple of years ago, and the architecture was kind of hexagonal-shaped." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you have dreams with fuzzy architecture, too", "leadsTo": "zeffDream-architecture" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say that's actually an apt description of AwesomeCon", "leadsTo": "zeffDream-aptly" },
+		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
+	],
+	"zeffDream-architecture":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Heh. I have these recurring dreams when I wake up in my apartment, only it's not really my apartment; it's got an extra bedroom and concrete floors, and when I come out, I'm in this fancy hotel hallway with gift shops strewn all about." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
+	],
+	"zeffDream-aptly":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "I guess that's kind of an apt comparison, if one can be made. AwesomeCon is one part high school and one part a giant casino." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
+	],
+	"zeffDream-cats":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Anyway, I'm trying to find the registration desk, which everyone tells me is one the other side of a giant maze, so I go into this maze and there are these human-sized cats repeating, over and over again: the monkey room is upstairs, the monkey room is upstairs." },
+		{ "type": "speech", "speaker": "zeff", "line": "I keep wandering around, and somehow, I wind up next to this fountain, and I realise I'm not wearing any pants. And then my mom walks up to me, hands me a laundry basket full of styrofoam packing peanuts, and says, take this, it will help you on your quest." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder if this story is actually going anywhere", "leadsTo": "zeffDream-going" },
+		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-car" }
+	],
+	"zeffDream-going":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Is this story actually going anywhere?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I'm getting to that part." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-car" }
+	],
+	"zeffDream-car":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "So, all of a sudden, I'm in a car, driving. I can't see anything ahead of me; it's all a blur of bright lights." },
+		
+		{ "type": "music", "line": "Stuck in the Middle with You" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "Meanwhile, Sparrow and Robin, my friends I travelled here with, are in the back seat with a guitar, singing Stuck in the Middle with You in perfect harmony." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, now that I think about it, there was also a giant tongue monster in the car too, singing along, and no one found this out of the ordinary." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Inquire further about the tongue monster", "leadsTo": "zeffDream-tongue" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say it doesn't sound like Zeff was paying attention to the road", "leadsTo": "zeffDream-road" },
+		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
+		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
+	],
+	"zeffDream-tongue":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Tongue monster? Uh, okay, I'm having trouble picturing what that entails, exactly, but it sounds gross." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, just picture this giant tongue with smaller tongues coming out of it, and eyes, a nose, and a mouth. Now that I think of it, it was really disturbing." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Gross!" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
+		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
+	],
+	"zeffDream-road":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Doesn't sound like you were paying attention to the road, there." },
+		{ "type": "speech", "speaker": "zeff", "line": "It was a dream! I ultimately wasn't going anywhere. And anyway, it didn't really take much effort to look; it's like in my dreams, I have the ability for panoramic vision or something, so I don't have turn my head around, ever." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
+		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
+	],
+	"zeffDream-kissing":
+	[
+		{ "type": "music", "line": "Make out" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "And then, for some reason, the tongue monster and I wind up alone, and it starts kissing me. Like, everywhere. And then I wake up." },
+		
+		{ "type": "unlockAchievement", "description": "TMI" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say your dreams are usually way more boring than that", "leadsTo": "zeffDream-boring" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask what Zeff thinks #zeffDet# dream means", "leadsTo": "zeffDream-analysis" }
+	],
+	"zeffDream-finish":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "And then, uh, I wake up shortly after that." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say your dreams are usually way more boring than that", "leadsTo": "zeffDream-boring" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask what Zeff thinks #zeffDet# dream means", "leadsTo": "zeffDream-analysis" }
+	],
+	"zeffDream-boring":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Huh. My dreams are usually so much more boring than that." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Usually, they're about trying to find a bathroom and discovering that all the toilets are in an open space with no walls, and I don't want to pee when everyone can watch me, even though I really, really have to." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Or about still being in school and finding out I'm registered for a class that I never noticed I was registered for, and the final exam is in an hour and I'm going to fail. That sort of thing." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Huh. I don't always remember my dreams, but when I do, they're always these action-packed epics. Usually to do with some game I've been playing, or some book I've been reading." },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, sometimes I've even written music about my dreams, because they were that inspiring." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I envy that sometimes. I wish my dreams were inspiringly action-packed, but they're super mundane instead. Probably why I write a slice of life webcomic about single-celled organisms instead of something more exciting." },
+		{ "type": "speech", "speaker": "zeff", "line": "I gotta say, your art style is pretty surrealist and dreamlike." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but that's more because I can't draw realism to save my life. If I were able to draw what I see, I figure it wouldn't be super exciting." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffDream-analysis":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "What do you think your dream means? Sounds to me like it's covered in delicious layers of symbolism." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you think it represents your excitement and anxiety over AwesomeCon", "leadsTo": "zeffDream-anxiety" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you thought it would just be an amusing story", "leadsTo": "zeffDream-dunno" }
+	],
+	"zeffDream-anxiety":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, I think it represents my excitement over going to AwesomeCon, and that excitement sometimes turns into anxiety. Like, it's so big, what if I get lost and make a complete mess of myself?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Of course, that's not going to happen, but still. Some part of me wonders about that stuff, particularly when I'm in big social situations." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffDream-dunno":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "I didn't really think about what this dream could mean. I just thought it would make for an amusing story to tell you." },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	
 	"mansplaining":
 	[
+		{ "type": "music", "line": "Harsh, discordant, accusatory" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wait... I know who you are. You were that guy who had that long Twitter conversation with me about how I handled Gidget's mitosis scene in Bacteria Stories." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh. Yeah. That." },
 		{ "type": "speech", "speaker": "zeff", "line": "Look... I didn't mean to make you mad at me. I just thought you might appreciate it if I pointed out some factual inconsistencies between that scene and how mitosis works in the real world." },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, suffice to say, if I really want that information, I have Wikipedia at my disposal. As it stands, Bacteria Stories is a work of fiction." },
@@ -2652,7 +2904,12 @@
 	],
 	"mansplaining-help":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I was only trying to help. I mean, there might actually be cell biologists reading your comic, and I don't want you to get embarrassed." },
+		
+		{ "type": "unlockAchievement", "description": "Mansplained" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "Gee, thanks. It's always nice to know I have a gallant young man protecting me from the many hordes of rabid cell biologists." },
 		{ "type": "speech", "speaker": "artemis", "line": "Typical straight white guys, with their splaining. Yeesh." },
 		
@@ -2660,18 +2917,21 @@
 	],
 	"mansplaining-never":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
 		{ "type": "speech", "speaker": "zeff", "line": "Hey, now! I never said I was straight, and I'm not even 100% sure about... never mind." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Apologise for assuming", "leadsTo": "mansplaining-assumed" }
 	],
 	"mansplaining-assumed":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I'm sorry I assumed... but still... it's not really cool to automatically assume people are going to want unsolicited advice." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Mention that your friend got harassed on the show floor this weekend", "leadsTo": "harassment" }
 	],
 	"mansplaining-apologise":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Look. I just want to say, I'm really sorry for pissing you off. I was an ass, and I hope you can forgive me." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Mention that your friend got harassed on the show floor this weekend", "leadsTo": "harassment" }
@@ -2705,116 +2965,5 @@
 		{ "type": "speech", "speaker": "artemis", "line": "He literally came up to her and asked if she was married." },
 		{ "type": "speech", "speaker": "artemis", "line": "When she said no, he was like, do you want to come up to my room for coffee? With the most unsubtle wink conveying that what he meant by coffee was actually sex." },
 		{ "type": "speech", "speaker": "artemis", "line": "In retrospect, we both found it kind of funny, but still." }
-	],
-	
-	"zeffDream":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "So, I had this dream last night. I was here at AwesomeCon, only for some reason, it actually looked more like a cross between my old high school and this casino I went to a couple of years ago, and the architecture was kind of hexagonal-shaped." },
-		
-		{ "type": "choice", "speaker": "artemis", "line": "Say you have dreams with fuzzy architecture, too", "leadsTo": "zeffDream-architecture" },
-		{ "type": "choice", "speaker": "artemis", "line": "Say that's actually an apt description of AwesomeCon", "leadsTo": "zeffDream-aptly" },
-		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
-	],
-	"zeffDream-architecture":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "Heh. I have these recurring dreams when I wake up in my apartment, only it's not really my apartment; it's got an extra bedroom and concrete floors, and when I come out, I'm in this fancy hotel hallway with gift shops strewn all about." },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
-	],
-	"zeffDream-aptly":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "I guess that's kind of an apt comparison, if one can be made. AwesomeCon is one part high school and one part a giant casino." },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-cats" }
-	],
-	"zeffDream-cats":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "Anyway, I'm trying to find the registration desk, which everyone tells me is one the other side of a giant maze, so I go into this maze and there are these human-sized cats repeating, over and over again: the monkey room is upstairs, the monkey room is upstairs." },
-		{ "type": "speech", "speaker": "zeff", "line": "I keep wandering around, and somehow, I wind up next to this fountain, and I realise I'm not wearing any pants. And then my mom walks up to me, hands me a laundry basket full of styrofoam packing peanuts, and says, take this, it will help you on your quest." },
-		
-		{ "type": "choice", "speaker": "artemis", "line": "Wonder if this story is actually going anywhere", "leadsTo": "zeffDream-going" },
-		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-car" }
-	],
-	"zeffDream-going":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "Is this story actually going anywhere?" },
-		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I'm getting to that part." },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Continue retelling your dream", "leadsTo": "zeffDream-car" }
-	],
-	"zeffDream-car":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "So, all of a sudden, I'm in a car, driving. I can't see anything ahead of me; it's all a blur of bright lights." },
-		{ "type": "speech", "speaker": "zeff", "line": "Meanwhile, Sparrow and Robin, my friends I travelled here with, are in the back seat with a guitar, singing Stuck in the Middle with You in perfect harmony." },
-		{ "type": "speech", "speaker": "zeff", "line": "Actually, now that I think about it, there was also a giant tongue monster in the car too, singing along, and no one found this out of the ordinary." },
-		
-		{ "type": "choice", "speaker": "artemis", "line": "Inquire further about the tongue monster", "leadsTo": "zeffDream-tongue" },
-		{ "type": "choice", "speaker": "artemis", "line": "Say it doesn't sound like Zeff was paying attention to the road", "leadsTo": "zeffDream-road" },
-		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
-		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
-	],
-	"zeffDream-tongue":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "Tongue monster? Uh, okay, I'm having trouble picturing what that entails, exactly, but it sounds gross." },
-		{ "type": "speech", "speaker": "zeff", "line": "Well, just picture this giant tongue with smaller tongues coming out of it, and eyes, a nose, and a mouth. Now that I think of it, it was really disturbing." },
-		{ "type": "speech", "speaker": "artemis", "line": "Gross!" },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
-		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
-	],
-	"zeffDream-road":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "Doesn't sound like you were paying attention to the road, there." },
-		{ "type": "speech", "speaker": "zeff", "line": "It was a dream! I ultimately wasn't going anywhere. And anyway, it didn't really take much effort to look; it's like in my dreams, I have the ability for panoramic vision or something, so I don't have turn my head around, ever." },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Mention the part of your dream where the tongue monster starts kissing you", "leadsTo": "zeffDream-kissing" },
-		{ "type": "choice", "speaker": "zeff", "line": "Finish the story, omitting the kissing part", "leadsTo": "zeffDream-finish" }
-	],
-	"zeffDream-kissing":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "And then, for some reason, the tongue monster and I wind up alone, and it starts kissing me. Like, everywhere. And then I wake up." },
-		
-		{ "type": "choice", "speaker": "artemis", "line": "Say your dreams are usually way more boring than that", "leadsTo": "zeffDream-boring" },
-		{ "type": "choice", "speaker": "artemis", "line": "Ask what Zeff thinks #zeffDet# dream means", "leadsTo": "zeffDream-analysis" }
-	],
-	"zeffDream-finish":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "And then, uh, I wake up shortly after that." },
-		
-		{ "type": "choice", "speaker": "artemis", "line": "Say your dreams are usually way more boring than that", "leadsTo": "zeffDream-boring" },
-		{ "type": "choice", "speaker": "artemis", "line": "Ask what Zeff thinks #zeffDet# dream means", "leadsTo": "zeffDream-analysis" }
-	],
-	"zeffDream-boring":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "Huh. My dreams are usually so much more boring than that." },
-		{ "type": "speech", "speaker": "artemis", "line": "Usually, they're about trying to find a bathroom and discovering that all the toilets are in an open space with no walls, and I don't want to pee when everyone can watch me, even though I really, really have to." },
-		{ "type": "speech", "speaker": "artemis", "line": "Or about still being in school and finding out I'm registered for a class that I never noticed I was registered for, and the final exam is in an hour and I'm going to fail. That sort of thing." },
-		{ "type": "speech", "speaker": "zeff", "line": "Huh. I don't always remember my dreams, but when I do, they're always these action-packed epics. Usually to do with some game I've been playing, or some book I've been reading." },
-		{ "type": "speech", "speaker": "zeff", "line": "Actually, sometimes I've even written music about my dreams, because they were that inspiring." },
-		{ "type": "speech", "speaker": "artemis", "line": "I envy that sometimes. I wish my dreams were inspiringly action-packed, but they're super mundane instead. Probably why I write a slice of life webcomic about single-celled organisms instead of something more exciting." },
-		{ "type": "speech", "speaker": "zeff", "line": "I gotta say, your art style is pretty surrealist and dreamlike." },
-		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but that's more because I can't draw realism to save my life. If I were able to draw what I see, I figure it wouldn't be super exciting." },
-		
-		{ "type": "showAvailableTopics" }
-	],
-	"zeffDream-analysis":
-	[
-		{ "type": "speech", "speaker": "artemis", "line": "What do you think your dream means? Sounds to me like it's covered in delicious layers of symbolism." },
-		
-		{ "type": "choice", "speaker": "zeff", "line": "Say you think it represents your excitement and anxiety over AwesomeCon", "leadsTo": "zeffDream-anxiety" },
-		{ "type": "choice", "speaker": "zeff", "line": "Say you thought it would just be an amusing story", "leadsTo": "zeffDream-dunno" }
-	],
-	"zeffDream-anxiety":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "Well, I think it represents my excitement over going to AwesomeCon, and that excitement sometimes turns into anxiety. Like, it's so big, what if I get lost and make a complete mess of myself?" },
-		{ "type": "speech", "speaker": "zeff", "line": "Of course, that's not going to happen, but still. Some part of me wonders about that stuff, particularly when I'm in big social situations." },
-		
-		{ "type": "showAvailableTopics" }
-	],
-	"zeffDream-dunno":
-	[
-		{ "type": "speech", "speaker": "zeff", "line": "I didn't really think about what this dream could mean. I just thought it would make for an amusing story to tell you." },
-		
-		{ "type": "showAvailableTopics" }
 	]
 }
