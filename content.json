@@ -48,6 +48,10 @@
 		[
 			{ "type": "choice", "speaker": "artemis", "line": "Mention that your friend got harassed on the show floor this weekend", "leadsTo": "harassment" }
 		],
+		"rant":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Go on a big rant about how toxic fan conventions are for women", "leadsTo": "toxic" }
+		],
 		"artemisAnxieties":
 		[
 			{ "type": "choice", "speaker": "artemis", "line": "Mention how weirdly people treat you as a non-male webcomic artist", "leadsTo": "criticism" }
@@ -411,7 +415,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anyway, I'm pretty new to all this con stuff. The only reason I got a table in the first place was because Dan Carbonetto had an extra space he wanted to fill. So, as you can imagine, I've been kind of underprepared." },
 		
-		{ "type": "unlockTopics", "category": "artemisAnxieties", "weirdnessLevel": 2 },
+		{ "type": "unlockTopics", "category": "artemisAnxieties", "weirdnessLevel": 1 },
 		{ "type": "choice", "speaker": "zeff", "line": "Mention you're unfamiliar with who Dan Carbonetto is", "leadsTo": "artemisBooth-carbonetto" },
 		{ "type": "choice", "speaker": "zeff", "line": "Tell #artemisObj# not to sell #artemisRef# short", "leadsTo": "artemisBooth-short" }
 	],
@@ -2907,7 +2911,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I was only trying to help. I mean, there might actually be cell biologists reading your comic, and I don't want you to get embarrassed." },
 		
-		{ "type": "unlockAchievement", "description": "Mansplained" },
+		{ "type": "unlockAchievement", "description": "Said something well-meaning but patronising" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "Gee, thanks. It's always nice to know I have a gallant young man protecting me from the many hordes of rabid cell biologists." },
@@ -2939,31 +2943,169 @@
 	
 	"harassment":
 	[
+		{ "type": "music", "line": "Creepy, flirty, gross" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "(Take a deep breath.)" },
 		{ "type": "speech", "speaker": "artemis", "line": "Look, a friend of mine got harassed by this guy on the show floor earlier this weekend. I've kind of been on my guard ever since." },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, more on my guard than usual." },
 		
-		{ "type": "flushTopics" },
+		{ "type": "unlockTopics", "category": "rant", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that's awful and gross", "leadsTo": "harassment-gross" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say it doesn't surprise you", "leadsTo": "harassment-surprise" },
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about what specifically happened", "leadsTo": "harassment-whatHappened" }
 	],
 	"harassment-gross":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Ugh! That's awful and gross!" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about what specifically happened", "leadsTo": "harassment-whatHappened" }
 	],
 	"harassment-surprise":
 	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "I'm sad to say that doesn't surprise me." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about what specifically happened", "leadsTo": "harassment-whatHappened" }
 	],
 	"harassment-whatHappened":
 	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "He literally came up to her and asked if she was married." },
 		{ "type": "speech", "speaker": "artemis", "line": "When she said no, he was like, do you want to come up to my room for coffee? With the most unsubtle wink conveying that what he meant by coffee was actually sex." },
-		{ "type": "speech", "speaker": "artemis", "line": "In retrospect, we both found it kind of funny, but still." }
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "In retrospect, we both found it kind of funny, but still." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about what weirded you out the most", "leadsTo": "harassment-weirded" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who that creep was, anyway", "leadsTo": "harassment-whoCreep" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" }
+	],
+	"harassment-weirded":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "The thing that really weirded me out, though, was that it was as if I wasn't even there. He pretty much looked right through me as if I was invisible." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Point out that maybe that's a relief", "leadsTo": "harassment-relief" },
+		{ "type": "choice", "speaker": "zeff", "line": "Empathise with the weirdness", "leadsTo": "harassment-iCanImagine" },
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder aloud why the creeper failed to notice you", "leadsTo": "harassment-whyNotMe" }
+		
+	],
+	"harassment-relief":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wouldn't that be a relief? I mean, at least it wasn't you getting harassed, right?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder aloud why the creeper failed to notice you", "leadsTo": "harassment-whyNotMe" }
+	],
+	"harassment-iCanImagine":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah. I can imagine that being super weird." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder aloud why the creeper failed to notice you", "leadsTo": "harassment-whyNotMe" }
+	],
+	"harassment-whyNotMe":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, sure, yeah, being harassed is really shitty and I feel awful for my friend." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "But, like, why not me? Was I not good enough for him?" },
+		
+		{ "type": "unlockAchievement", "description": "Brought up insecurities about your appearance" },
+		
+		{ "type": "speech", "speaker": "artemis", "line": "Did I fail to meet some kind of standard of female attractiveness or something? I don't understand!" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you know the feeling", "leadsTo": "harassment-knowTheFeeling" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who that creep was, anyway", "leadsTo": "harassment-whoCreep" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" },
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-knowTheFeeling":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I know the feeling. Kind of." },
+		{ "type": "speech", "speaker": "zeff", "line": "I wouldn't want to be harassed either, but it'd be nice if people thought I was worth looking at, too." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who that creep was, anyway", "leadsTo": "harassment-whoCreep" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" },
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-whoCreep":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Who was that creep, anyway? You know, so the rest of us can name and shame him." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you have no idea", "leadsTo": "harassment-noIdea" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you didn't even think to identify him", "leadsTo": "harassment-picture" }
+	],
+	"harassment-noIdea":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Actually, I have no idea who he was. Just some random, nondescript guy wearing a random, nondescript geeky t-shirt." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Plus, there's always the problem that publicly naming and shaming brings on even more harassment on the part of the namer and shamer. So there's that." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you could do it anonymously", "leadsTo": "harassment-anonymously" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" },
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-picture":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I wish one of us had thought to take a picture, but I guess we were too much in shock to really do anything." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Plus, there's always the problem that publicly naming and shaming brings on even more harassment on the part of the namer and shamer. So there's that." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you could do it anonymously", "leadsTo": "harassment-anonymously" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" },
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-anonymously":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Well, couldn't you do it anonymously?" },
+		{ "type": "speech", "speaker": "artemis", "line": "You could, but fewer people will believe you. It's kind of a double-edged sword." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask who Artemis's friend is", "leadsTo": "harassment-whoFriend" },
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-whoFriend":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "If you don't mind my asking... who's your friend? Is she someone well-known?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you don't understand why that matters", "leadsTo": "harassment-matters" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say it's not you", "leadsTo": "harassment-notMe" },
+		{ "type": "choice", "speaker": "artemis", "line": "Give #zeffObj# the benefit of the doubt, but be vague", "leadsTo": "harassment-doubt" }
+	],
+	"harassment-matters":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't understand why that matters." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Right. Sorry I overstepped." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-notMe":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's not me, if that's what you're implying." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Right. Sorry I overstepped." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"harassment-doubt":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "She's another webcomic artist. That's all you really need to know." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Right. Sorry I overstepped." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"toxic":
+	[
 	]
 }
