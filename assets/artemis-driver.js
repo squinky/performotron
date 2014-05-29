@@ -21,6 +21,14 @@ socket.on('updateArtemisChoices', function (data)
 	});
 });
 
+socket.on('highlightSelected', function (data)
+{
+	$("#artemisChoices a").wrap("<div id=\"unselectable\"></div>");
+	$("#"+data.id).unwrap();
+	$("#"+data.id).wrap("<div id=\"highlighted\"></div>");
+	$("#artemisChoices a").contents().unwrap();
+});
+
 function clickChoice(e, speech)
 {
     e.preventDefault();

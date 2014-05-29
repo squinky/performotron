@@ -41,7 +41,8 @@ io.sockets.on('connection', function (socket)
     
     socket.on("clickChoice", function(data)
     {
-    	io.sockets.emit("clearChoices");
+    	io.sockets.emit("highlightSelected", { id: data.speech });
+    	topicJustSelected = true;
         addSpeechToQueue(data.speech);
 		io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
     });
@@ -97,6 +98,7 @@ var backgroundEvents = new Array();
 backgroundEvents = backgroundEvents.concat(content.background);
 var currentMusic = "";
 var achievementJustUnlocked = false;
+var topicJustSelected = false;
 
 var allPronouns = require('./pronouns.json');
 var pronouns = { "artemis": null, "zeff": null }
@@ -263,6 +265,12 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "choice")
 		{
+			if (topicJustSelected)
+			{
+				io.sockets.emit("clearChoices");
+				topicJustSelected = false;
+			}
+		
 			var line = pronounify(queuedLines[currentLine].line);
 			var leadsTo = queuedLines[currentLine].leadsTo;
 		

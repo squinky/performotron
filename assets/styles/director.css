@@ -15,6 +15,14 @@
 	line-height: 1.3em;
 }
 
+#unselectable {
+	opacity: 0.5;
+}
+
+#highlighted {
+	opacity: 0.7;
+}
+
 #nextButton {
 	font-size: 5em;
 	line-height: 1.6em;

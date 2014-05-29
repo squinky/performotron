@@ -91,6 +91,14 @@ body {
 	background: #a3d771;
 }
 
+#unselectable {
+	opacity: 0.5;
+}
+
+#highlighted {
+	opacity: 0.7;
+}
+
 #narrationContainer {
 	padding: 8%;
 }

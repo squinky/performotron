@@ -23,7 +23,7 @@ socket.on('updateZeffSpeech', function (data)
 
 socket.on('updateArtemisChoices', function (data)
 {
-	nextLine = $('<a />',
+	var nextLine = $('<a />',
 	{
 		href: data.leadsTo,
 		text: data.line,
@@ -41,7 +41,7 @@ socket.on('updateArtemisChoices', function (data)
 
 socket.on('updateZeffChoices', function (data)
 {
-	nextLine = $('<a />',
+	var nextLine = $('<a />',
 	{
 		href: data.leadsTo,
 		text: data.line,
@@ -55,6 +55,16 @@ socket.on('updateZeffChoices', function (data)
 	{
 		clickChoice(event, $(this).attr("id"));
 	});
+});
+
+socket.on('highlightSelected', function (data)
+{
+	$("#artemisChoices a").wrap("<div id=\"unselectable\"></div>");
+	$("#zeffChoices a").wrap("<div id=\"unselectable\"></div>");
+	$("#"+data.id).unwrap();
+	$("#"+data.id).wrap("<div id=\"highlighted\"></div>");
+	$("#artemisChoices a").contents().unwrap();
+	$("#zeffChoices a").contents().unwrap();
 });
 
 socket.on('updateNarration', function (data)

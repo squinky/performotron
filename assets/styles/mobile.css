@@ -25,6 +25,14 @@ a {
 	padding: 20px;
 }
 
+#unselectable {
+	opacity: 0.5;
+}
+
+#highlighted {
+	opacity: 0.7;
+}
+
 #band
 {
 	font-size: 6em;

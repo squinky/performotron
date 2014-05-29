@@ -21,6 +21,14 @@ socket.on('updateZeffChoices', function (data)
 	});
 });
 
+socket.on('highlightSelected', function (data)
+{
+	$("#zeffChoices a").wrap("<div id=\"unselectable\"></div>");
+	$("#"+data.id).unwrap();
+	$("#"+data.id).wrap("<div id=\"highlighted\"></div>");
+	$("#zeffChoices a").contents().unwrap();
+});
+
 function clickChoice(e, speech)
 {
     e.preventDefault();
