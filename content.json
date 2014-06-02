@@ -56,6 +56,19 @@
 		[
 			{ "type": "choice", "speaker": "artemis", "line": "Mention how weirdly people treat you as a non-male webcomic artist", "leadsTo": "criticism" }
 		],
+		"cosplayStuff":
+		[
+			{ "type": "choice", "speaker": "zeff", "line": "Confessed that you cosplayed as a woman yesterday", "leadsTo": "cosplay" }
+		],
+		"transgenderStuff":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff has another pronoun preference", "leadsTo": "pronouns" },
+			{ "type": "choice", "speaker": "zeff", "line": "Talk about how scary it is to be who you really are", "leadsTo": "zeffChildhood" }
+		],
+		"crushStuff":
+		[
+			{ "type": "choice", "speaker": "zeff", "line": "Admit to your longtime crush on Artemis", "leadsTo": "crush" }
+		],
 		"weirdTalk":
 		[
 			{ "type": "choice", "speaker": "zeff", "line": "Mention the really weird dream you had last night", "leadsTo": "zeffDream" }
@@ -195,6 +208,7 @@
 		{ "type": "unlockAchievement", "description": "Sat down with Artemis" },
 		
 		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
+		{ "type": "unlockTopics", "category": "crushStuff", "weirdnessLevel": 2 },
 		{ "type": "unlockTopics", "category": "weirdTalk", "weirdnessLevel": 3 },
 		{ "type": "showAvailableTopics" }
 	],
@@ -204,6 +218,9 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, uh, you having a good AwesomeCon?" },
 		
+		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
+		{ "type": "unlockTopics", "category": "harassmentStuff", "weirdnessLevel": 2 },
+		{ "type": "unlockTopics", "category": "cosplayStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it could be worse", "leadsTo": "awesomeCon-worse" },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's better than you thought it'd be", "leadsTo": "awesomeCon-better" }
 	],
@@ -226,8 +243,6 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Heh, yeah, it sure does get loud on that expo floor, doesn't it? Hard to hear yourself think." },
 		
-		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
-		{ "type": "unlockTopics", "category": "harassmentStuff", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
 	"awesomeCon-surelyItMust":
@@ -238,8 +253,6 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Aw, come on. It's AwesomeCon! Surely it has to be at least a little bit awesome, right?" },
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		
-		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
-		{ "type": "unlockTopics", "category": "harassment", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
 	"awesomeCon-better":
@@ -247,8 +260,6 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Better than I thought it'd be, actually. Of course, I don't think I was expecting all that much." },
 		
-		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
-		{ "type": "unlockTopics", "category": "harassment", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
 	
@@ -688,7 +699,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "Sure! Hold on a second..." },
 		
-		{ "type": "music", "line": "A bad cross between Skrillex and Super Mario Bros." },
+		{ "type": "music", "line": "A bad combination of Skrillex and Super Mario Bros." },
 		
 		{ "type": "speech", "speaker": "zeff", "line": "(Hold out your phone towards Artemis.)" },
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
@@ -1722,6 +1733,31 @@
 	[
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. Hmm. I guess it would have to be invisibility. But it doesn't really make me feel powerful. It feels more like something out of my control." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you sometimes feel like you'd want to be invisible", "leadsTo": "superpower-zeffInvisible" },
+		{ "type": "showAvailableTopics" }
+	],
+	"superpower-zeffInvisible":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I feel like it would be nice to be invisible for a change. That way, I could look and act however I wanted and no one would ever bother me for it." },
+		{ "type": "speech", "speaker": "artemis", "line": "Are you saying I should be taking more advantage of my superpower, then?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'm not saying anything about you. I'm just..." },
+		{ "type": "speech", "speaker": "zeff", "line": "I feel like I'm under constant surveillance, you know? Like if I deviate too far out of my prescribed role as a supposedly normal-looking white man, everyone will turn on me." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Suggest that maybe Zeff's been reading too much Foucault", "leadsTo": "superpower-foucault" },
+		{ "type": "showAvailableTopics" }
+	],
+	"superpower-foucault":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sounds like someone's been reading too much Foucault lately." },
+		
+		{ "type": "unlockAchievement", "description": "Made a reference to Foucault's Panopticon" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "I'm not really familiar with Foucault. Did he write dystopian sci-fi?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, now that you mention it, if aliens got their hands on some of Foucault's writing, they'd probably find it grotesquely fascinating in a dystopian sci-fi sense. So, sure." },
 		
 		{ "type": "showAvailableTopics" }
 	],
@@ -2917,28 +2953,30 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Gee, thanks. It's always nice to know I have a gallant young man protecting me from the many hordes of rabid cell biologists." },
 		{ "type": "speech", "speaker": "artemis", "line": "Typical straight white guys, with their splaining. Yeesh." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Say you never said you were straight, and you're not even 100% sure that you're male", "leadsTo": "mansplaining-never" }
+		{ "type": "choice", "speaker": "zeff", "line": "Say you never said you were straight, and you're not even 100% sure that you're male", "leadsTo": "mansplaining-never" },
+		{ "type": "showAvailableTopics" }
 	],
 	"mansplaining-never":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
 		{ "type": "speech", "speaker": "zeff", "line": "Hey, now! I never said I was straight, and I'm not even 100% sure about... never mind." },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Apologise for assuming", "leadsTo": "mansplaining-assumed" }
+		{ "type": "choice", "speaker": "artemis", "line": "Apologise for assuming", "leadsTo": "mansplaining-assumed" },
+		{ "type": "showAvailableTopics" }
 	],
 	"mansplaining-assumed":
 	[
 		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I'm sorry I assumed... but still... it's not really cool to automatically assume people are going to want unsolicited advice." },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Mention that your friend got harassed on the show floor this weekend", "leadsTo": "harassment" }
+		{ "type": "showAvailableTopics" }
 	],
 	"mansplaining-apologise":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Look. I just want to say, I'm really sorry for pissing you off. I was an ass, and I hope you can forgive me." },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Mention that your friend got harassed on the show floor this weekend", "leadsTo": "harassment" }
+		{ "type": "showAvailableTopics" }
 	],
 	
 	"harassment":
@@ -3107,5 +3145,1262 @@
 	
 	"toxic":
 	[
+		{ "type": "music", "line": "Noisy, uncomfortable" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, the more I think about it, the whole fan convention environment really is a toxic environment for women." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, there are barely any real women there! All I see are scantily-clad booth babes paid to be gawked at by mouth-breathing nerdbros." },
+		{ "type": "speech", "speaker": "artemis", "line": "Who would actually, willingly, want to dress like that? I mean, seriously?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Point out that some women do make the choice to dress that way", "leadsTo": "toxic-choice" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-choice":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I wouldn't be so quick to judge. Some women like dressing to show some skin. It should be their choice." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Point out that such a choice can't be independent of patriarchy", "leadsTo": "toxic-independent" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say it's a choice you don't understand personally", "leadsTo": "toxic-understand" }
+	],
+	"toxic-independent":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "They do, but how can such a choice be made independent of a patriarchal society that values women, first and foremost, for their looks?" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's human nature to want to please people in your community. So it's only natural that some women like to dress solely to please people." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Call #artemisObj# out on being patronising", "leadsTo": "toxic-patronising" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-patronising":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wow. That's really, really patronising. What makes you so high and mighty that you're above pleasing people, anyway?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Call #zeffObj# out on account of being male", "leadsTo": "toxic-man" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-understand":
+	[
+		{ "type": "music", "line": "Alien music" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, sure, it's a choice. But that doesn't mean I understand it." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, when I've tried to dress that way, I've always felt so... uncomfortable. Exposed." },
+		{ "type": "speech", "speaker": "artemis", "line": "I'd look at myself in the mirror and see someone who wasn't me at all. It was some alien." },
+		{ "type": "speech", "speaker": "artemis", "line": "An alien most men would find way hotter than the real me, sure, but still. Not me." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say maybe it's not for #artemisObj#, but it is for others", "leadsTo": "toxic-notForYou" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-notForYou":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, maybe dressing feminine just isn't you. That's okay. But for some women, that is who they are. And you have to respect that." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Call #zeffObj# out on account of being male", "leadsTo": "toxic-man" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-man":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "You're one to talk. You're a dude. Think about that before the next time you splain your face off about things in which you have no lived experience." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Point out that you're way more complicated than that", "leadsTo": "toxic-complicated" },
+		{ "type": "showAvailableTopics" }
+	],
+	"toxic-complicated":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
+		{ "type": "speech", "speaker": "zeff", "line": "See, that's just it! You keep assuming I'm just your bog-standard straight white dude, but that's not me at all!" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'm... way more complicated than that." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"cosplay":
+	[
+		{ "type": "music", "line": "Sneaky film noir detective jazz" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yesterday, I, uh, cosplayed as Roberta St. Albert from SleuthQuest." },
+		
+		{ "type": "unlockAchievement", "description": "Admitted out loud to crossdressing" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're not familiar with the character", "leadsTo": "cosplay-who" },
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder why cross-dressing is a big deal", "leadsTo": "cosplay-bigDeal" }
+	],
+	"cosplay-who":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I've never played SleuthQuest. Who's Roberta St. Albert?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh, she's the main villain who you spend the entire game searching for, visiting every country in the world in the process." },
+		{ "type": "speech", "speaker": "zeff", "line": "She's got long, flaming red hear and wears a little black dress, a fedora, and fishnets. You've probably seen her before; she's pretty recognisable and iconic." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder why cross-dressing is a big deal", "leadsTo": "cosplay-bigDeal" },
+		{ "type": "choice", "speaker": "zeff", "line": "Explain that it actually wasn't really cross-dressing", "leadsTo": "cosplay-crossDressing" }
+	],
+	"cosplay-bigDeal":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh. Uh... wow. Okay." },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't know, though... it seems to me like lots of people cross-dress at conventions. I had the impression it wasn't a big deal." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Explain that it actually wasn't really cross-dressing", "leadsTo": "cosplay-crossDressing" }
+	],
+	"cosplay-crossDressing":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "See, here's the thing. It wasn't really cross-dressing. I... I've been dressing like that, in private, for years." },
+		{ "type": "speech", "speaker": "zeff", "line": "And, uh, when I wear a wig and a dress and heels, it's the only time I really feel like me. If that makes any sense." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you kind of get it", "leadsTo": "cosplay-kindOf" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about the time you wore a tie and a blazer", "leadsTo": "cosplay-blazer" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
+	],
+	"cosplay-kindOf":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Kind of. I mean, I do hate wearing all those things, even though I'm supposed to love them. I guess it works the other way around too, huh." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
+	],
+	"cosplay-blazer":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I felt that way the first time I wore a tie and a blazer to a friend's wedding. It was the first time I realised I didn't hate dressing up, at least not completely." },
+		{ "type": "speech", "speaker": "artemis", "line": "I guess it also works the other way around, doesn't it?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
+	],
+	"cosplay-yesterday":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Anyway. Yesterday was the first time I did that out in public. And it was amazing. No one recognised me, and a few people even said my cosplay was super accurate." },
+		{ "type": "speech", "speaker": "zeff", "line": "I even caught my friend Sparrow staring at my legs, and he's as straight as it gets." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Sympathetically assent", "leadsTo": "cosplay-goodTime" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if that's a good thing", "leadsTo": "cosplay-sparrow" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" }
+	],
+	"cosplay-goodTime":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sounds like you had a good time." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" }
+	],
+	"cosplay-sparrow":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Is that a good thing? Do you like Sparrow in that way?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Hah. No. He's really not my type, and even if he were, he's very very monogamously married. But it was still kind of flattering, I gotta say." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" }
+	],
+	"cosplay-ranAway":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Of course, once I saw Sparrow, I had to get out of there before he could come up and get a closer look and realise it was me." },
+		{ "type": "speech", "speaker": "zeff", "line": "So, I booked it straight to my hotel room, washed off all my makeup, and changed back into my regular clothes before anyone could figure it out." },
+		
+		{ "type": "unlockTopics", "category": "transgenderStuff", "weirdnessLevel": 2 },
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"pronouns":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "So... does this mean you identify as female? Should I use different pronouns for you?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you prefer she/her pronouns", "leadsTo": "pronouns-she" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you prefer ze/zir pronouns", "leadsTo": "pronouns-ze" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you don't know yet, but he/him is okay for now", "leadsTo": "pronouns-he" }
+	],
+	"pronouns-she":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, I've been thinking about this, and I'd really like to know what it's like be called she and her." },
+		
+		{ "type": "unlockAchievement", "description": "Switched to she/her pronouns" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "No one's ever used feminine pronouns for me before, for obvious reasons. But I've always wondered if they might fit me better." },
+		{ "type": "speech", "speaker": "zeff", "line": "And to tell you the truth, I don't think I completely identify as a woman, but I still like the sound of she and her." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Okay, then. She and her it is!" },
+		
+		{ "type": "setPronoun", "speaker": "zeff", "pronoun": "she" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-ze":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, I've been thinking about this, and I'd really like to start using ze and zir for myself." },
+		
+		{ "type": "unlockAchievement", "description": "Switched to ze/zir pronouns" },
+		
+		{ "type": "setPronoun", "speaker": "zeff", "pronoun": "ze" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you haven't heard those pronouns before", "leadsTo": "pronouns-haventHeard" },
+		{ "type": "choice", "speaker": "artemis", "line": "Try to use the pronouns in a sentence", "leadsTo": "pronouns-sentence" }
+	],
+	"pronouns-haventHeard":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Ze and zir? I haven't heard those before. How do they work?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh, something like, Zeff had fun at AwesomeCon this weekend. Ze got to have coffee with the author of zir favourite webcomic." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I dunno. I haven't really spoken these pronouns in person before. I've only read them on the internet. It feels weird to me to say them out loud." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if you should try something else, if it's too weird", "leadsTo": "pronouns-weird" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've never told anyone about your pronoun preference before", "leadsTo": "pronouns-neverToldAnyone" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" }
+	],
+	"pronouns-sentence":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Okay... so, like, Zeff is hungry; ze wants to go to zir favourite burger joint?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, basically." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wow, it feels weird to hear someone say those pronouns out loud. I've only read them on the internet." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if you should try something else, if it's too weird", "leadsTo": "pronouns-weird" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've never told anyone about your pronoun preference before", "leadsTo": "pronouns-neverToldAnyone" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" }
+	],
+	"pronouns-weird":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh? If it's weird, should I try something else?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "No, I meant... it's weird in a good way. Ze and zir do feel right for me; I'm just not used to what feeling right feels like." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "It's kind of like I just got a new pair of shoes, and I still need to break them in, but they're way better for my feet than my old ratty shoes were." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "That makes a lot of sense, actually." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've never told anyone about your pronoun preference before", "leadsTo": "pronouns-neverToldAnyone" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" }
+	],
+	"pronouns-neverToldAnyone":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Anyway... you're the first person I've ever told my pronoun preference to in person, so thank you for respecting me." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say there's no need to thank you", "leadsTo": "pronouns-noNeed" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" }
+	],
+	"pronouns-noNeed":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "No need to thank me! Using someone's preferred pronouns should be common human decency, as far as I'm concerned." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "You'd think so, but every time I want to tell someone, I feel like they're going to laugh in my face for using made-up words." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "That doesn't make sense to me. Aren't all words made up by someone, at some point?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I think it's awesome that people can create new words for concepts for which we've never had the vocabulary." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-he":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I... I don't know yet. I'm still trying to figure that out. Male pronouns are okay for now, but, you know, that might change. I might want to be neither." },
+		{ "type": "speech", "speaker": "zeff", "line": "It's a lot to think about, and I don't think I'm ready for all that just yet." },
+		
+		{ "type": "setPronoun", "speaker": "zeff", "pronoun": "he" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's pronoun preference", "leadsTo": "pronouns-artemis" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-artemis":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "While we're on the subject, do you have a pronoun preference other than #artemisSub# and #artemisObj#?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you've been thinking about singular they", "leadsTo": "pronouns-they" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you still prefer she/her", "leadsTo": "pronouns-stillShe" }
+	],
+	"pronouns-they":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I've been thinking about singular they, lately. I have a friend who uses it." },
+		
+		{ "type": "unlockAchievement", "description": "Switched to they/them pronouns" },
+		
+		{ "type": "setPronoun", "speaker": "artemis", "pronoun": "they" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say that's cool", "leadsTo": "pronouns-cool" },
+		{ "type": "choice", "speaker": "zeff", "line": "Remark that singular they sounds deliberately vague", "leadsTo": "pronouns-vague" }
+	],
+	"pronouns-cool":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Cool!" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-vague":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I know of internet people who use singular they, too. But I dunno." },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, people sound like they're talking about more than one person, or being deliberately vague." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Quibble about etymology", "leadsTo": "pronouns-etymology" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be reminded of an amusing story about multiple personalities", "leadsTo": "pronouns-multiple" }
+	],
+	"pronouns-etymology":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, the way they justify it is that the word you used to be plural, but then also became singular after people stopped using thou." },
+		{ "type": "speech", "speaker": "artemis", "line": "So it makes sense that the word they can follow a similar trajectory." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Ah. Good point!" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-multiple":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Hah. My friend told a funny story about that, actually." },
+		{ "type": "speech", "speaker": "artemis", "line": "They said they went to this event, told people their pronoun preference, and then people got confused because they thought they had multiple personalities." },
+		{ "type": "speech", "speaker": "artemis", "line": "Everyone was really nice and polite about it, but then my friend had to awkwardly explain that no, it was singular they." },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't know. I think I like the idea of deliberately confusing people. It suits me." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Okay, then! Confuse away!" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-stillShe":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I've thought about that too, and I still prefer she and her." },
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, I'm not sure I completely or only identify as female, but I feel like she and her can still be broad enough to include someone like me." },
+		{ "type": "speech", "speaker": "artemis", "line": "Plus, there's so much literature where he and him are used as generic pronouns, and I feel like it's kind of my responsibility as a feminist to counterbalance that. So, yeah." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, I hate that. It's like how men are default people and women are special people." },
+		{ "type": "speech", "speaker": "zeff", "line": "Like how Ms. Pac-Man is Pac-Man except with a bow on her head. Or how in ASDF, all the male characters are stick people and all the women are stick people with long hair." },
+		{ "type": "speech", "speaker": "zeff", "line": "And, of course, those of us who don't fit neatly in the gender binary don't actually exist at all." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah. You'd think that a default person would be gender neutral, but society has this annoying construction of gender neutral as being male." },
+		{ "type": "speech", "speaker": "artemis", "line": "Which annoys me, but I guess makes sense if you consider that men are the ones running the show and writing about it, and would therefore project their experiences on everyone." },
+		
+		{ "type": "setPronoun", "speaker": "artemis", "pronoun": "she" },
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"zeffChildhood":
+	[
+		{ "type": "music", "line": "The music of your unhappy childhood" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "It's just... I'm so scared, you know? To take that step and openly be who I am." },
+		{ "type": "speech", "speaker": "zeff", "line": "Like, when I was a kid, I got teased all the time for being small and kinda girly. So I learned to suppress that part of myself and come across as invisible most of the time." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're sorry that happened to #zeffObj#", "leadsTo": "zeffChildhood-sorry" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got into videogames", "leadsTo": "zeffChildhood-videogames" }
+	],
+	"zeffChildhood-sorry":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "sad" },
+		{ "type": "speech", "speaker": "artemis", "line": "That's so awful. I'm so sorry that happened to you." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got into videogames", "leadsTo": "zeffChildhood-videogames" }
+	],
+	"zeffChildhood-videogames":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I think that's maybe why I got really into videogames. Whenever I could play as a girl in a game, I would. And no one would know." },
+		{ "type": "speech", "speaker": "zeff", "line": "And if anyone found out I was really a guy, I'd say I just like looking at women, like every dude does." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "In some ways, it's true. I do like looking at women. But in an aspirational way, in addition to just plain aesthetic preference." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you preferred to play as big hulking man figures", "leadsTo": "zeffChildhood-hulking" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you never thought that way about videogames", "leadsTo": "zeffChildhood-neverThought" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you joined the drama club in high school", "leadsTo": "zeffChildhood-drama" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about an openly gay boy you knew in high school", "leadsTo": "zeffChildhood-jeremy" }
+	],
+	"zeffChildhood-hulking":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "That's funny. I never played many games growing up, but my neighbours had Smash Fighters, and when I came over, I'd always pick the biggest hulking manly figure available." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't know if it helped at all. I always lost at those games." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, the smaller, lighter characters tend to give you better control. The big ones deal more damage, but are really clumsy and slow. But anyway." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you joined the drama club in high school", "leadsTo": "zeffChildhood-drama" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about an openly gay boy you knew in high school", "leadsTo": "zeffChildhood-jeremy" }
+	],
+	"zeffChildhood-neverThought":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "That... makes a lot of sense. I've never thought about videogames that way before. As a way to be who you can't be in real life." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you joined the drama club in high school", "leadsTo": "zeffChildhood-drama" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about an openly gay boy you knew in high school", "leadsTo": "zeffChildhood-jeremy" }
+	],
+	"zeffChildhood-drama":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I joined the drama club in high school, and I found I was actually pretty good at acting." },
+		{ "type": "speech", "speaker": "zeff", "line": "At least as an actor, I didn't have to worry about living up to any kind of self-image. All I had to do was play the part I was told to play." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Mention that you used to work tech", "leadsTo": "zeffChildhood-tech" },
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest you might have done more acting if there were better roles for you", "leadsTo": "zeffChildhood-roles" }
+	],
+	"zeffChildhood-tech":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Drama club, huh? I used to be part of the stage crew with all the other freaks and rejects. It was fun." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I wasn't much of an actor, though. Wasn't theatrical or boisterous enough." },
+		{ "type": "speech", "speaker": "zeff", "line": "But see, that's the thing. I was really shy and quiet most of the time, but when I tried acting, I had a safe space to be someone else for a while." },
+		{ "type": "speech", "speaker": "zeff", "line": "Instead, I could be someone like a court jester, or a town crier, or a plucky streetwise orphan. Anyone but me, you know?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder what it would be like to be someone completely different for a day", "leadsTo": "beingSomeoneElse" },
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest you might have done more acting if there were better roles for you", "leadsTo": "zeffChildhood-roles" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about an openly gay boy you knew in high school", "leadsTo": "zeffChildhood-jeremy" }
+	],
+	"zeffChildhood-roles":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I wonder sometimes if I might have done more acting if there were better roles I could have played." },
+		{ "type": "speech", "speaker": "artemis", "line": "It was all pretty ingenues, matronly mother types, and maybe some other bit parts if we were lucky." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Plus, there was no shortage of girls auditioning for those parts, all of whom were more experienced at acting than me, so I figured I'd just let them have it." },
+		{ "type": "speech", "speaker": "zeff", "line": "Maybe I was lucky that there weren't as many boys in theatre. Still, I wasn't really offered any of the serious leading man roles; those went to all the handsome buff guys." },
+		{ "type": "speech", "speaker": "zeff", "line": "And auditioning for one of the women's parts would have gotten me laughed at." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about an openly gay boy you knew in high school", "leadsTo": "zeffChildhood-jeremy" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffChildhood-jeremy":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "I remember at my high school, there was this really brave, openly gay guy in my graduating class. His name was Jeremy." },
+		{ "type": "speech", "speaker": "zeff", "line": "He didn't care what anyone thought. I always wished I could be like him." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I also had a huge crush on him, but he was way too popular to notice my existence, let alone look at me in that way." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you had one of those at your high school, too", "leadsTo": "zeffChildhood-oneOfThose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Mention the talent show incident", "leadsTo": "zeffChildhood-talentShow" }
+	],
+	"zeffChildhood-oneOfThose":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Funny, I think I had one of those at my high school, too. Except his name was Cam, he was always the lead in the school play, and he never noticed me because I worked tech." },
+		
+		{ "type": "unlockAchievement", "description": "Bonded over your unattainable high school crush experiences" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention the talent show incident", "leadsTo": "zeffChildhood-talentShow" }
+	],
+	"zeffChildhood-talentShow":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Anyway, there was this one time the school did a talent show thing, and Jeremy decided to lip sync to Britney Spears. While dressed as her. It was epic." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'll bet." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "But then, he came outside to the parking lot to find that someone completely totalled his car and spray painted it with every variation on the word fag in existence." },
+		{ "type": "speech", "speaker": "zeff", "line": "No one saw him again after that. We didn't know if he moved or just dropped out or finished high school some other way." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask what would posses anyone to be so hateful", "leadsTo": "zeffChildhood-possess" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if #zeffSub# ever got back in touch with Jeremy", "leadsTo": "zeffChildhood-backInTouch" }
+	],
+	"zeffChildhood-possess":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "That's awful. What would possess anyone to be so hateful?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Hell if I know. But if a guy as popular and well-loved as Jeremy gets that kind of crap, I can't even imagine what would happen to me." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if #zeffSub# ever got back in touch with Jeremy", "leadsTo": "zeffChildhood-backInTouch" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffChildhood-backInTouch":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Did you ever get back in touch with Jeremy again?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'd be lying if I said I didn't try Googling him a few times, but considering that his last name is Smith, he's pretty much impossible to find." },
+		{ "type": "speech", "speaker": "zeff", "line": "And anyway, even if I could find him, he didn't even know who I was, so I doubt anything would come of it." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"beingSomeoneElse":
+	[
+		{ "type": "music", "line": "The sound of body-swapping" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sometimes, I wonder what it would be like to be someone completely different, just for a day. Like, say, a straight white man." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "What would that entail? Strategic chest binding and whiteface makeup?" },
+		{ "type": "speech", "speaker": "artemis", "line": "I was thinking more along the lines of my consciousness being transferred into a completely different body for 24 hours." },
+		{ "type": "speech", "speaker": "artemis", "line": "And then seeing how they'd react to me in that body, as opposed to me in my own body." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what #artemisSub# would be hoping to learn from the experiment", "leadsTo": "beingSomeoneElse-learn" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if it would be like eighties body-swapping movies", "leadsTo": "beingSomeoneElse-bodySwapping" },
+		{ "type": "choice", "speaker": "zeff", "line": "Suggest controlling a volunteer via voice commands and hidden cameras", "leadsTo": "beingSomeoneElse-volunteer" }
+	],
+	"beingSomeoneElse-learn":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "And what would you be hoping to learn from the experiment?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, I'd want to know if straight white guys really do have it easier. I mean, I already know they do, but I want to know how it feels." },
+		{ "type": "speech", "speaker": "artemis", "line": "I want to know what it's like to have the entire world designed for someone like me to walk through it and use everything in it." },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm just so... tired of feeling like I don't belong, you know?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder what it would be like to be in a cisgender woman's body", "leadsTo": "beingSomeoneElse-cisgender" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you don't know that the world is designed for anyone", "leadsTo": "beingSomeoneElse-designed" }
+	],
+	"beingSomeoneElse-cisgender":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know how much easier I have it than you, honestly. I'm pretty scrawny and kinda girly, as you can plainly see." },
+		{ "type": "speech", "speaker": "zeff", "line": "I actually kind of want to know what it would be like to be in a cisgender woman's body. Whether people would treat me like a human being instead of like some failure." },
+		{ "type": "speech", "speaker": "artemis", "line": "See, here's the thing. All female-bodied people are failures to be human beings by default. At best, they can maybe be sex objects for the male gaze, but never real people." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, maybe that would be less disappointing than having people expect all these things out of me because I appear male and then get huffy when I can't live up to those expectations." },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know. That's why I want to know." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-designed":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know that the world is designed for anyone." },
+		{ "type": "speech", "speaker": "zeff", "line": "Maybe it fits some people better than others, but I don't think there's really a single person who fits the perfect ideal of a human in this world." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't live up to the tall, muscular-but-not-too-buff, blonde-haired, square-jawed man ideal I grew up having to live up to. Not that I've never really met anyone who does." },
+		{ "type": "speech", "speaker": "artemis", "line": "Not even celebrities? Or charismatic world leaders?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I think they might be worst off of all." },
+		{ "type": "speech", "speaker": "zeff", "line": "The closer you are to perfect, it's like you're teetering on a ledge, and if anything even nudges you slightly off of perfect, then they all come after you." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask who they is", "leadsTo": "beingSomeoneElse-they" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you'd never want to be put in that position, for sure", "leadsTo": "beingSomeoneElse-never" }
+	],
+	"beingSomeoneElse-they":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "Who's they?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Everyone. All of us. We who perpetuate the system even as it oppresses us." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-never":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, I'd never want to be put in that position, for sure." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-bodySwapping":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Do you mean like switching bodies, like in those wacky sci-fi movies from the eighties?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Maybe. I mean, if the technology existed to body swap temporarily, and it was guaranteed to be safe." },
+		{ "type": "speech", "speaker": "artemis", "line": "And also if there were contracts stipulating that the other person couldn't just run off with your body forever... yeah, I'd be first in line to try that." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what if you liked someone else's body better", "leadsTo": "beingSomeoneElse-better" },
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-better":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "What if you found that you liked someone else's body way more than your own? Wouldn't that just make things worse?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Possibly? But at the same time, I think I might feel better off for knowing, you know?" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-volunteer":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Hmm. Maybe you could get a straight white man to volunteer to obey your voice commands and carry a hidden camera around." },
+		{ "type": "speech", "speaker": "zeff", "line": "That might get you some of the effect you're hoping for." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "You may be on to something, there. But I'd be missing a lot of tactile feedback if that were the case. " },
+		{ "type": "speech", "speaker": "zeff", "line": "Hey, they might just have the technology you're looking for available to mass markets within a couple of years." },
+		{ "type": "speech", "speaker": "zeff", "line": "What with so many romantic relationships happening long distance and all, there's definitely demand for remote touchy feely technology." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"crush":
+	[
+		{ "type": "music", "line": "A love song" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "So, this is kind of embarrassing to admit, but I've had a crush on you for like forever." },
+		
+		{ "type": "unlockAchievement", "description": "Confessed your crush" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "I don't expect you to reciprocate, but I, uh, just wanted to let you know what an awesome person you are." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Demand to know if Zeff came here to try and hit on you", "leadsTo": "crush-whoa" },
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder if this is some kind of a joke", "leadsTo": "crush-joke" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask how Zeff can have a crush on you without even knowing you", "leadsTo": "crush-know" },
+		{ "type": "choice", "speaker": "artemis", "line": "Tactfully thank Zeff for the compliment", "leadsTo": "crush-thanks" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be at a loss for words", "leadsTo": "crush-loss" }
+	],
+	"crush-whoa":
+	[
+		{ "type": "music", "line": "A record needle scratch cutting the love song short" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "Whoa! Did you come here to try to hit on me? Because if that's what this is all about..." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say it's not like that at all, and you're sorry for being an ass", "leadsTo": "crush-ass" },
+		{ "type": "choice", "speaker": "zeff", "line": "Angrily tell her to forget you ever said anything", "leadsTo": "crush-forget" }
+	],
+	"crush-ass":
+	[
+		{ "type": "music", "line": "Trying and failing to start the love song again" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "No! No, it's not like that at all! I know you barely even know me, but even so, I know you're totally, utterly out of my league!" },
+		{ "type": "speech", "speaker": "zeff", "line": "I just figured, maybe there'd be some kind of long shot? I don't know. Oh, geez. I'm such an ass. I'm so sorry. I understand if you don't want to talk to me anymore." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you think that would probably be best, actually", "leadsTo": "crush-best" },
+		{ "type": "choice", "speaker": "artemis", "line": "Explain your overreaction", "leadsTo": "crush-explain" }
+	],
+	"crush-best":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I think that would probably be best, actually." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-explain":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "No, no, it's okay. I just... I don't know." },
+		{ "type": "speech", "speaker": "artemis", "line": "Having someone I've only just met suddenly tell me they have a crush on me... well, it's weird. I mean, how would you feel if that happened to you?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you think you'd be flattered and curious", "leadsTo": "crush-flattered" },
+		{ "type": "choice", "speaker": "zeff", "line": "Angrily tell her to forget you ever said anything", "leadsTo": "crush-forget" }
+	],
+	"crush-flattered":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know, I'm not sure. I'd like to think I'd be flattered, and curious to get to know that person better and stuff." },
+		{ "type": "speech", "speaker": "zeff", "line": "But, you know, it's not an experience I've been fortunate enough to have happen to me, so I can't really say for certain." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-forget":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
+		{ "type": "speech", "speaker": "zeff", "line": "Urgh. Never mind. Forget I said anything." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-joke":
+	[
+		{ "type": "music", "line": "A love song that feels forced and insincere" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "You're joking, right? Because I tell you, I'm not the kind of person people have crushes on. Trust me." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, I guess I must not be a person, then, because I'm not joking. I am, in fact, completely serious." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "I think your webcomic is absolutely brilliant, and I think you're absolutely brilliant too. And if that's not attractive, I don't know what is." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-know":
+	[
+		{ "type": "music", "line": "A love song with a lot of mistakes in it" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "artemis", "line": "What? You have a crush on me? But how... but you don't even know me!" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Maybe that's true. But I know what you're like online." },
+		{ "type": "speech", "speaker": "zeff", "line": "And I think you're smart and funny and super duper talented and, well, that makes me really want to get to know the meatspace you better. If that makes any sense." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-thanks":
+	[
+		{ "type": "music", "line": "A love song getting awkwardly redirected into boring café music" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Thanks. That's, uh, very kind of you." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I mean, don't take it as me trying to hit on you or anything. I know women get hit on a lot at cons, and I really really don't want to be that person." },
+		{ "type": "speech", "speaker": "artemis", "line": "I, uh, appreciate it. I think..." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	"crush-loss":
+	[
+		{ "type": "music", "line": "Incoherent stuttering" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I... I don't know what to say..." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "You don't have to say anything. I just thought you might like to know that there's someone out there who finds you really, really great. " },
+		{ "type": "speech", "speaker": "zeff", "line": "Because you are. You're smart and talented and hilarious, which I knew when reading your stuff online, but talking to you in person, you're just as cool. If not cooler." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"zeffLove":
+	[
+		{ "type": "music", "line": "The sound of longing" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I feel like I fall in love with almost everyone I know." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "It's been that way ever since I was a kid. Every year in school, I'd have a crush on a new girl. Or boy, sometimes." },
+		{ "type": "speech", "speaker": "zeff", "line": "It would be whoever was nicest to me, generally speaking." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds emotionally exhausting", "leadsTo": "zeffLove-exhausting" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if any of those people ever loved him back", "leadsTo": "zeffLove-back" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you feel the opposite, personally", "leadsTo": "zeffLove-opposite" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've actually never been in a real relationship before", "leadsTo": "zeffLove-relationship" }
+	],
+	"zeffLove-exhausting":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "That sounds a bit emotionally exhausting." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Maybe it is. I've never been any other way, though, so I wouldn't know." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you feel the opposite, personally", "leadsTo": "zeffLove-opposite" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've actually never been in a real relationship before", "leadsTo": "zeffLove-relationship" }
+	],
+	"zeffLove-back":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I see. And did any of those people ever love you back?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know. Most likely not. I've never exactly been the kind of person most people are looking for in a relationship." },
+		{ "type": "speech", "speaker": "zeff", "line": "Weirdly, it doesn't stop me from falling in love anyway." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you feel the opposite, personally", "leadsTo": "zeffLove-opposite" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've actually never been in a real relationship before", "leadsTo": "zeffLove-relationship" }
+	],
+	"zeffLove-opposite":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I find the opposite, I think. It takes a lot for me to want to be friends with someone, let alone love them." },
+		{ "type": "speech", "speaker": "artemis", "line": "In fact, it's really weird to me that other people seem to fall in love so easily. Like, where do you get all that love, anyway?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Love isn't a finite resource, you know. And, well, I guess I have this foolish tendency to want to see the best in people." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Maybe it's not very smart of me. But it doesn't make sense to assume everyone's an enemy, either." },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't assume everyone's the enemy. I just... well, I feel neutral towards most people. I like to assume a blank slate unless and until people prove otherwise." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you've actually never been in a real relationship before", "leadsTo": "zeffLove-relationship" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffLove-relationship":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "The thing is, I've never actually been in a relationship before. A real one, that wasn't totally and utterly one-sided." },
+		{ "type": "speech", "speaker": "zeff", "line": "And it's weird. I feel like everyone else my age has been in at least one honest to goodness long-term relationship, but somehow, it never happened to me. I don't know why." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Hope out loud that Zeff isn't an entitled Nice Guy", "leadsTo": "zeffLove-niceGuy" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask how old Zeff is, anyway", "leadsTo": "zeffLove-howOld" },
+		{ "type": "choice", "speaker": "zeff", "line": "Recall the internet friend you almost had a thing with once", "leadsTo": "crumpet" }
+	],
+	"zeffLove-niceGuy":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Urgh. Please, please don't tell me you're one of those Nice Guys who thinks they're entitled to a relationship for no reason other than the fact that they're alive and breathing." },
+		{ "type": "speech", "speaker": "zeff", "line": "No! Of course not. I don't think anyone's entitled to a relationship. I just... well, it would be nice to experience what it's like, you know?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Okay, good. Because, I hear entitled Reddit-reading dudebros whining about that sort of thing a lot, and quite frankly, I'm sick of it." },
+		{ "type": "speech", "speaker": "artemis", "line": "Not having experience at long-term relationships is actually more common than people give credit for." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Mention you haven't had a lot of relationship experience yourself", "leadsTo": "zeffLove-experience" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffLove-howOld":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "How old are you, anyway?" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'm 23." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "23? Pfft. That's not old at all." },
+		{ "type": "speech", "speaker": "artemis", "line": "In fact, I'm only four years older than you, and I know quite a few people my age who've never been in a long-term relationship before, either." },
+		
+		{ "type": "unlockAchievement", "description": "Revealed your age" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Mention you haven't had a lot of relationship experience yourself", "leadsTo": "zeffLove-experience" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffLove-experience":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "And, well, you know, I haven't had a super huge amount of relationship experience, myself." },
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, sure, it's less than zero, but it's been awkward and I've said and done a lot of things I regret." },
+		{ "type": "speech", "speaker": "artemis", "line": "There are times I actually wish I could hit the reset button and start from a clean slate." },
+		{ "type": "speech", "speaker": "artemis", "line": "Sometimes, I wonder if I'd be more optimistic about people if that were the case, instead of the killjoy cynic I am." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're not sure you could ever be cynical about people", "leadsTo": "zeffLove-cynical" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's past relationships", "leadsTo": "artemisLove" }
+	],
+	"zeffLove-cynical":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'm not sure I could ever become cynical about people. I'm not sure I'd even want to be. People are just so interesting to me." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Play devil's advocate", "leadsTo": "zeffLove-devil" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say that you think you just find people really predictable", "leadsTo": "zeffLove-predictable" }
+	],
+	"zeffLove-devil":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Even really, really terrible people, like serial killers? Or fascist dictators?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yes, actually. Well, I wouldn't want to date them, or even be in the same room as them, for that matter, but there's something fascinating about the dark side of human nature." },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I'm amazed at how talented and creative people can be at doing evil things." },
+		{ "type": "speech", "speaker": "zeff", "line": "Not that it makes those things less evil in the least. But it also doesn't make them less human." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, so you're talking admiring from afar. Sure. Anyone can do that. It's all in how you spin it." },
+		{ "type": "speech", "speaker": "artemis", "line": "But in a practical sense, why bother thinking that way, or even caring? They'd probably just kill you." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know. To me, understanding humanity means understanding the whole picture." },
+		{ "type": "speech", "speaker": "zeff", "line": "Thinking that people who commit atrocities are somehow less human, well, that contributes to the harmful us-against-them thinking that allows atrocities to happen in the first place." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Are we even talking about the same thing we were talking about before?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Probably not. But in my defence, you brought up this particular tangent." },
+		{ "type": "speech", "speaker": "artemis", "line": "Heh. I guess I did." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's past relationships", "leadsTo": "artemisLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	"zeffLove-predictable":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "Really? Because after a while, I find that they get really predictable. For once, I'd like to meet someone who truly surprised me." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask about Artemis's past relationships", "leadsTo": "artemisLove" },
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"crumpet":
+	[
+		{ "type": "music", "line": "The heroic sound of heroism" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, there was almost this one time..." },
+		{ "type": "speech", "speaker": "zeff", "line": "There was a girl I met on this fan discussion forum for this videogame I was really into at the time, Symphony of the Elements." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask what Symphony of the Elements is about", "leadsTo": "crumpet-elements" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be impressed that #zeffSub# managed to find a girl on an videogame forum", "leadsTo": "crumpet-internet" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk more about the girl", "leadsTo": "crumpet-more" }
+	],
+	"crumpet-elements":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "I've never heard of Symphony of the Elements. What's it about?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "It's a massively multiplayer online roleplaying game set in a medieval fantasy world where everything is controlled by music." },
+		{ "type": "speech", "speaker": "zeff", "line": "You get together and form bands with people and battle with other bands." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds really cool and creative", "leadsTo": "crumpet-cool" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds interesting", "leadsTo": "crumpet-interesting" },
+		{ "type": "choice", "speaker": "zeff", "line": "Mention Symphony of the Elements's eventual demise", "leadsTo": "crumpet-demise" }
+	],
+	"crumpet-cool":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "That sounds really cool and creative." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention Symphony of the Elements's eventual demise", "leadsTo": "crumpet-demise" }
+	],
+	"crumpet-interesting":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Hmm. Interesting." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention Symphony of the Elements's eventual demise", "leadsTo": "crumpet-demise" }
+	],
+	"crumpet-demise":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Of course, as with any MMORPG that isn't Epic Fantasy Online, it didn't gain enough players and, after a year, was canned." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "The fan community was really tight, though." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Aw. That's unfortunate." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk more about the girl", "leadsTo": "crumpet-more" }
+	],
+	"crumpet-internet":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "You managed to find the one girl who hangs out on an internet forum about a videogame. That's impressive." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "There were lots of women who were into that game, actually. A de-emphasis on violence and a strong emphasis on teamwork will do that." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if it's essentialist to assume women don't like violence", "leadsTo": "crumpet-essentialist" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk more about the girl", "leadsTo": "crumpet-more" }
+	],
+	"crumpet-essentialist":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Wait... isn't it kind of essentialist to assume women don't like violence?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say it's more that dudebros don't like not having violence", "leadsTo": "crumpet-dudebros" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if it's essentialist to assume women don't play videogames", "leadsTo": "crumpet-touche" }
+	],
+	"crumpet-dudebros":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, what I meant was that the typical dudebro online gamer crowd isn't as likely to play something non-violent." },
+		{ "type": "speech", "speaker": "zeff", "line": "Without them around to shout misogynist, homophobic slurs and teabag people and the like, more women felt safe enough to be part of the community." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk more about the girl", "leadsTo": "crumpet-more" }
+	],
+	"crumpet-touche":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Isn't it essentialist to assume women don't go on internet forums about videogames?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Touché." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk more about the girl", "leadsTo": "crumpet-more" }
+	],
+	"crumpet-more":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Anyway. This girl -- she went by the name Crumpet." },
+		{ "type": "speech", "speaker": "zeff", "line": "It was an in-joke from the game, where this character makes a bad translation foible when trying to be flirtatious, and winds up telling his love interest that she has beautiful crumpets." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Laugh", "leadsTo": "crumpet-lol" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about Crumpet's impressive sense of humour", "leadsTo": "crumpet-humour" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you became friends", "leadsTo": "crumpet-hangOut" }
+	],
+	"crumpet-lol":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Laugh.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about Crumpet's impressive sense of humour", "leadsTo": "crumpet-humour" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you became friends", "leadsTo": "crumpet-hangOut" }
+	],
+	"crumpet-humour":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "The things she would write on the forums were always really, really funny. Like, I could barely even keep up with her, and neither could anyone else." },
+		{ "type": "speech", "speaker": "zeff", "line": "She'd make these animated gifs out of screencaps of the game that had all these hilarious jokes in them, and I'd barely be able to contain myself when I saw them posted." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say she sounds like someone you'd like to be friends with", "leadsTo": "crumpet-friends" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you became friends", "leadsTo": "crumpet-hangOut" }
+	],
+	"crumpet-friends":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sounds like someone I'd like to be friends with." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you became friends", "leadsTo": "crumpet-hangOut" }
+	],
+	"crumpet-hangOut":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "So, anyway, somehow, through some miracle I can't even fathom, we became friends and started emailing and IMing each other." },
+		{ "type": "speech", "speaker": "zeff", "line": "It then transpired that she happened to live just 2 hours from me, and the subject of hanging out in person was brought up." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Ooh. Lucky Zeff." },
+		{ "type": "speech", "speaker": "zeff", "line": "We set up a hangout date, and I drove over to see her." },
+		{ "type": "speech", "speaker": "zeff", "line": "We went to an art museum, and then to this wood-fired oven pizza place for lunch, and then for a long walk in the park, talking all the while." },
+		{ "type": "speech", "speaker": "zeff", "line": "She was just as hilarious and witty as she was online, and I couldn't remember having so much fun talking to another person for the longest time." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Mention your fondness for art gallery dates", "leadsTo": "crumpet-gallery" },
+		{ "type": "choice", "speaker": "artemis", "line": "Mention your fondness for wood-fired oven pizza", "leadsTo": "crumpet-pizza" },
+		{ "type": "choice", "speaker": "artemis", "line": "Mention your fondness for long walks in the park", "leadsTo": "crumpet-walks" },
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got scared", "leadsTo": "crumpet-scared" }
+	],
+	"crumpet-gallery":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Hah. I love art gallery dates. They are almost always awesome." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Wait, there was one exception. I went on an art gallery date once with a guy who wouldn't even talk the whole time. That was not nearly as much fun." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got scared", "leadsTo": "crumpet-scared" }
+	],
+	"crumpet-pizza":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Mmm... wood-fired oven pizza. There's a great place for such near my apartment. It's expensive, though." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got scared", "leadsTo": "crumpet-scared" }
+	],
+	"crumpet-walks":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I love long walks in the park! Usually, I prefer going on them by myself, though." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you got scared", "leadsTo": "crumpet-scared" }
+	],
+	"crumpet-scared":
+	[
+		{ "type": "music", "line": "The unheroic sound of failure" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "But then... I got scared. I started to feel like I was boring to her. I started to worry that she'd find out what a loser I am, and then hate me." },
+		{ "type": "speech", "speaker": "zeff", "line": "When I went home, she'd try and talk to me some more, and set up another day to hang out, but I'd always make some excuse and claim I was busy." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say that was an asshole move", "leadsTo": "crumpet-asshole" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be sympathetic", "leadsTo": "crumpet-sympathetic" },
+		{ "type": "choice", "speaker": "zeff", "line": "Lament what could have been", "leadsTo": "crumpet-lament" }
+	],
+	"crumpet-asshole":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Ouch. What an asshole move." },
+		{ "type": "speech", "speaker": "artemis", "line": "I mean, she obviously liked you and didn't think you were a loser, otherwise why would she even want to hang out with you again in the first place?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "I know, I know. It was awful of me. But I was really scared and vulnerable." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Lament what could have been", "leadsTo": "crumpet-lament" }
+	],
+	"crumpet-sympathetic":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I think I'd be super intimidated too." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Lament what could have been", "leadsTo": "crumpet-lament" }
+	],
+	"crumpet-lament":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "So, yeah. Eventually, I stopped hanging out on those forums, she stopped talking to me, and we went on with our lives. So it goes." },
+		{ "type": "speech", "speaker": "zeff", "line": "I always do wonder what would have happened if I hadn't been such a coward. Would she have been my first everything?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Or would she have rejected me eventually? I guess I'll never know." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if maybe #zeffSub# could get back in touch with her", "leadsTo": "crumpet-back" },
+		{ "type": "showAvailableTopics" }
+	],
+	"crumpet-back":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Could you maybe try getting back in touch with her? Explaining how you felt, saying you're sorry?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know how that would go over. I don't think it would be the same, anyway." },
+		{ "type": "speech", "speaker": "zeff", "line": "She's likely moved on; I've definitely moved on. So it goes." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "You might be surprised. She could be a person who easily forgives this sort of thing." },
+		{ "type": "speech", "speaker": "artemis", "line": "Or who's been waiting to hear a long-overdue and much-deserved apology for ages." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Accept that maybe Artemis is right", "leadsTo": "crumpet-right" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you'd rather not revisit the past", "leadsTo": "crumpet-revisit" }
+	],
+	"crumpet-right":
+	[
+		{ "type": "music", "line": "Maybe there's hope" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know, maybe you're right. Maybe I should try and look her up and see what she's up to these days." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"crumpet-revisit":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Nah. I'd rather not revisit the past, especially when the past is so embarrassing." },
+		{ "type": "speech", "speaker": "zeff", "line": "All I can really do now is avoid screwing up in the future. That's how I'm feeling right now, anyway." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"artemisLove":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "What were your past relationships like? Out of curiosity." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about your high school sweetheart", "leadsTo": "artemisLove-leslie" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about Ed the cartoonist", "leadsTo": "artemisLove-ed" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you'd rather not talk about them", "leadsTo": "artemisLove-ratherNot" }
+	],
+	"artemisLove-leslie":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I fell for my best friend in high school. Well, actually, she fell for me first." },
+		{ "type": "speech", "speaker": "artemis", "line": "Leslie was a year younger than me, but we both worked tech the year the drama club did a production of Nothing's Fair in Art, Love, or War." },
+		{ "type": "speech", "speaker": "artemis", "line": "A bunch of us on the stage crew became a tight group of social outcast friends." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Mention a fondness for the arts as a safe haven for social rejects", "leadsTo": "artemisLove-arts" },
+		{ "type": "choice", "speaker": "artemis", "line": "Reminisce about your IM conversations", "leadsTo": "artemisLove-im" }
+	],
+	"artemisLove-arts":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Ah, the arts. A safe haven for social rejects everywhere." },
+		{ "type": "speech", "speaker": "zeff", "line": "I mean that in the best way possible, of course." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Reminisce about your IM conversations", "leadsTo": "artemisLove-im" }
+	],
+	"artemisLove-im":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Anyway, after hanging out a bunch as a group, Leslie and I got to talking online on IM." },
+		{ "type": "speech", "speaker": "artemis", "line": "I still have such wonderful memories of tapping away on a chunky keyboard bathed in a bluish hue from a 17-inch CRT screen while trying not to wake my parents." },
+		{ "type": "speech", "speaker": "artemis", "line": "We'd talk about everything. Life, love, sex, identity, good books, philosophy, hair dye, you name it." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Be reminded of chatting with your guildmates late into the night", "leadsTo": "artemisLove-guildmates" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about how you kept your relationship with Leslie a secret", "leadsTo": "artemisLove-secret" }
+	],
+	"artemisLove-guildmates":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "That takes me back to when I used to chat on IM with my Epic Fantasy Online guildmates back in high school and neglect all my homework. Good times." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about how you kept your relationship with Leslie a secret", "leadsTo": "artemisLove-secret" }
+	],
+	"artemisLove-secret":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "When we started dating, we didn't tell anyone. Both our parents were pretty conservative and wouldn't have understood." },
+		{ "type": "speech", "speaker": "artemis", "line": "As for our friends... well, we didn't want to be the subject of rumours and gossip." },
+		{ "type": "speech", "speaker": "artemis", "line": "In retrospect, we were probably gossiped about anyway, but at the time, we thought we were being mature." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Let me guess: it didn't end well?" },
+		{ "type": "speech", "speaker": "artemis", "line": "We inevitably broke up because, well, keeping secrets is hard. She dumped me. Said she wasn't ready for a relationship right now. I was devastated." },
+		{ "type": "speech", "speaker": "artemis", "line": "A bit later, I started dating a boy with pretty hair; I was lonely and he was there and willing." },
+		{ "type": "speech", "speaker": "artemis", "line": "Leslie felt like I betrayed her. I argued that she was the one who dumped me." },
+		{ "type": "speech", "speaker": "artemis", "line": "Things got awkward and rough between us pretty fast, as you can imagine." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you hope things got better", "leadsTo": "artemisLove-better" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about where things are now", "leadsTo": "artemisLove-cordial" }
+	],
+	"artemisLove-better":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "That's sad. I hope things got better." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about where things are now", "leadsTo": "artemisLove-cordial" }
+	],
+	"artemisLove-cordial":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "Years after we'd both graduated, we ran into each other again and were cordial with one another. Even friendly. But never quite as close again." },
+		{ "type": "speech", "speaker": "artemis", "line": "She's apparently now dating an Welsh girl five years younger who's getting a PhD in English literature. They seem happy. I guess that's really all I can ask for." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisLove-ed":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I met this guy online a few years back. Another cartoonist, about 15 years older than me, who read my comic and liked it." },
+		{ "type": "speech", "speaker": "artemis", "line": "Ed actually went to school to study animation back in the dinosaur ages, but flunked out due to undiagnosed bipolar disorder. His work was really good, but mostly unfinished." },
+		{ "type": "speech", "speaker": "artemis", "line": "He knew how to do just about anything: draw, write, make prog rock-inspired music... kind of a modern-day Renaissance man." },
+		{ "type": "speech", "speaker": "artemis", "line": "I feel like if he'd actually finished any of the work he'd started, he'd be a famous household name by now." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you aren't really into prog rock", "leadsTo": "artemisLove-prog" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about how you became close", "leadsTo": "artemisLove-close" }
+	],
+	"artemisLove-prog":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "I never really got into prog rock. Always felt like too much of a boy's club to me." },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, I'm not a big fan of the whole scene myself, but I like the stuff it does with time signatures sometimes." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about how you became close", "leadsTo": "artemisLove-close" }
+	],
+	"artemisLove-close":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "Anyway, as the story goes, we became close, and for the longest time, I felt like he was the only person in the world who really understood me. As an artist and as a friend, really." },
+		{ "type": "speech", "speaker": "artemis", "line": "He was this wonderful, accepting guy, unfazed by anything I threw at him. I'd never really met anyone like that before." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what went wrong", "leadsTo": "artemisLove-wrong" },
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about complicating factors", "leadsTo": "artemisLove-complicating" }
+	],
+	"artemisLove-wrong":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sounds like a really great guy." },
+		{ "type": "speech", "speaker": "artemis", "line": "Why are you talking about him in the past tense, though? Something go wrong?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Talk about complicating factors", "leadsTo": "artemisLove-complicating" }
+	],
+	"artemisLove-complicating":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "The complicating factor, other than him living on the other side of the country, was that he was married to this woman he loved very much." },
+		{ "type": "speech", "speaker": "artemis", "line": "I kept thinking, okay, that's fine, we'll just be friends." },
+		{ "type": "speech", "speaker": "artemis", "line": "But then, it transpired that he was polyamorous, and also loved me. His wife, sadly, wasn't. And then she got suspicious." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "sad" },
+		{ "type": "speech", "speaker": "artemis", "line": "There were some really big arguments, apparently. She almost left him. But they're still together." },
+		{ "type": "speech", "speaker": "artemis", "line": "And I'm still friends with him, though we don't talk as much as we used to anymore." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that sounds awkward", "leadsTo": "artemisLove-awkward" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're glad you got to know him, in spite of everything", "leadsTo": "artemisLove-glad" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis identifies as polyamorous", "leadsTo": "artemisLove-poly" }
+	],
+	"artemisLove-awkward":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh. Well, that would be awkward, wouldn't it?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're glad you got to know him, in spite of everything", "leadsTo": "artemisLove-glad" }
+	],
+	"artemisLove-glad":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I know the whole age difference thing sounds weird and creepy, and the whole being married bit, but it honestly never felt that way to me." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm just... I'm really glad I got to know him and that we came into each other's lives. He made me realise a lot of stuff about myself and my art that I didn't know was possible." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis identifies as polyamorous", "leadsTo": "artemisLove-poly" },
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisLove-poly":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Would you, uh, consider yourself polyamorous?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I've thought about it, and I'm not entirely sure." },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm open to the idea of loving more than one person at a time. I mean, most people can do it in series, so why not in parallel?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "But in practice, I know it can be hard and complicated. And I don't know how I'd deal with it. I don't have the experience." },
+		{ "type": "speech", "speaker": "artemis", "line": "Usually, I'm lucky to have one person love me at a time; mostly, I spend my life comfortably alone." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Agree that polyamory is complicated", "leadsTo": "artemisLove-agree" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say forced monogamy seems unrealistic to you now", "leadsTo": "artemisLove-monogamy" },
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisLove-agree":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "That's kinda what I'm thinking, too. It sounds like a nice idea, but in practice, it seems like a lot more potential for things to go wrong." },
+		{ "type": "speech", "speaker": "zeff", "line": "It's like the possible complications increase exponentially when you introduce new people." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say forced monogamy seems unrealistic to you now", "leadsTo": "artemisLove-monogamy" },
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisLove-monogamy":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "All I really know is, promising oneself to monogamy doesn't sound realistic anymore, after all that happened with Ed." },
+		{ "type": "speech", "speaker": "artemis", "line": "What happens if you do fall in love with someone else? Doesn't mean there's anything wrong with the person you were with before, and that you should necessarily ditch them." },
+		{ "type": "speech", "speaker": "artemis", "line": "If it so happens that you only fall for one person at a time, that's fine, but you can't force that outcome." },
+		{ "type": "speech", "speaker": "artemis", "line": "Trying to suppress these things always ends badly for everyone involved. You just can't control human emotion like that. It's so complicated." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisLove-ratherNot":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'd... rather not talk about them. At least, not to someone I've just met." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "There's nothing really to know, except that love isn't the magical thing it's all hyped up to be." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Of course, nothing I could ever say could convince someone who hasn't experienced it before themself, so... let's just leave it at that." },
+		
+		{ "type": "showAvailableTopics" }
 	]
 }

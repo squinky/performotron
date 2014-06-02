@@ -102,8 +102,8 @@ var topicJustSelected = false;
 
 var allPronouns = require('./pronouns.json');
 var pronouns = { "artemis": null, "zeff": null }
-setPronoun("artemis", "they");
-setPronoun("zeff", "ze");
+setPronoun("artemis", "she");
+setPronoun("zeff", "he");
 
 var startWith = "zeffIntro";
 addSpeechToQueue(startWith);
