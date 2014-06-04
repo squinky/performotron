@@ -83,6 +83,13 @@ socket.on('unlockAchievement', function (data)
 	$("#achievements").fadeIn('slow').delay(3000).fadeOut('slow');
 });
 
+socket.on('clearProjector', function (data)
+{
+	$("#characters").hide();
+	$("#background").hide();
+	$("#achievements").hide();
+});
+
 $(function()
 {
 	$("#characters").hide();

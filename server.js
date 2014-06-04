@@ -59,6 +59,13 @@ io.sockets.on('connection', function (socket)
 		}
     });
     
+    socket.on("clickEnding", function(data)
+    {
+    	flushTopics();
+    	unlockEndings(data.endings);
+    	listTopicQueue();
+    });
+    
     socket.on("clickWeirdness", function()
     {
     	weirdnessLevel++;
@@ -78,6 +85,7 @@ io.sockets.on('connection', function (socket)
     	
 		io.sockets.emit("clearSpeeches");
 		io.sockets.emit("clearChoices");
+		io.sockets.emit("clearProjector");
 		io.sockets.emit("updateMusic", { line: null });
 		listTopicQueue();
 		
@@ -200,6 +208,11 @@ function queueBackgroundEvent()
 	queuedLines = queuedLines.concat(queuedEvent);
 }
 
+function unlockEndings(e)
+{
+	queuedTopics = queuedTopics.concat(content.endings[e]);
+}
+
 function addNextLine()
 {
 	if (currentLine < queuedLines.length)
@@ -258,6 +271,11 @@ function addNextLine()
 			{
 				io.sockets.emit("updateZeffSpeech", { line: nextLine });
 			}
+			if (queuedLines[currentLine].speaker == "both")
+			{
+				io.sockets.emit("updateArtemisSpeech", { line: nextLine });
+				io.sockets.emit("updateZeffSpeech", { line: nextLine });
+			}
 			currentLine++;
 			choicesA = 0;
 			choicesZ = 0;
@@ -313,6 +331,13 @@ function addNextLine()
 		if (queuedLines[currentLine].type == "flushTopics")
 		{
 			flushTopics();
+			currentLine++;
+			addNextLine();
+			return;
+		}
+		if (queuedLines[currentLine].type == "unlockEndings")
+		{
+			unlockEndings(queuedLines[currentLine].endings);
 			currentLine++;
 			addNextLine();
 			return;

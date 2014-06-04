@@ -28,7 +28,7 @@ body {
 .portrait {
 	position: absolute;
 	width: 37.5%;
-	height: 50%;
+	height: 56%;
 }
 
 #artemisPortrait {
@@ -69,15 +69,16 @@ body {
 
 #artemisName {
 	background: #016fde;
-	margin: 60% 30%;
+	margin: 52% 30%;
 }
 
 #zeffName {
 	background: #72bd02;
-	margin: 60% 35%;
+	margin: 52% 35%;
 }
 
 .choices {
+	font-size: 0.9em;
 	line-height: 1.3em;
 }
 

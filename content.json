@@ -71,7 +71,32 @@
 		],
 		"weirdTalk":
 		[
-			{ "type": "choice", "speaker": "zeff", "line": "Mention the really weird dream you had last night", "leadsTo": "zeffDream" }
+			{ "type": "choice", "speaker": "zeff", "line": "Mention the really weird dream you had last night", "leadsTo": "zeffDream" },
+			{ "type": "choice", "speaker": "zeff", "line": "Tell Artemis you're stuck in a Groundhog Day loop", "leadsTo": "groundhogDay" },
+			{ "type": "choice", "speaker": "zeff", "line": "Start to wonder if Artemis is actually an AI", "leadsTo": "ai" }
+		]
+	},
+	
+	"endings":
+	{
+		"good":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Say you didn't expect having this much fun talking to a stranger", "leadsTo": "pleasantSurprise" },
+			{ "type": "choice", "speaker": "artemis", "line": "Say you're sorry, but you have to go", "leadsTo": "artemisLeaves" },
+			{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis knows a good place to get food", "leadsTo": "gettingFood" },
+			{ "type": "choice", "speaker": "zeff", "line": "Just cut your losses and leave", "leadsTo": "zeffLeaves" }
+		],
+		"neutral":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Say you're sorry, but you have to go", "leadsTo": "artemisLeaves" },
+			{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably go", "leadsTo": "zeffLeaves" }
+		],
+		"bad":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Ask Zeff what the hell #zeffDet# problem is", "leadsTo": "artemisPissed" },
+			{ "type": "choice", "speaker": "artemis", "line": "Make your excuses and get the hell out of there", "leadsTo": "artemisLeaves" },
+			{ "type": "choice", "speaker": "zeff", "line": "Express disappointment that Artemis wasn't who you thought #artemisSub# would be", "leadsTo": "disappointed" },
+			{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably go", "leadsTo": "zeffLeaves" }
 		]
 	},
 	
@@ -2939,6 +2964,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Look... I didn't mean to make you mad at me. I just thought you might appreciate it if I pointed out some factual inconsistencies between that scene and how mitosis works in the real world." },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, suffice to say, if I really want that information, I have Wikipedia at my disposal. As it stands, Bacteria Stories is a work of fiction." },
 		
+		{ "type": "unlockEndings", "endings": "bad" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say you were just trying to help", "leadsTo": "mansplaining-help" },
 		{ "type": "choice", "speaker": "zeff", "line": "Apologise", "leadsTo": "mansplaining-apologise" }
 	],
@@ -3469,9 +3495,16 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Hah. My friend told a funny story about that, actually." },
 		{ "type": "speech", "speaker": "artemis", "line": "They said they went to this event, told people their pronoun preference, and then people got confused because they thought they had multiple personalities." },
 		{ "type": "speech", "speaker": "artemis", "line": "Everyone was really nice and polite about it, but then my friend had to awkwardly explain that no, it was singular they." },
-		{ "type": "speech", "speaker": "artemis", "line": "I don't know. I think I like the idea of deliberately confusing people. It suits me." },
-		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
-		{ "type": "speech", "speaker": "zeff", "line": "Okay, then! Confuse away!" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Point out that we all contain multitudes", "leadsTo": "pronouns-multitudes" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pronouns-multitudes":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Now that I think about it, don't we all contain multitudes?" },
+		{ "type": "speech", "speaker": "zeff", "line": "I mean, identity isn't this fixed thing. We're different people based on who we're around at a given time." },
+		{ "type": "speech", "speaker": "artemis", "line": "True. I think this might be why I like they as a pronoun so much. It accounts for the shifting and fluidity within ourselves." },
 		
 		{ "type": "showAvailableTopics" }
 	],
@@ -3776,6 +3809,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I think that would probably be best, actually." },
 		
+		{ "type": "unlockEndings", "endings": "bad" },
 		{ "type": "showAvailableTopics" }
 	],
 	"crush-explain":
@@ -3793,6 +3827,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "You know, I'm not sure. I'd like to think I'd be flattered, and curious to get to know that person better and stuff." },
 		{ "type": "speech", "speaker": "zeff", "line": "But, you know, it's not an experience I've been fortunate enough to have happen to me, so I can't really say for certain." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -3801,6 +3836,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
 		{ "type": "speech", "speaker": "zeff", "line": "Urgh. Never mind. Forget I said anything." },
 		
+		{ "type": "unlockEndings", "endings": "bad" },
 		{ "type": "showAvailableTopics" }
 	],
 	"crush-joke":
@@ -3814,6 +3850,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I think your webcomic is absolutely brilliant, and I think you're absolutely brilliant too. And if that's not attractive, I don't know what is." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -3827,6 +3864,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe that's true. But I know what you're like online." },
 		{ "type": "speech", "speaker": "zeff", "line": "And I think you're smart and funny and super duper talented and, well, that makes me really want to get to know the meatspace you better. If that makes any sense." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -3840,6 +3878,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "I mean, don't take it as me trying to hit on you or anything. I know women get hit on a lot at cons, and I really really don't want to be that person." },
 		{ "type": "speech", "speaker": "artemis", "line": "I, uh, appreciate it. I think..." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -3853,6 +3892,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "You don't have to say anything. I just thought you might like to know that there's someone out there who finds you really, really great. " },
 		{ "type": "speech", "speaker": "zeff", "line": "Because you are. You're smart and talented and hilarious, which I knew when reading your stuff online, but talking to you in person, you're just as cool. If not cooler." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say that sometimes, you feel like you fall in love with almost everyone you know", "leadsTo": "zeffLove" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -4221,6 +4261,8 @@
 	
 	"artemisLove":
 	[
+		{ "type": "music", "line": "The sound of regret and bad decisions" },
+		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "What were your past relationships like? Out of curiosity." },
 		
@@ -4291,6 +4333,8 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Years after we'd both graduated, we ran into each other again and were cordial with one another. Even friendly. But never quite as close again." },
 		{ "type": "speech", "speaker": "artemis", "line": "She's apparently now dating an Welsh girl five years younger who's getting a PhD in English literature. They seem happy. I guess that's really all I can ask for." },
 		
+		{ "type": "unlockAchievement", "description": "Told the sordid tale of a past lover" },
+		
 		{ "type": "showAvailableTopics" }
 	],
 	"artemisLove-ed":
@@ -4355,6 +4399,8 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm just... I'm really glad I got to know him and that we came into each other's lives. He made me realise a lot of stuff about myself and my art that I didn't know was possible." },
 		
+		{ "type": "unlockAchievement", "description": "Told the sordid tale of a past lover" },
+		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis identifies as polyamorous", "leadsTo": "artemisLove-poly" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -4402,5 +4448,665 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Of course, nothing I could ever say could convince someone who hasn't experienced it before themself, so... let's just leave it at that." },
 		
 		{ "type": "showAvailableTopics" }
+	],
+	
+	"artemisLeaves":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Get up from your chair.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sorry, I gotta go." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Make some kind of an excuse", "leadsTo": "artemisLeaves-excuse" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say goodbye", "leadsTo": "artemisLeaves-goodbye" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say it was nice meeting #artemisObj#", "leadsTo": "artemisLeaves-niceMeeting" },
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-excuse":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "I, uh, promised some folks I'd meet up with them, so, uh. Yeah." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say goodbye", "leadsTo": "artemisLeaves-goodbye" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say it was nice meeting #artemisObj#", "leadsTo": "artemisLeaves-niceMeeting" },
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-goodbye":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "Uh, okay. Bye." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-niceMeeting":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "It was nice to finally meet you! Maybe I'll see you again on the internet?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Be enthusiastic", "leadsTo": "artemisLeaves-sure" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be evasive", "leadsTo": "artemisLeaves-umm" },
+		{ "type": "choice", "speaker": "artemis", "line": "Just walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-sure":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, sure!" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-umm":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Umm. Yeah. Sure." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisLeaves-walkOut":
+	[
+		{ "type": "music", "line": "Fade out" },
+		
+		{ "type": "speech", "speaker": "artemis", "line": "(Walk offstage.)" }
+	],
+	
+	"zeffLeaves":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, uh, I guess I'd better get going." },
+		{ "type": "speech", "speaker": "zeff", "line": "(Get up from your chair.)" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say a non-committal goodbye", "leadsTo": "zeffLeaves-bye" },
+		{ "type": "choice", "speaker": "artemis", "line": "Tell Zeff it was nice to meet #zeffObj#", "leadsTo": "zeffLeaves-niceMeeting" },
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"zeffLeaves-bye":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Bye." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"zeffLeaves-niceToMeet":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Okay. It was nice to meet you, Zeff." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"zeffLeaves-walkOut":
+	[
+		{ "type": "music", "line": "Fade out" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "(Walk offstage.)" }
+	],
+	
+	"pleasantSurprise":
+	[
+		{ "type": "music", "line": "A pleasant surprise" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I didn't expect to have this much fun talking to someone I've never met before." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Philosophically point out that it's easier to talk to strangers", "leadsTo": "pleasantSurprise-philosophical" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you knew Artemis would be fun to talk to because you've read #artemisDet# stuff online", "leadsTo": "pleasantSurprise-knew" }
+	],
+	"pleasantSurprise-philosophical":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, that's just it, right?" },
+		{ "type": "speech", "speaker": "zeff", "line": "When you don't already have a pre-existing relationship with a person, it's way easier to just say what's on your mind. There's less at stake that way." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "I've never thought about it like that before." },
+		{ "type": "speech", "speaker": "artemis", "line": "Usually, I'm more comfortable talking people I do know, because that means I know enough about them to trust them. So I avoid random conversations with strangers." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what made #artemisObj# not avoid this one", "leadsTo": "pleasantSurprise-avoid" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you knew Artemis would be fun to talk to because you've read #artemisDet# stuff online", "leadsTo": "pleasantSurprise-knew" }
+	],
+	"pleasantSurprise-avoid":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "And what made you not avoid this one?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you feel more comfortable around #zeffObj# than you do around most strangers", "leadsTo": "pleasantSurprise-comfortable" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're in a bit of a weird headspace with AwesomeCon going on around you", "leadsTo": "pleasantSurprise-awesomeCon" }
+	],
+	"pleasantSurprise-comfortable":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't know. I guess I feel more comfortable around you than I do around most strangers." },
+		{ "type": "speech", "speaker": "artemis", "line": "Maybe it's because you already know who I am from the internet. And, well, you're the one who decided to approach me, and not many people do that." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, thanks. It's nice to know I'm not a complete weirdo to run away from really really fast." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff usually gets that kind of a reaction", "leadsTo": "pleasantSurprise-usually" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-usually":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Why? Do you usually get that kind of a reaction?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you don't, but you hear so many stories about creeps", "leadsTo": "pleasantSurprise-creeps" },
+		{ "type": "choice", "speaker": "zeff", "line": "Make a joke about it", "leadsTo": "pleasantSurprise-werewolf" }
+	],
+	"pleasantSurprise-creeps":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "No, but I hear stories all the time about women being approached by strange men and getting creeped out, and I so don't want to be that guy." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's true. But the difference with you is, you're actually treating me like a real person with thoughts and opinions." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "And not once have I caught you staring at my chest." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Turn that statement into a slightly more flirtatious direction", "leadsTo": "pleasantSurprise-flirty" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you'd be uncomfortable too if someone stared at your crotch", "leadsTo": "pleasantSurprise-crotch" }
+	],
+	"pleasantSurprise-flirty":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh good! I've been just subtle enough." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-crotch":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, I believe in treating people as I would want them to treat me." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "It would be mighty uncomfortable if someone talked to me and stared at my crotch the whole time." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-werewolf":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sometimes. But only when there's a full moon and I start changing into my evil green werewolf form. That usually gets people plenty alarmed." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Laugh", "leadsTo": "pleasantSurprise-lol" },
+		{ "type": "choice", "speaker": "artemis", "line": "Look askance at #zeffObj#", "leadsTo": "pleasantSurprise-what" }
+	],
+	"pleasantSurprise-lol":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Laugh.)" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-what":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Look askance at Zeff.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Explain that you were trying to make a joke", "leadsTo": "pleasantSurprise-joke" }
+	],
+	"pleasantSurprise-joke":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "I was joking. I'm not really a werewolf." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you knew that", "leadsTo": "pleasantSurprise-iKnow" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-iKnow":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "So I figured." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-awesomeCon":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm not sure. I'm kind of in a weird headspace right now, with AwesomeCon going on around me." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's kind of an altered reality where the pseudonymity of the internet blends with real life to create this environment that's... more open, I guess?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah. Sometimes, I wish I could live somewhere where AwesomeCon-like things could happen all year round." },
+		{ "type": "speech", "speaker": "zeff", "line": "But sometimes, I wonder if that would just become the new normal, and maybe what makes AwesomeCon and other conventions so special is that they only happen once a year." },
+		{ "type": "speech", "speaker": "artemis", "line": "Good point. I definitely wouldn't want to be at AwesomeCon all year round. It would get overwhelming pretty quickly." },
+		{ "type": "speech", "speaker": "artemis", "line": "But surprisingly, I guess I have some nice things to say about it as a once-a-year experience, especially if it means having good conversations with interesting people." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Aw, shucks. Thanks." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-knew":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, the thing is, I knew you'd be fun to talk to because I've read your stuff online." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "You're a really awesome, interesting person, Artemis." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say Zeff is pretty interesting #zeffRef#", "leadsTo": "pleasantSurprise-wow" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-wow":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Wow. Thanks. You're pretty interesting yourself." },
+		{ "type": "speech", "speaker": "artemis", "line": "Honestly, I'm sorry I didn't interact with you online much until now." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis might give people of the benefit of the doubt more often", "leadsTo": "pleasantSurprise-benefit" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you don't have as much interesting stuff to say online as Artemis does", "leadsTo": "pleasantSurprise-interesting" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-benefit":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Do you think this means you'll give people on the internet the benefit of the doubt more often?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I don't know. It's hard to say. There are probably lots of people I'd have good conversations with if I gave them the chance." },
+		{ "type": "speech", "speaker": "artemis", "line": "But it's hard to say how well that translates to the online world and whether I'd like to read what they're saying. People are weird." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-interesting":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "It's all right. I don't have as much interesting stuff to say online as you do." },
+		{ "type": "speech", "speaker": "zeff", "line": "My tweets don't become widely retweeted and I don't ever write viral blog posts, or make music that's heavily shared, or anything like that." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Encourage Zeff", "leadsTo": "pleasantSurprise-encourage" },
+		{ "type": "showAvailableTopics" }
+	],
+	"pleasantSurprise-encourage":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, maybe you should write and tweet and such more often. You do have interesting things to say. Just give it time and practice." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"gettingFood":
+	[
+		{ "type": "music", "line": "I like you, but do you like me?" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know, I've been having such a great time talking to you, but I'm starting to get kind of hungry." },
+		{ "type": "speech", "speaker": "zeff", "line": "Do you know a good place to get food?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest that French place called Un Petit d'Un Petit", "leadsTo": "gettingFood-unPetit" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're going for pizza with a group of webcomic artists", "leadsTo": "gettingFood-pizza" }
+	],
+	"gettingFood-unPetit":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, there's this cute and surprisingly inexpensive little French place two blocks away that's adjacent to a cheese shop." },
+		{ "type": "speech", "speaker": "artemis", "line": "I think it's called Un Petit d'Un Petit or something." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis would like to go there with you", "leadsTo": "gettingFood-comeWith" }
+	],
+	"gettingFood-comeWith":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Sounds awesome. Do you, uh, want to come with me?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I mean, if you'd rather be alone, that's fine, but I'd love the company if you're up for it." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Go to dinner with Zeff", "leadsTo": "gettingFood-yes" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you already have dinner plans", "leadsTo": "gettingFood-plans" }
+	],
+	"gettingFood-yes":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, what the hell. Sure. Why not." },
+		
+		{ "type": "music", "line": "Yay!" },
+		
+		{ "type": "speech", "speaker": "artemis", "line": "Besides, you'd probably get lost if I weren't there. There's this alleyway you have to go through that most people miss if they don't know where it is." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Motion to leave", "leadsTo": "gettingFood-shallWe" }
+	],
+	"gettingFood-plans":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I would, but I already made plans to get pizza with a bunch of webcomic artists." },
+		
+		{ "type": "music", "line": "Anticipation fizzles away" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "Oh. Okay. I'll try out that place on my own, then." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "It was great to meet you! Hope the rest of your AwesomeCon experience goes well." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah. You too." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"gettingFood-pizza":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, a bunch of webcomic artists I know are going for pizza at Alonzo's." },
+		{ "type": "speech", "speaker": "artemis", "line": "Their pizza is kinda greasy, but it really hits the spot when basically all you've consumed today is coffee and bad convention centre food." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Invite Zeff along", "leadsTo": "gettingFood-invite" },
+		{ "type": "choice", "speaker": "artemis", "line": "Don't invite Zeff along", "leadsTo": "gettingFood-dontInvite" }
+	],
+	"gettingFood-invite":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "If you want to come with me, you're more than welcome to." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Accept the invitation", "leadsTo": "gettingFood-sure" },
+		{ "type": "choice", "speaker": "zeff", "line": "Decline the invitation", "leadsTo": "gettingFood-nah" }
+	],
+	"gettingFood-sure":
+	[
+		{ "type": "music", "line": "Yay!" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, sure! I'd love to." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Cool." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Motion to leave", "leadsTo": "gettingFood-shallWe" }
+	],
+	"gettingFood-nah":
+	[
+		{ "type": "music", "line": "Anticipation fizzles away" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'd like to, but I feel like I'd be kinda out of place. I mean, I'm not a webcomic artist myself..." },
+		{ "type": "speech", "speaker": "zeff", "line": "I guess I'll go to the food court again or something. I'll figure it out" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Okay. Well, it was nice to meet you, Zeff." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah. Same." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"gettingFood-dontInvite":
+	[
+		{ "type": "music", "line": "Anticipation fizzles away" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sadly, I think it's more of an invite-only thing. So, I'd recommend hitting up the food court in the mall." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh. Okay. Well... it was nice meeting you." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah. You too." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"gettingFood-shallWe":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, then. Shall we?" },
+		
+		{ "type": "music", "line": "Fade out" },
+		
+		{ "type": "speech", "speaker": "both", "line": "(Walk offstage together.)" },
+		
+		{ "type": "unlockAchievement", "description": "Left the café together" }
+	],
+	
+	"disappointed":
+	[
+		{ "type": "music", "line": "Dashed hopes and expectations" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know, I have to admit, you kind of weren't who I was expecting you to be." },
+		
+		{ "type": "unlockEndings", "endings": "neutral" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask exactly what Zeff was expecting", "leadsTo": "disappointed-exactly" }
+	],
+	"disappointed-exactly":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh? And who exactly was it you were expecting me to be?" },
+		{ "type": "speech", "speaker": "zeff", "line": "I dunno... I just figured, from your Twitter feed, it seemed to me like we had a lot in common." },
+		{ "type": "speech", "speaker": "zeff", "line": "You seemed like someone I might want to be friends with for real, you know?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Explain that you can't know a person from online interaction alone", "leadsTo": "disappointed-online" },
+		{ "type": "choice", "speaker": "artemis", "line": "Let #zeffObj# down gently", "leadsTo": "disappointed-gently" }
+	],
+	"disappointed-online":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, you can't expect to really know everything about a person just from what they write online." },
+		{ "type": "speech", "speaker": "artemis", "line": "What really happens is that you build up this idealised image of someone in your head based on fragments of text. The problem is, that person isn't real." },
+		{ "type": "speech", "speaker": "artemis", "line": "Meanwhile, there's an actual person at the other end of all that text who has their own thoughts and feelings, who has very little to do with the image in your head." },
+		{ "type": "speech", "speaker": "artemis", "line": "So, yeah. I can see why that would be disappointing. I don't know how to make it better, though, so don't even ask." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you understand", "leadsTo": "disappointed-understand" },
+		{ "type": "showAvailableTopics" }
+	],
+	"disappointed-gently":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, I'm sorry if I disappointed you. You seem like a perfectly okay person. I just..." },
+		{ "type": "speech", "speaker": "artemis", "line": "Look, not everyone's meant to be friends with everyone. Sometimes, the chemistry or whatever just isn't there." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you understand", "leadsTo": "disappointed-understand" },
+		{ "type": "showAvailableTopics" }
+	],
+	"disappointed-understand":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "It's okay. I understand." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"artemisPissed":
+	[
+		{ "type": "music", "line": "Angry and obnoxious" },
+		
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "What the hell is your problem?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "angry" },
+		{ "type": "speech", "speaker": "zeff", "line": "What do you mean? What did I do?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Chew #zeffObj# out for invading your personal space", "leadsTo": "artemisPissed-space" },
+		{ "type": "choice", "speaker": "artemis", "line": "Yell at #zeffObj# for acting entitled to your friendship", "leadsTo": "artemisPissed-entitled" }
+	],
+	"artemisPissed-space":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "You just had to come in here and invade my personal space when I was trying to have a moment alone!" },
+		{ "type": "speech", "speaker": "zeff", "line": "Hey, now, I asked if it was okay to sit here! You could have just said no!" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, sure, like you would have even listened!" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's like all you creepy dudes are reading from the same poorly-written manual or something!" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wow, way to generalise! No wonder you're such a lonely, closed-off, bitter person!" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Retort that at least you don't hate everyone", "leadsTo": "artemisPissed-creepy" },
+		{ "type": "choice", "speaker": "zeff", "line": "Storm out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"artemisPissed-entitled":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "You think that just because you follow me on Twitter, that all of a sudden makes us best friends or something? I don't even know you!" },
+		{ "type": "speech", "speaker": "artemis", "line": "There's a word for this kind of behaviour. It's called creepy." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Retort that at least you don't hate everyone", "leadsTo": "artemisPissed-creepy" },
+		{ "type": "choice", "speaker": "zeff", "line": "Storm out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	"artemisPissed-creepy":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah, well, at least I don't hate everyone! You never even gave me a chance!" },
+		{ "type": "speech", "speaker": "zeff", "line": "No wonder you're such a lonely, closed-off, bitter person!" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Throw your mug of coffee in Zeff's face", "leadsTo": "artemisPissed-throwCoffee" }
+	],
+	"artemisPissed-throwCoffee":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "(Throw the contents of your mug of coffee in Zeff's face.)" },
+		{ "type": "speech", "speaker": "zeff", "line": "(Scream.)" },
+		
+		{ "type": "unlockAchievement", "description": "Got coffee thrown in your face" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what the hell that was for", "leadsTo": "artemisPissed-whatTheHell" },
+		{ "type": "choice", "speaker": "artemis", "line": "Remark that you always wanted to do that", "leadsTo": "artemisPissed-alwaysWanted" },
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisPissed-whatTheHell":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "What the hell was THAT for?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Remark that you always wanted to do that", "leadsTo": "artemisPissed-alwaysWanted" },
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	"artemisPissed-alwaysWanted":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "You know, I've always wanted to do that. It looks so cool when they do it in the movies. Thanks for giving me the opportunity, jerkface!" },
+		{ "type": "speech", "speaker": "artemis", "line": "Now, if you'll excuse me..." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Walk out the door", "leadsTo": "artemisLeaves-walkOut" }
+	],
+	
+	"ai":
+	[
+		{ "type": "music", "line": "Glitchiness" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Do you ever have those conversations where you question whether the person you're talking to is actually a person, and not an AI simulation?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're also not really sure whether you're an AI simulation either", "leadsTo": "ai-actuallyYes" },
+		{ "type": "choice", "speaker": "artemis", "line": "Wonder if maybe one can be both", "leadsTo": "ai-both" },
+		{ "type": "choice", "speaker": "artemis", "line": "Blatantly deny anything of the sort", "leadsTo": "ai-deny" }
+	],
+	"ai-actuallyYes":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Actually, yes. But not only that: sometimes I'm not really sure whether or not I'm an AI simulation, either." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder if there's a way to test this theory", "leadsTo": "ai-test" }
+	],
+	"ai-both":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Can't one be both? Maybe AI simulations are real people. For all we know, it's possible." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder if there's a way to test this theory", "leadsTo": "ai-test" }
+	],
+	"ai-deny":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Of course not. Why would anyone think such a thing? That's just nonsensical, I tell you." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder if there's a way to test this theory", "leadsTo": "ai-test" }
+	],
+	"ai-test":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Hmm. I wonder if there's a way to actually test this..." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask that turtle in the desert question from that movie", "leadsTo": "ai-bladeRunner" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask how Artemis feels about captchas on webforms", "leadsTo": "ai-captcha" }
+	],
+	"ai-bladeRunner":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Okay, so let's say you're walking in a desert, and you see this turtle flipped on its back..." },
+		{ "type": "speech", "speaker": "zeff", "line": "...no wait, the turtle is actually right side up, and it's crawling towards you, and then you flip it over so it's on its back..." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're not a replicant", "leadsTo": "ai-replicant" },
+		{ "type": "choice", "speaker": "artemis", "line": "Be confused about why you would flip a turtle on its back", "leadsTo": "ai-confused" }
+	],
+	"ai-replicant":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm not a replicant, Zeff. And isn't it supposed to be a tortoise?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Uh... right. Yeah. I totally screwed that up, didn't I?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask how Artemis feels about captchas on webforms", "leadsTo": "ai-captcha" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're feeling awkward and you should probably go", "leadsTo": "ai-awkward" }
+	],
+	"ai-confused":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Wait, why would I flip a turtle on its back? It wouldn't be able to turn itself around, and that would just be cruel." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Uh... never mind. I think this was probably the wrong line of questioning." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask how Artemis feels about captchas on webforms", "leadsTo": "ai-captcha" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're feeling awkward and you should probably go", "leadsTo": "ai-awkward" }
+	],
+	"ai-captcha":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Okay, uh, how do you feel about captchas on webforms?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "I hate them. They're pointless, and just add more of a hassle whenever I have to fill out a webform." },
+		{ "type": "speech", "speaker": "artemis", "line": "Don't they know that computers are eventually going to figure out how to read them? If they haven't already, that is..." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "A-ha! This proves you're really an AI, because if you were human, you would definitely..." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "...wait, actually, yeah, I could see why a human would say something like that, I guess... ack! This is so hard and confusing! Help!" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you're feeling awkward and you should probably go", "leadsTo": "ai-awkward" }
+	],
+	"ai-awkward":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Um, yeah. This is starting to feel really awkward. I'd better go." },
+		
+		{ "type": "music", "line": "Fade out to glitchy static" },
+		
+		{ "type": "speech", "speaker": "artemis", "line": "(Walk offstage, glitching along the way.)" },
+		
+		{ "type": "unlockAchievement", "description": "Discovered that you are actually an AI" }
+	],
+	
+	"groundhogDay":
+	[
+		{ "type": "music", "line": "Repetitive record skipping" },
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Look, this may sound really weird, but... I'm stuck in some kind of Groundhog Day time loop right now." },
+		
+		{ "type": "unlockAchievement", "description": "Discovered that you are in a Groundhog Day loop" },
+		
+		{ "type": "speech", "speaker": "zeff", "line": "I keep repeating this conversation I'm having with you over and over again, and I don't know how to stop it." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Don't believe #zeffObj#", "leadsTo": "groundhogDay-what" },
+		{ "type": "choice", "speaker": "artemis", "line": "Explain yourself", "leadsTo": "groundhogDay-explain" }
+	],
+	"groundhogDay-what":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "What? You're shitting me." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Explain yourself", "leadsTo": "groundhogDay-explain" }
+	],
+	"groundhogDay-explain":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "I come here, introduce myself, sit down, and we talk. Sometimes we get along really well, sometimes we wind up hating each other." },
+		{ "type": "speech", "speaker": "zeff", "line": "Most of the time, though, it's just awkward. I don't know why." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask how this isn't awkward", "leadsTo": "groundhogDay-awkward" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is trying to find the optimal path to your pants", "leadsTo": "groundhogDay-pants" }
+	],
+	"groundhogDay-awkward":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "And this isn't awkward how, exactly?" },
+		{ "type": "speech", "speaker": "zeff", "line": "I don't know if there's any non-awkward way of explaining that you're stuck in a time loop." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is trying to find the optimal path to your pants", "leadsTo": "groundhogDay-pants" },
+		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
+	],
+	"groundhogDay-pants":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "So, what, then? Are you supposed to spend years finding the optimal path to get me to fall in mad, passionate love with you? Is that how it works?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Because if so, good luck. You won't charm the pants off me by doing all the standard stuff like helping the elderly and learning to play the piano obscenely well or whatever." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Was that what happened in that movie? It's been a really long time since I've seen it." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you get points for audacity", "leadsTo": "groundhogDay-points" },
+		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
+	],
+	"groundhogDay-points":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Do I, uh, get points for sheer audacity, at least?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Points? This isn't a game! No one's keeping score." },
+		{ "type": "speech", "speaker": "artemis", "line": "Look, if you're really desperate for tips on how to impress a lady, just talk to her and see if you have anything in common." },
+		{ "type": "speech", "speaker": "artemis", "line": "And if at least one of you isn't feeling it, go find someone else who is." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
+		{ "type": "speech", "speaker": "artemis", "line": "And if this is some kind of prank people pull at fan conventions, kindly fuck off and take it somewhere else, all right?" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
+	],
+	"groundhogDay-exit":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "And I guess that's my cue to exit, right?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Pretty much, yeah." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
 	]
 }

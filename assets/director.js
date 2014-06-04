@@ -120,6 +120,21 @@ $("#backgroundEventButton").click(function()
 	socket.emit("clickBackground");
 });
 
+$("#wrapUpButtonGood").click(function()
+{
+	socket.emit("clickEnding", { endings: "good" });
+});
+
+$("#wrapUpButtonNeutral").click(function()
+{
+	socket.emit("clickEnding", { endings: "neutral" });
+});
+
+$("#wrapUpButtonBad").click(function()
+{
+	socket.emit("clickEnding", { endings: "bad" });
+});
+
 $("#weirdnessLevelButton").click(function()
 {
 	socket.emit("clickWeirdness");
