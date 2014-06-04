@@ -4513,7 +4513,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "(Get up from your chair.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say a non-committal goodbye", "leadsTo": "zeffLeaves-bye" },
-		{ "type": "choice", "speaker": "artemis", "line": "Tell Zeff it was nice to meet #zeffObj#", "leadsTo": "zeffLeaves-niceMeeting" },
+		{ "type": "choice", "speaker": "artemis", "line": "Tell Zeff it was nice to meet #zeffObj#", "leadsTo": "zeffLeaves-niceToMeet" },
 		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
 	],
 	"zeffLeaves-bye":

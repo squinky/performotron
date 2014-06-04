@@ -337,6 +337,7 @@ function addNextLine()
 		}
 		if (queuedLines[currentLine].type == "unlockEndings")
 		{
+			flushTopics();
 			unlockEndings(queuedLines[currentLine].endings);
 			currentLine++;
 			addNextLine();
