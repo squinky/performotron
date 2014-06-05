@@ -106,10 +106,168 @@
 			{ "type": "narration", "line": "A person wearing a full-on GloomBorg suit, complete with a screen-accurate helmet mask and chest panel, walks into the coffee shop and up to the counter." },
 			{ "type": "narration", "line": "GloomBorg orders a large double mint mocha to go, pays for it, and leaves." },
 			
+			{ "type": "choice", "speaker": "zeff", "line": "Voice your amazement at the GloomBorg costume", "leadsTo": "gloomBorg" },
 			{ "type": "showAvailableTopics" }
 		],
 		[
+			{ "type": "music", "line": "A mashup of Adele's Rolling in the Deep and Gnarls Barkley's Crazy" },
+			
 			{ "type": "narration", "line": "Outside, a marching band passes by, playing a rousing rendition of Adele's Rolling in the Deep mashed up with Gnarls Barkley's Crazy." },
+			
+			{ "type": "choice", "speaker": "zeff", "line": "Reminisce about marching band", "leadsTo": "marchingBand" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "music", "line": "Boyz II Men acapella" },
+			
+			{ "type": "narration", "line": "A barbershop quartet dressed up in medieval fantasy garb walks into the cafe and up to a neighbouring table, at which a young man and woman are sitting." },
+			{ "type": "narration", "line": "As the quartet sings a Boyz II Men song, the man drops down on one knee and pulls out a ring. The woman starts to break out in happy tears." },
+			
+			{ "type": "choice", "speaker": "artemis", "line": "Complain about public marriage proposals", "leadsTo": "marriage" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "A tall man wearing a utility kilt walks in, orders a shot of espresso, and leaves." },
+			
+			{ "type": "choice", "speaker": "artemis", "line": "Comment on the utility kilt guy's beautiful legs", "leadsTo": "utilityKilt" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Two young, long-haired men walk into the coffee shop and order Italian sodas. As they leave, they wave at Artemis, who waves back in recognition." },
+			{ "type": "speech", "speaker": "artemis", "line": "(Wave at the audience.)" },
+			
+			{ "type": "choice", "speaker": "zeff", "line": "Ask if those are friends of #artemisPos#", "leadsTo": "roommates" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "A pair of nondescript teenage girls walk into the cafe and make a beeline straight for the bathroom." },
+			{ "type": "narration", "line": "Literally thirty seconds later, they come out of the bathroom dressed as magical girls from some anime show, complete with sparkly, unintentionally suggestively-shaped weapons at their disposal. They run off, presumably to fight crime or something." },
+			
+			{ "type": "choice", "speaker": "artemis", "line": "Express amazement at how those girls changed into their costumes so fast", "leadsTo": "magicalGirls" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, a couple of people dressed as Elizabeth Bennet and Mr. Darcy from Pride and Prejudice appear to be having some kind of heated argument." },
+			
+			{ "type": "music", "line": "Yell 'yeah, well, it is a truth universally acknowledged that you suck!'" },
+			
+			{ "type": "narration", "line": "Elizabeth stands up and storms out the cafe in a huff, leaving Mr. Darcy fuming." },
+			
+			{ "type": "music", "line": "Well, I never!" },
+			
+			{ "type": "choice", "speaker": "zeff", "line": "Express sympathy for poor Mr. Darcy", "leadsTo": "mrDarcy" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "music", "line": "Careless Whisper" },
+			
+			{ "type": "narration", "line": "At a neighbouring table, two young people sit side by side, staring into each other's eyes and looking like they're almost about to snog each other's faces off." },
+			
+			{ "type": "choice", "speaker": "artemis", "line": "Make a crack about the makeout kids", "leadsTo": "makeoutKids" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "music", "line": "Just The Way You Look Tonight" },
+			
+			{ "type": "narration", "line": "A saxophone-laden instrumental arrangement of an old jazz standard plays ambiently in the background." },
+			
+			{ "type": "choice", "speaker": "artemis", "line": "Sing along to the background music", "leadsTo": "jazzStandard" },
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "music", "line": "Raiders March (Indiana Jones theme) played on bagpipes" },
+			
+			{ "type": "narration", "line": "Outside, a handful of bagpipers walk by, playing the Raiders March theme in unison as a row of snare drummers plays a precise beat behind them." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "music", "line": "Robots can't count the beat, what what whatever" },
+			
+			{ "type": "narration", "line": "At a neighbouring table, a middle-aged man excitedly tells his friend about a new robot girlfriend he custom ordered from Japan." },
+			{ "type": "narration", "line": "He complains that the shipping is taking forever, but consoles himself with the knowledge that the company he ordered from makes the most ultra-realistic robots available to consumers at this point in time." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Behind the counter, one of the baristas eagerly shows the manager an article on Japanese cat cafes. The manager, likely thinking about licencing fees and veterinary bills, is nonplussed." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "An elderly couple walks into the coffee shop, kvetching all the while about all the young hooligans who appear to be encroaching upon the neighbourhood this weekend." },
+			{ "type": "narration", "line": "They make small talk with the barista, who serves them their usual matching orders of black coffee. The couple then walks out, still complaining all the while." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "A middle-aged woman with a side shave and a floral print skirt wanders inside the coffee shop, appearing to look for someone." },
+			{ "type": "narration", "line": "After glancing around for a minute, she leaves, appearing not to have found whomever it was she was looking for." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, an eight-year-old girl attempts to solve a Sudoku from one of the complimentary newspapers while her mom texts on her smartphone so furiously, it's like her fingers are going to fall off." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, a heavily-tattooed man musters up the courage to convince his girlfriend to give open relationships a try. He appears to be surprised at how eager she is about the idea." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, a cuddly-looking, dark-haired, bowtie-wearing person of mysterious and indistinct gender sits hunched over, furiously typing on a laptop covered in stickers." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, one slick-looking man in a well-tailored business suit gives a pitch on dream-based marketing to another almost-identical slick-looking man in a well-tailored business suit." },
+			{ "type": "narration", "line": "The second man is somewhat concerned about the privacy invasiveness of the technology, but the first man reassures him that they won't be using any information that isn't already available publicly over the internet." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At a neighbouring table, two white men in black t-shirts and jeans jabber excitedly about a new level design tool for first person videogames in which you point a gun and shoot to create scenery." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Behind the counter, a couple of baristas gossip about banal relationship drama of some sort or another." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "A clatter sounds from somewhere behind the counter. One of the baristas curses loudly and sets about mopping up the mess." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Outside, a unicyclist in a bear costume passes by, swerving dangerously to avoid a group of loitering teenage boys taking up an entire section of sidewalk." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "At the counter, a confused patron loudly complains about having to solve a skill-testing puzzle in order to get the wifi password." },
+			{ "type": "narration", "line": "The barista calmly offers to help the customer reason through the puzzle, which only makes said customer even more irate." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Outside, a tall, lipstick red-haired woman walks by who appears to be wearing tights made of spiders and seven inch stiletto heels.." },
+			{ "type": "narration", "line": "She almost trips over a manhole cover, but deftly sidesteps and regains her balance, continuing to sassily make her way to her destination." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "Outside, a bunch of young, twentysomething men wearing horse hooves and tails gallop across the street with very, very serious looks on their faces." },
+			{ "type": "narration", "line": "They almost knock over a middle-aged, bespectacled woman, who yells at them to watch where they're going." },
+			
+			{ "type": "showAvailableTopics" }
+		],
+		[
+			{ "type": "narration", "line": "A group of about a dozen ninjas walks into the coffee shop very, very quietly. " },
+			{ "type": "narration", "line": "No one notices that they've arrived until they've already left, however, with the only trace of their existence being some missing danishes from the pastry counter and some very, very confused looks on the baristas' faces." },
 			
 			{ "type": "showAvailableTopics" }
 		]
@@ -4801,7 +4959,7 @@
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "I'd like to, but I feel like I'd be kinda out of place. I mean, I'm not a webcomic artist myself..." },
-		{ "type": "speech", "speaker": "zeff", "line": "I guess I'll go to the food court again or something. I'll figure it out" },
+		{ "type": "speech", "speaker": "zeff", "line": "I guess I'll go to the food court again or something. I'll figure it out." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Okay. Well, it was nice to meet you, Zeff." },
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
@@ -5108,5 +5266,303 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Pretty much, yeah." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	
+	"gloomBorg":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Whoa, that's the best GloomBorg costume I've ever seen!" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Admit to being unfamiliar with GloomBorg", "leadsTo": "gloomBorg-unfamiliar" },
+		{ "type": "showAvailableTopics" }
+	],
+	"gloomBorg-unfamiliar":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I'm afraid I'm not familiar with where that's from." },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, it's this mid-90s anime and manga series that's based on Albert Camus's The Stranger, except with cyborgs." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Express surprise that Japanese cartoons would involve such subject matter", "leadsTo": "gloomBorg-japanese" },
+		{ "type": "showAvailableTopics" }
+	],
+	"gloomBorg-japanese":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Interesting. I didn't know French existentialism was ever a subject of fascination in Japanese cartoons." },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, you'd be surprised at how well-recognised an art form it is over there. It's a shame the same isn't true here." },
+		{ "type": "speech", "speaker": "artemis", "line": "That, I agree with. People sometimes ask me why I draw comics when I could be writing novels instead, as if there's something inherently superior about the latter. I find it vexing." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"marchingBand":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Ah, marching band. I used to play the clarinet back in high school. Those were good times." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say you used to play French horn", "leadsTo": "marchingBand-meToo" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say that band was the only part of high school you enjoyed", "leadsTo": "marchingBand-enjoyed" },
+		{ "type": "showAvailableTopics" }
+	],
+	"marchingBand-meToo":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I played French horn. Only for a couple of years, though. I was never really much of a band nerd. Music wasn't my strong suit." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say that band was the only part of high school you enjoyed", "leadsTo": "marchingBand-enjoyed" },
+		{ "type": "showAvailableTopics" }
+	],
+	"marchingBand-enjoyed":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Band was the only part of high school I really enjoyed, aside from theatre. The people weren't assholes, relatively speaking." },
+		{ "type": "speech", "speaker": "zeff", "line": "And we even got to go to Hawaii one year." },
+		{ "type": "speech", "speaker": "artemis", "line": "Sounds fancy." },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah. There was a music festival going on that our band director got us into. But we did lots of sightseeing, too." },
+		{ "type": "speech", "speaker": "zeff", "line": "Although most of what I remember involves me and a couple of tuba players getting lost in the USS Arizona war memorial and missing our tour bus." },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh, and that the tour bus was being driven by this guy named Cousin Randy, who kept making bad jokes about international bathrooms." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if it's the international bathroom joke you know", "leadsTo": "marchingBand-bathroom" },
+		{ "type": "showAvailableTopics" }
+	],
+	"marchingBand-bathroom":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "You mean like, first you're Russian, then European, and when you come out, you're Finnish?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeah! Something like that, anyway." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"marriage":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Eeeugh. For once, I'd like to see someone say no to a public marriage proposal. That would make my day." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you think the marriage proposal was sweet", "leadsTo": "marriage-sweet" },
+		{ "type": "choice", "speaker": "zeff", "line": "Insinuate that #artemisSub# must not be into romance", "leadsTo": "marriage-romance" },
+		{ "type": "showAvailableTopics" }
+	],
+	"marriage-sweet":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Aw, can't you just be happy for them? I think it's sweet when people express their love for one another out in public." },
+		{ "type": "speech", "speaker": "artemis", "line": "I for one would really hate being put on the spot like that. Marriage is a pretty huge deal; it's a contract, for fuck's sake." },
+		{ "type": "speech", "speaker": "artemis", "line": "Do people normally surprise each other with contracts? No, they negotiate them like rational adults." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Insinuate that #artemisSub# must not be into romance", "leadsTo": "marriage-romance" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask how Artemis knows they didn't negotiate beforehand", "leadsTo": "marriage-negotiate" },
+		{ "type": "showAvailableTopics" }
+	],
+	"marriage-romance":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wow, you're really not into romance, are you?" },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say that depends on one's definition of romance", "leadsTo": "marriage-definition" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say that you really aren't", "leadsTo": "marriage-nope" }
+	],
+	"marriage-definition":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "No, my definition of romance is way more interesting and complicated than cliches and the wedding industrial complex." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, how do you define romance, then?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Huh. That's a good question." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "I guess for me, it's things that make you deliriously happy to be alive. It doesn't necessarily have to involve another person." },
+		{ "type": "speech", "speaker": "artemis", "line": "I've felt romance walking alone at night on a tree-lined street covered in autumn leaves." },
+		{ "type": "speech", "speaker": "artemis", "line": "And when another person is involved, it's just a sense of awe in how great that person is." },
+		{ "type": "speech", "speaker": "artemis", "line": "You don't feel the need to demand anything from them, because their very existence makes the world a better place in which to be." },
+		{ "type": "speech", "speaker": "artemis", "line": "Something like that, anyway." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"marriage-nope":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "If romance is all about cheesy public displays and putting people on the spot to say yes to you right then and there, then no, I'm really not into romance at all." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"marriage-negotiate":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "And how do you know they didn't negotiate beforehand? Could be that being surprised is exactly what she wants." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Doesn't that kind of defeat the point of a surprise?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, it could be that he knows she wants to get hitched, but she doesn't know when and how he'll pop the question." },
+		{ "type": "speech", "speaker": "zeff", "line": "It's not the are we getting married part that's necessarily exciting, but the what's he going to do to show his love for me part is something to look forward to." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"utilityKilt":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "I hope it's not too inappropriate to say this, but man, does that guy in the utility kilt have beautiful legs or what?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know what? I'm going to have to agree with you on that. Those legs sure are bodacious. I mean, check out those knobbly knees." },
+		{ "type": "speech", "speaker": "artemis", "line": "(Look directly at the audience.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "Whoa, I think that woman over there is glaring at us." },
+		{ "type": "speech", "speaker": "zeff", "line": "The brown-haired one with glasses who's crocheting a spiral carpet out of recycled wool?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah. Sounds like someone really doesn't like utility kilts." },
+		{ "type": "speech", "speaker": "zeff", "line": "Yeesh. What's her problem?" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"roommates":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "Friends of yours?" },
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, you mean Bob and Doug? Yeah. Former roommates, too." },
+		{ "type": "speech", "speaker": "artemis", "line": "Great guys to live with, but I swear, they must have gone through a new family-sized bottle of conditioner every week." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis lives with anyone now", "leadsTo": "roommates-live" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-live":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "Do you live with anyone now?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Nah, I've got this cute little studio all to myself. It was quite a steal, too." },
+		{ "type": "speech", "speaker": "artemis", "line": "An artist I knew from a local meetup group was moving to Berlin and needed someone to take over her lease, so I snapped it up as soon as I got a chance." },
+		{ "type": "speech", "speaker": "zeff", "line": "And I take it you like living alone?" },
+		{ "type": "speech", "speaker": "artemis", "line": "I love it. Way more space to hear myself think. Though I've also got my cat, so I'm not completely alone, at least." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask Artemis about #artemisDet# cat", "leadsTo": "roommates-cat" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're more of a dog person", "leadsTo": "roommates-dog" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-cat":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "You've got a cat?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah. His name's Chairman Mao. He's the cutest little guy ever. I call him my boyfriend sometimes, but I'm only half joking." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Express amusement at Artemis's cat's name", "leadsTo": "roommates-lol" },
+		{ "type": "choice", "speaker": "zeff", "line": "Express bewilderment at Artemis's cat's name", "leadsTo": "roommates-what" },
+		{ "type": "choice", "speaker": "zeff", "line": "Mention that you're allergic to cats", "leadsTo": "roommates-allergic" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're more of a dog person", "leadsTo": "roommates-dog" }
+	],
+	"roommates-lol":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wait, you named your cat Chairman Mao? That's hilarious." },
+		{ "type": "speech", "speaker": "artemis", "line": "Heh, I'm glad someone else appreciates my silly play on words." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're more of a dog person", "leadsTo": "roommates-dog" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-what":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "Wait, you named your cat Chairman Mao? That's... well, communist dictators wouldn't be my choice of pet name, that's for sure." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "It's... well, I'm obviously being tongue-in-cheek. Cats kind of are dictator-like, after all." },
+		{ "type": "speech", "speaker": "artemis", "line": "Of course, they get away with it by being so incredibly cute, which sadly, the real Chairman Mao wasn't." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're more of a dog person", "leadsTo": "roommates-dog" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-allergic":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "zeff", "line": "Well, that's unfortunate, because I happen to be really allergic to cats." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Say you're more of a dog person", "leadsTo": "roommates-dog" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-dog":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "I'm more of a dog person, I think. They're friendlier." },
+		
+		{ "type": "choice", "speaker": "artemis", "line": "Say that dogs are also really, really needy", "leadsTo": "roommates-needy" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff has a dog", "leadsTo": "roommates-sylvia" },
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-needy":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, but they're also really, really needy, and I can't do needy. Cats are quite a bit lower maintenance." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"roommates-sylvia":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh? Do you have a dog?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Not right now, but I had one growing up. She was a poodle named Sylvia Plath. My mom named her." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Let me guess: she was depressed and neurotic?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Actually, she was always happy and really mellow. It's funny how that worked out in the end." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"magicalGirls":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Whoa... how they change into their costumes so fast?" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "zeff", "line": "They must have gone through a transformation sequence. It's the only logical explanation." },
+		{ "type": "speech", "speaker": "artemis", "line": "A transformation sequence? But I didn't hear any music or see any flashing lights." },
+		{ "type": "speech", "speaker": "zeff", "line": "That's because those are only for the viewers. We're just unimportant background characters in their exciting crimefighting narrative." },
+		{ "type": "speech", "speaker": "artemis", "line": "Well, now that you mention it, my life really does feel boring and insignificant." },
+		{ "type": "speech", "speaker": "zeff", "line": "I feel that way all the time." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"mrDarcy":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
+		{ "type": "speech", "speaker": "zeff", "line": "Aww. Poor Mr. Darcy. He looks so pitiful and worked up." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, well, he's no Colin Firth, that's for sure." },
+		{ "type": "speech", "speaker": "artemis", "line": "Otherwise, you'd better believe I'd be over there right now asking if he's okay while taking the opportunity to stare into his brooding, dark eyes." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "You know, if it really were Colin Firth, I wouldn't blame you." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"makeoutKids":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Ooh, they'd better be careful, or else they might wind up in bed together smoking cigarettes or something." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "You mean, like, they start making out and then literally jump cut to smoking cigarettes in bed?" },
+		{ "type": "speech", "speaker": "artemis", "line": "That's how it works, right? I learned it from the movies, so it must be true." },
+		{ "type": "speech", "speaker": "zeff", "line": "Wow, I'd imagine that would get annoying pretty fast. The disorientation from the jump cuts would make me dizzy. Not to mention the cigarette smoke." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	
+	"jazzStandard":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
+		{ "type": "speech", "speaker": "artemis", "line": "(singing) And that laugh that wrinkles your nose, touches my foolish heaaart..." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Inquire about the singing", "leadsTo": "jazzStandard-what" },
+		{ "type": "choice", "speaker": "zeff", "line": "Say you love this song", "leadsTo": "jazzStandard-love" },
+		{ "type": "showAvailableTopics" }
+	],
+	"jazzStandard-what":
+	[
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
+		{ "type": "speech", "speaker": "zeff", "line": "What's that?" },
+		{ "type": "speech", "speaker": "artemis", "line": "Oh, a song I grew up hearing a million times and therefore can't help but sing along to at every opportunity. It's kind of an embarrassing tendency." },
+	
+		{ "type": "showAvailableTopics" }
+	],
+	"jazzStandard-love":
+	[
+		
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "I love this song!" },
+		{ "type": "speech", "speaker": "artemis", "line": "Yeah, I grew up hearing it a million times and therefore can't help but sing along to it at every opportunity. It's kind of an embarrassing tendency." },
+	
+		{ "type": "showAvailableTopics" }
 	]
 }
