@@ -58,7 +58,7 @@
 		],
 		"cosplayStuff":
 		[
-			{ "type": "choice", "speaker": "zeff", "line": "Confessed that you cosplayed as a woman yesterday", "leadsTo": "cosplay" }
+			{ "type": "choice", "speaker": "zeff", "line": "Confess that you cosplayed as a woman yesterday", "leadsTo": "cosplay" }
 		],
 		"transgenderStuff":
 		[
@@ -290,7 +290,7 @@
 		{ "type": "music", "line": "Timid" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
-		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, fidgeting nervously.)" },
+		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis, fidgeting nervously. Don't sit down just yet.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Notice someone approaching", "leadsTo": "zeffIntro-hello" }
 	],
@@ -299,7 +299,7 @@
 		{ "type": "music", "line": "Overcompensating for something" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
-		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis's table, feigning confidence to mask the nervousness you feel.)" },
+		{ "type": "speech", "speaker": "zeff", "line": "(Walk up to Artemis, feigning confidence to mask the nervousness you feel. Don't sit down just yet.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Notice someone approaching", "leadsTo": "zeffIntro-hello" }
 	],
@@ -403,7 +403,6 @@
 		
 		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
 		{ "type": "unlockTopics", "category": "harassmentStuff", "weirdnessLevel": 2 },
-		{ "type": "unlockTopics", "category": "cosplayStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it could be worse", "leadsTo": "awesomeCon-worse" },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's better than you thought it'd be", "leadsTo": "awesomeCon-better" }
 	],
@@ -470,8 +469,6 @@
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I get seasonal affective disorder in the winter, so actually being in a place where there's sunlight feels really refreshing to me." },
-		
-		{ "type": "unlockAchievement", "description": "Brought up SAD while talking about the weather" },
 		
 		{ "type": "speech", "speaker": "artemis", "line": "Good for you." },
 		
@@ -647,6 +644,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "How about you? Have you seen anything at AwesomeCon that you feel is particularly awesome?" },
 		
 		{ "type": "unlockTopics", "category": "aboutZeff", "weirdnessLevel": 1 },
+		{ "type": "unlockTopics", "category": "cosplayStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the virtual reality hamster ball game on the expo floor", "leadsTo": "zeffAwesomeCon-hamster" },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the panel about women in the videogame industry", "leadsTo": "zeffAwesomeCon-women" },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the flash mob", "leadsTo": "zeffAwesomeCon-flash" },
@@ -1654,7 +1652,8 @@
 		
 		{ "type": "music", "line": "My Heart Will Go On" },
 		
-		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room -- apparently, that last one was specifically built at an angle to simulate the sinking ship." },
+		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room..." },
+		{ "type": "speech", "speaker": "zeff", "line": "...apparently, that last one was specifically built at an angle to simulate the sinking ship." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds really impressive and really awful at the same time", "leadsTo": "roadTrip-awful" },
 		{ "type": "choice", "speaker": "zeff", "line": "Explain about the restaurant and pub where you ate", "leadsTo": "roadTrip-pub" }
@@ -1667,7 +1666,8 @@
 		
 		{ "type": "music", "line": "My Heart Will Go On" },
 		
-		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room -- apparently, that last one was specifically built at an angle to simulate the sinking ship." },
+		{ "type": "speech", "speaker": "zeff", "line": "There's a French Renaissance castle room, a 1930s gangster mafia room, a medieval monastery room, a Cold War-era retro-futuristic spaceship room, an Ancient Roman gladiator room, a Crimean War hospital room, and a Titanic room..." },
+		{ "type": "speech", "speaker": "zeff", "line": "...apparently, that last one was specifically built at an angle to simulate the sinking ship." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say that sounds really impressive and really awful at the same time", "leadsTo": "roadTrip-awful" },
 		{ "type": "choice", "speaker": "zeff", "line": "Explain about the restaurant and pub where you ate", "leadsTo": "roadTrip-pub" }
@@ -1714,7 +1714,8 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Of course, back then, I had no concept of food spoiling, but still." },
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah. But then, sometimes it's hard to tell where the money's really going, when it comes to those sorts of charities." },
-		{ "type": "speech", "speaker": "zeff", "line": "Robin actually looked up the name of the charity listed on the menu, and apparently, it's one of those Christian organisations that's super homophobic. Neither of us felt comfortable donating there, and they didn't give us any other options. So much for that." },
+		{ "type": "speech", "speaker": "zeff", "line": "Robin actually looked up the name of the charity listed on the menu, and apparently, it's one of those Christian organisations that's super homophobic." },
+		{ "type": "speech", "speaker": "zeff", "line": "Neither of us felt comfortable donating there, and they didn't give us any other options. So much for that." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Gross. That's too bad." },
 		
@@ -3409,7 +3410,7 @@
 		{ "type": "music", "line": "Sneaky film noir detective jazz" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
-		{ "type": "speech", "speaker": "zeff", "line": "Yesterday, I, uh, cosplayed as Roberta St. Albert from SleuthQuest." },
+		{ "type": "speech", "speaker": "zeff", "line": "So... yesterday, I, uh, cosplayed as Roberta St. Albert from SleuthQuest." },
 		
 		{ "type": "unlockAchievement", "description": "Admitted out loud to crossdressing" },
 		
@@ -3786,7 +3787,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Funny, I think I had one of those at my high school, too. Except his name was Cam, he was always the lead in the school play, and he never noticed me because I worked tech." },
 		
-		{ "type": "unlockAchievement", "description": "Bonded over your unattainable high school crush experiences" },
+		{ "type": "unlockAchievement", "description": "Bonded over your unattainable high school crushes" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Mention the talent show incident", "leadsTo": "zeffChildhood-talentShow" }
 	],
@@ -4611,7 +4612,7 @@
 	"artemisLeaves":
 	[
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
-		{ "type": "speech", "speaker": "artemis", "line": "(Get up from your chair.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Get up.)" },
 		{ "type": "speech", "speaker": "artemis", "line": "Sorry, I gotta go." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Make some kind of an excuse", "leadsTo": "artemisLeaves-excuse" },
@@ -4668,7 +4669,7 @@
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, uh, I guess I'd better get going." },
-		{ "type": "speech", "speaker": "zeff", "line": "(Get up from your chair.)" },
+		{ "type": "speech", "speaker": "zeff", "line": "(Get up.)" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Say a non-committal goodbye", "leadsTo": "zeffLeaves-bye" },
 		{ "type": "choice", "speaker": "artemis", "line": "Tell Zeff it was nice to meet #zeffObj#", "leadsTo": "zeffLeaves-niceToMeet" },
@@ -5057,7 +5058,6 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Hey, now, I asked if it was okay to sit here! You could have just said no!" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh, sure, like you would have even listened!" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's like all you creepy dudes are reading from the same poorly-written manual or something!" },
-		{ "type": "speech", "speaker": "zeff", "line": "Wow, way to generalise! No wonder you're such a lonely, closed-off, bitter person!" },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Retort that at least you don't hate everyone", "leadsTo": "artemisPissed-creepy" },
 		{ "type": "choice", "speaker": "zeff", "line": "Storm out the door", "leadsTo": "zeffLeaves-walkOut" }
@@ -5075,7 +5075,8 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Yeah, well, at least I don't hate everyone! You never even gave me a chance!" },
 		{ "type": "speech", "speaker": "zeff", "line": "No wonder you're such a lonely, closed-off, bitter person!" },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Throw your mug of coffee in Zeff's face", "leadsTo": "artemisPissed-throwCoffee" }
+		{ "type": "choice", "speaker": "artemis", "line": "Throw your mug of coffee in Zeff's face", "leadsTo": "artemisPissed-throwCoffee" },
+		{ "type": "choice", "speaker": "artemis", "line": "Storm out the door", "leadsTo": "artemisLeaves-walkOut" }
 	],
 	"artemisPissed-throwCoffee":
 	[
