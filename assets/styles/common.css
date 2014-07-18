@@ -1,5 +1,23 @@
-@import url(http://fonts.googleapis.com/css?family=Englebert);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@font-face {
+	font-family: "Englebert";
+	src: url('fonts/985198975-Englebert-regular.eot');
+	src: url('fonts/985198975-Englebert-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/985198975-Englebert-regular.svg#Englebert') format('svg'),
+	url('fonts/985198975-Englebert-regular.woff') format('woff'),
+	url('fonts/985198975-Englebert-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lobster";
+	src: url('fonts/911407471-Lobster-regular.eot');
+	src: url('fonts/911407471-Lobster-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/911407471-Lobster-regular.svg#Lobster 1.4') format('svg'),
+	url('fonts/911407471-Lobster-regular.woff') format('woff'),
+	url('fonts/911407471-Lobster-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @media only screen and (max-width: 800px) {
 	body { font-size: 70%; }

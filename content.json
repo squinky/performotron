@@ -141,7 +141,8 @@
 		],
 		[
 			{ "type": "narration", "line": "A pair of nondescript teenage girls walk into the cafe and make a beeline straight for the bathroom." },
-			{ "type": "narration", "line": "Literally thirty seconds later, they come out of the bathroom dressed as magical girls from some anime show, complete with sparkly, unintentionally suggestively-shaped weapons at their disposal. They run off, presumably to fight crime or something." },
+			{ "type": "narration", "line": "Literally thirty seconds later, they come out of the bathroom dressed as magical girls from some anime show, complete with sparkly, unintentionally suggestively-shaped weapons at their disposal." },
+			{ "type": "narration", "line": "They run off, presumably to fight crime or something." },
 			
 			{ "type": "choice", "speaker": "artemis", "line": "Express amazement at how those girls changed into their costumes so fast", "leadsTo": "magicalGirls" },
 			{ "type": "showAvailableTopics" }
@@ -266,7 +267,7 @@
 			{ "type": "showAvailableTopics" }
 		],
 		[
-			{ "type": "narration", "line": "A group of about a dozen ninjas walks into the coffee shop very, very quietly. " },
+			{ "type": "narration", "line": "A group of about a dozen ninjas walks into the coffee shop very, very quietly." },
 			{ "type": "narration", "line": "No one notices that they've arrived until they've already left, however, with the only trace of their existence being some missing danishes from the pastry counter and some very, very confused looks on the baristas' faces." },
 			
 			{ "type": "showAvailableTopics" }
@@ -391,8 +392,8 @@
 		{ "type": "unlockAchievement", "description": "Sat down with Artemis" },
 		
 		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
-		{ "type": "unlockTopics", "category": "crushStuff", "weirdnessLevel": 2 },
-		{ "type": "unlockTopics", "category": "weirdTalk", "weirdnessLevel": 3 },
+		{ "type": "unlockTopics", "category": "crushStuff", "weirdnessLevel": 3 },
+		{ "type": "unlockTopics", "category": "weirdTalk", "weirdnessLevel": 4 },
 		{ "type": "showAvailableTopics" }
 	],
 	
@@ -403,6 +404,7 @@
 		
 		{ "type": "unlockTopics", "category": "conStuff", "weirdnessLevel": 1 },
 		{ "type": "unlockTopics", "category": "harassmentStuff", "weirdnessLevel": 2 },
+		{ "type": "unlockTopics", "category": "cosplayStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it could be worse", "leadsTo": "awesomeCon-worse" },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's better than you thought it'd be", "leadsTo": "awesomeCon-better" }
 	],
@@ -644,7 +646,6 @@
 		{ "type": "speech", "speaker": "artemis", "line": "How about you? Have you seen anything at AwesomeCon that you feel is particularly awesome?" },
 		
 		{ "type": "unlockTopics", "category": "aboutZeff", "weirdnessLevel": 1 },
-		{ "type": "unlockTopics", "category": "cosplayStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the virtual reality hamster ball game on the expo floor", "leadsTo": "zeffAwesomeCon-hamster" },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the panel about women in the videogame industry", "leadsTo": "zeffAwesomeCon-women" },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk about the flash mob", "leadsTo": "zeffAwesomeCon-flash" },
@@ -3442,6 +3443,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "See, here's the thing. It wasn't really cross-dressing. I... I've been dressing like that, in private, for years." },
 		{ "type": "speech", "speaker": "zeff", "line": "And, uh, when I wear a wig and a dress and heels, it's the only time I really feel like me. If that makes any sense." },
 		
+		{ "type": "unlockTopics", "category": "transgenderStuff", "weirdnessLevel": 2 },
 		{ "type": "choice", "speaker": "artemis", "line": "Say you kind of get it", "leadsTo": "cosplay-kindOf" },
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about the time you wore a tie and a blazer", "leadsTo": "cosplay-blazer" },
 		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
@@ -3451,7 +3453,8 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Kind of. I mean, I do hate wearing all those things, even though I'm supposed to love them. I guess it works the other way around too, huh." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
+		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" },
+		{ "type": "showAvailableTopics" }
 	],
 	"cosplay-blazer":
 	[
@@ -3459,7 +3462,8 @@
 		{ "type": "speech", "speaker": "artemis", "line": "I felt that way the first time I wore a tie and a blazer to a friend's wedding. It was the first time I realised I didn't hate dressing up, at least not completely." },
 		{ "type": "speech", "speaker": "artemis", "line": "I guess it also works the other way around, doesn't it?" },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" }
+		{ "type": "choice", "speaker": "zeff", "line": "Talk some more about yesterday", "leadsTo": "cosplay-yesterday" },
+		{ "type": "showAvailableTopics" }
 	],
 	"cosplay-yesterday":
 	[
@@ -3476,7 +3480,8 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Sounds like you had a good time." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" }
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" },
+		{ "type": "showAvailableTopics" }
 	],
 	"cosplay-sparrow":
 	[
@@ -3485,7 +3490,8 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Hah. No. He's really not my type, and even if he were, he's very very monogamously married. But it was still kind of flattering, I gotta say." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" }
+		{ "type": "choice", "speaker": "zeff", "line": "Talk about how you ran away before Sparrow could notice you", "leadsTo": "cosplay-ranAway" },
+		{ "type": "showAvailableTopics" }
 	],
 	"cosplay-ranAway":
 	[
@@ -3493,7 +3499,6 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Of course, once I saw Sparrow, I had to get out of there before he could come up and get a closer look and realise it was me." },
 		{ "type": "speech", "speaker": "zeff", "line": "So, I booked it straight to my hotel room, washed off all my makeup, and changed back into my regular clothes before anyone could figure it out." },
 		
-		{ "type": "unlockTopics", "category": "transgenderStuff", "weirdnessLevel": 2 },
 		{ "type": "showAvailableTopics" }
 	],
 	
