@@ -41,10 +41,13 @@ io.sockets.on('connection', function (socket)
     
     socket.on("clickChoice", function(data)
     {
-    	io.sockets.emit("highlightSelected", { id: data.speech });
-    	topicJustSelected = true;
-        addSpeechToQueue(data.speech);
-		io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
+    	if (!topicJustSelected)
+    	{
+			io.sockets.emit("highlightSelected", { id: data.speech });
+			topicJustSelected = true;
+			addSpeechToQueue(data.speech);
+			io.sockets.emit("updateBackgroundButton", { yay: backgroundEventsEnabled() });
+		}
     });
     
     socket.on("clickBackground", function()
