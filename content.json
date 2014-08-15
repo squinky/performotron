@@ -74,6 +74,10 @@
 			{ "type": "choice", "speaker": "zeff", "line": "Mention the really weird dream you had last night", "leadsTo": "zeffDream" },
 			{ "type": "choice", "speaker": "zeff", "line": "Tell Artemis you're stuck in a Groundhog Day loop", "leadsTo": "groundhogDay" },
 			{ "type": "choice", "speaker": "zeff", "line": "Start to wonder if Artemis is actually an AI", "leadsTo": "ai" }
+		],
+		"peeStuff":
+		[
+			{ "type": "choice", "speaker": "artemis", "line": "Announce that you have to pee", "leadsTo": "pee" }
 		]
 	},
 	
@@ -328,9 +332,8 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Hah. Popular. That's hilarious." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with #artemisObj#", "leadsTo": "zeffIntro-okayToSit" },
 		{ "type": "unlockTopics", "category": "confrontation", "weirdnessLevel": 2 },
-		{ "type": "showAvailableTopics" }
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can sit with #artemisObj#", "leadsTo": "zeffIntro-okayToSit" }
 	],
 	"zeffIntro-fan":
 	[
@@ -392,6 +395,7 @@
 		{ "type": "unlockAchievement", "description": "Sat down with Artemis" },
 		
 		{ "type": "unlockTopics", "category": "smallTalk", "weirdnessLevel": 1 },
+		{ "type": "unlockTopics", "category": "peeStuff", "weirdnessLevel": 2 },
 		{ "type": "unlockTopics", "category": "crushStuff", "weirdnessLevel": 3 },
 		{ "type": "unlockTopics", "category": "weirdTalk", "weirdnessLevel": 4 },
 		{ "type": "showAvailableTopics" }
@@ -2113,7 +2117,9 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Well, since I only come here for AwesomeCon, it feels like it's like this all the time. How is it usually like?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Enh. People mostly keep to themselves, I guess. Especially in the winter months, when it's grey and raining all the time. Sometimes, I feel like Terminal City suffers from collective seasonal affective disorder." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
-		{ "type": "speech", "speaker": "artemis", "line": "And I mean, even if you do have friends in town, they seem to flake out a lot. Like, on my last birthday, I decided to throw a get together party-like thing, and a bunch of people RSVPed, but all but two of them flaked out at the last minute. And the ones who did show up were like 2 hours late." },
+		{ "type": "speech", "speaker": "artemis", "line": "And I mean, even if you do have friends in town, they seem to flake out a lot." },
+		{ "type": "speech", "speaker": "artemis", "line": "Like, on my last birthday, I decided to throw a get together party-like thing, and a bunch of people RSVPed, but all but two of them flaked out at the last minute." },
+		{ "type": "speech", "speaker": "artemis", "line": "And the ones who did show up were like 2 hours late." },
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Wow, that's too bad. I guess cities can be pretty alienating, huh?" },
 		
@@ -3124,7 +3130,6 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Look... I didn't mean to make you mad at me. I just thought you might appreciate it if I pointed out some factual inconsistencies between that scene and how mitosis works in the real world." },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, suffice to say, if I really want that information, I have Wikipedia at my disposal. As it stands, Bacteria Stories is a work of fiction." },
 		
-		{ "type": "unlockEndings", "endings": "bad" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say you were just trying to help", "leadsTo": "mansplaining-help" },
 		{ "type": "choice", "speaker": "zeff", "line": "Apologise", "leadsTo": "mansplaining-apologise" }
 	],
@@ -3139,6 +3144,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Gee, thanks. It's always nice to know I have a gallant young man protecting me from the many hordes of rabid cell biologists." },
 		{ "type": "speech", "speaker": "artemis", "line": "Typical straight white guys, with their splaining. Yeesh." },
 		
+		{ "type": "unlockEndings", "endings": "bad" },
 		{ "type": "choice", "speaker": "zeff", "line": "Say you never said you were straight, and you're not even 100% sure that you're male", "leadsTo": "mansplaining-never" },
 		{ "type": "showAvailableTopics" }
 	],
@@ -3155,12 +3161,15 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I'm sorry I assumed... but still... it's not really cool to automatically assume people are going to want unsolicited advice." },
 		
+		{ "type": "unlockEndings", "endings": "neutral" },
 		{ "type": "showAvailableTopics" }
 	],
 	"mansplaining-apologise":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "Look. I just want to say, I'm really sorry for pissing you off. I was an ass, and I hope you can forgive me." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "Whatever. Just don't do it again, all right?" },
 		
 		{ "type": "showAvailableTopics" }
 	],
@@ -5238,6 +5247,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know if there's any non-awkward way of explaining that you're stuck in a time loop." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is trying to find the optimal path to your pants", "leadsTo": "groundhogDay-pants" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can start this conversation over", "leadsTo": "groundhogDay-startOver" },
 		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
 	],
 	"groundhogDay-pants":
@@ -5249,6 +5259,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Was that what happened in that movie? It's been a really long time since I've seen it." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if you get points for audacity", "leadsTo": "groundhogDay-points" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can start this conversation over", "leadsTo": "groundhogDay-startOver" },
 		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
 	],
 	"groundhogDay-points":
@@ -5262,7 +5273,21 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "And if this is some kind of prank people pull at fan conventions, kindly fuck off and take it somewhere else, all right?" },
 		
+		{ "type": "choice", "speaker": "zeff", "line": "Ask if you can start this conversation over", "leadsTo": "groundhogDay-startOver" },
 		{ "type": "choice", "speaker": "zeff", "line": "Decide you should probably leave", "leadsTo": "groundhogDay-exit" }
+	],
+	"groundhogDay-startOver":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Look, can we start this conversation over?" },
+		{ "type": "speech", "speaker": "zeff", "line": "I just... I feel like I completely screwed up, and if you can just give me one more chance, maybe I can do it right this time around." },
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "Umm..." },
+		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
+		{ "type": "speech", "speaker": "zeff", "line": "Okay. I got this. Wait here." },
+		{ "type": "speech", "speaker": "zeff", "line": "(Get up and walk back to your starting position.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Start over from the beginning", "leadsTo": "zeffIntro" }
 	],
 	"groundhogDay-exit":
 	[
@@ -5272,6 +5297,89 @@
 		{ "type": "speech", "speaker": "artemis", "line": "Pretty much, yeah." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Walk out the door", "leadsTo": "zeffLeaves-walkOut" }
+	],
+	
+	"pee":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
+		{ "type": "speech", "speaker": "artemis", "line": "I have to pee." },
+		{ "type": "speech", "speaker": "artemis", "line": "(Get up and walk offstage.)" },
+		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Stare off into space", "leadsTo": "pee-stare" },
+		{ "type": "choice", "speaker": "zeff", "line": "Twiddle your thumbs", "leadsTo": "pee-twiddleThumbs" },
+		{ "type": "choice", "speaker": "zeff", "line": "Pick your nose", "leadsTo": "pee-pickNose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Drum impatiently on the table", "leadsTo": "pee-drum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Hum a few bars of your favourite song", "leadsTo": "pee-hum" }
+	],
+	"pee-stare":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Stare off into space.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Twiddle your thumbs", "leadsTo": "pee-twiddleThumbs" },
+		{ "type": "choice", "speaker": "zeff", "line": "Pick your nose", "leadsTo": "pee-pickNose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Drum impatiently on the table", "leadsTo": "pee-drum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Hum a few bars of your favourite song", "leadsTo": "pee-hum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Get bored and leave the coffee shop", "leadsTo": "pee-leave" },
+		{ "type": "choice", "speaker": "artemis", "line": "Come back from the bathroom", "leadsTo": "pee-back" }
+	],
+	"pee-twiddleThumbs":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Twiddle your thumbs.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Stare off into space", "leadsTo": "pee-stare" },
+		{ "type": "choice", "speaker": "zeff", "line": "Pick your nose", "leadsTo": "pee-pickNose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Drum impatiently on the table", "leadsTo": "pee-drum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Hum a few bars of your favourite song", "leadsTo": "pee-hum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Get bored and leave the coffee shop", "leadsTo": "pee-leave" },
+		{ "type": "choice", "speaker": "artemis", "line": "Come back from the bathroom", "leadsTo": "pee-back" }
+	],
+	"pee-pickNose":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Pick your nose.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Stare off into space", "leadsTo": "pee-stare" },
+		{ "type": "choice", "speaker": "zeff", "line": "Twiddle your thumbs", "leadsTo": "pee-twiddleThumbs" },
+		{ "type": "choice", "speaker": "zeff", "line": "Drum impatiently on the table", "leadsTo": "pee-drum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Hum a few bars of your favourite song", "leadsTo": "pee-hum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Get bored and leave the coffee shop", "leadsTo": "pee-leave" },
+		{ "type": "choice", "speaker": "artemis", "line": "Come back from the bathroom", "leadsTo": "pee-back" }
+	],
+	"pee-drum":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Drum impatiently on the table.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Stare off into space", "leadsTo": "pee-stare" },
+		{ "type": "choice", "speaker": "zeff", "line": "Twiddle your thumbs", "leadsTo": "pee-twiddleThumbs" },
+		{ "type": "choice", "speaker": "zeff", "line": "Pick your nose", "leadsTo": "pee-pickNose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Hum a few bars of your favourite song", "leadsTo": "pee-hum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Get bored and leave the coffee shop", "leadsTo": "pee-leave" },
+		{ "type": "choice", "speaker": "artemis", "line": "Come back from the bathroom", "leadsTo": "pee-back" }
+	],
+	"pee-hum":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Hum a few bars of your favourite song.)" },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Stare off into space", "leadsTo": "pee-stare" },
+		{ "type": "choice", "speaker": "zeff", "line": "Twiddle your thumbs", "leadsTo": "pee-twiddleThumbs" },
+		{ "type": "choice", "speaker": "zeff", "line": "Pick your nose", "leadsTo": "pee-pickNose" },
+		{ "type": "choice", "speaker": "zeff", "line": "Drum impatiently on the table", "leadsTo": "pee-drum" },
+		{ "type": "choice", "speaker": "zeff", "line": "Get bored and leave the coffee shop", "leadsTo": "pee-leave" },
+		{ "type": "choice", "speaker": "artemis", "line": "Come back from the bathroom", "leadsTo": "pee-back" }
+	],
+	"pee-leave":
+	[
+		{ "type": "speech", "speaker": "zeff", "line": "(Walk offstage.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Walk back onstage, noticing that Zeff is gone.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "Huh. Where'd #zeffSub# go?" },
+		{ "type": "speech", "speaker": "artemis", "line": "(Sit back down, relieved, and go back to sipping your coffee and staring at your smartphone.)" }
+	],
+	"pee-back":
+	[
+		{ "type": "speech", "speaker": "artemis", "line": "(Walk back onstage and sit down.)" },
+		{ "type": "speech", "speaker": "artemis", "line": "Sorry about that. What were we talking about, again?" },
+		
+		{ "type": "showAvailableTopics" }
 	],
 	
 	"gloomBorg":
