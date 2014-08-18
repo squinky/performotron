@@ -230,7 +230,7 @@ function addNextLine()
 			{
 				achievements.unshift(description);
 				io.sockets.emit("unlockAchievement", { description: description });
-				io.sockets.emit("updateMusic", { line: "Achievement Unlocked!!!" });
+				io.sockets.emit("updateMusic", { line: "Achievement Unlocked!!!<br>♪♬♩☺" });
 				listAchievements();
 				achievementJustUnlocked = true;
 				currentLine++;
