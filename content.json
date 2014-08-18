@@ -422,7 +422,7 @@
 	
 	"awesomeCon":
 	[
-		{ "type": "music", "line": "AwesomeCon<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon<br>♩♫★♩↑♫" },
 	
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, uh, you having a good AwesomeCon?" },
@@ -454,7 +454,7 @@
 	],
 	"awesomeCon-surelyItMust":
 	[
-		{ "type": "music", "line": "AwesomeCon, forced-sounding<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon, forced-sounding<br>♩♫★♩↑♫" },
 	
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "Aw, come on. It's AwesomeCon! Surely it has to be at least a little bit awesome, right?" },
@@ -576,14 +576,14 @@
 	
 	"artemisBooth":
 	[
-		{ "type": "music", "line": "AwesomeCon<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I tried to head over to your table, but it was super packed. Have you been selling a lot of artwork?" },
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Not a super huge amount, actually. Most of the traffic's been for the other artists at the table." },
 		
-		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I guess it doesn't really help that I haven't made my comic into a book yet; that seems to be the thing that gets the most people buying stuff. And I don't have any t-shirts or other merch, either." },
@@ -602,7 +602,7 @@
 	],
 	"artemisBooth-thanks":
 	[
-		{ "type": "music", "line": "AwesomeCon<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Thanks." },
@@ -661,7 +661,7 @@
 	
 	"zeffAwesomeCon":
 	[
-		{ "type": "music", "line": "AwesomeCon<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "How about you? Have you seen anything at AwesomeCon that you feel is particularly awesome?" },
@@ -758,7 +758,7 @@
 	],
 	"zeffAwesomeCon-glad":
 	[
-		{ "type": "music", "line": "AwesomeCon<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm glad those groups exist. Not that I care much about online gaming to begin with, but it's nice to know it's not all full of dudebros." },
@@ -767,7 +767,7 @@
 	],
 	"zeffAwesomeCon-skeptical":
 	[
-		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Not to be too contrarian, but does that kind of awareness-raising actually work? I mean, the target audience seemed to not get it, so is there really much of a point?" },
@@ -780,7 +780,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I randomly bumped into that famous internet videoblog celebrity, Rob Crenshaw, also known as Parcheesi." },
 		
-		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon? Meh.<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "zeff", "line": "And when I say bumped, I mean that literally. Needless to say, Parcheesi was pretty damn pissed." },
@@ -820,7 +820,7 @@
 	
 	"zeffTravel":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Do you live near here, or did you have to travel a good ways away for AwesomeCon?" },
@@ -839,7 +839,7 @@
 	
 	"zeffMusic":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "So, what do you do besides go to conventions?" },
@@ -867,7 +867,7 @@
 	],
 	"zeffMusic-job":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "So, is chiptune music what you do for a living, then?" },
@@ -878,7 +878,7 @@
 	],
 	"zeffMusic-live":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Do you ever perform your music live?" },
@@ -893,7 +893,7 @@
 	],
 	"zeffMusic-listen":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Can I hear some of your music?" },
@@ -912,7 +912,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "(Bob your head to the music.)" },
 		
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "speech", "speaker": "zeff", "line": "(Stop holding out your phone.)" },
 		
@@ -971,7 +971,7 @@
 	
 	"artemisMusic":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 	
 		{ "type": "speech", "speaker": "zeff", "line": "What kinds of music do you listen to?" },
 		
@@ -1014,7 +1014,7 @@
 	],
 	"artemisMusic-jazz":
 	[
-		{ "type": "music", "line": "Artemis's theme, jazzy<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, jazzy<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I like jazz. Mostly from the 1940s and earlier. Back when it was music you could actually dance to, and not just a bunch of dudes showing off on stage." },
@@ -1034,7 +1034,7 @@
 	],
 	"artemisMusic-bodies":
 	[
-		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Plus, I'm, uh, not very good at dancing. Not if it requires actual steps. I can bob in rhythm, but when my feet actually have to do things, my body just gets confused." },
@@ -1053,7 +1053,7 @@
 	
 	"artemisJob":
 	[
-		{ "type": "music", "line": "Artemis's theme, monotonous<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, monotonous<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "So... you mentioned on Twitter that your new job is taking time away from Bacteria Stories, huh?" },
@@ -1101,7 +1101,7 @@
 	
 	"artemisName":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I've been meaning to ask, is Artemis your real name?" },
@@ -1119,7 +1119,7 @@
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I meant the name you were born with." },
 		
-		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♠♯♫" },
 		
 		{ "type": "speech", "speaker": "artemis", "line": "In that case, no. Artemis is a completely and utterly fake name. There. Happy?" },
 		
@@ -1191,7 +1191,7 @@
 	
 	"bacteria":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "I feel like a total fanboy, but can I ask you some questions about Bacteria Stories?" },
@@ -1256,7 +1256,7 @@
 	],
 	"bacteria-michel":
 	[
-		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Seems to me like the Michel & Jacques segments are an obvious parody of a certain uber-popular webcomic about two guys sitting on a couch and talking about videogames." },
@@ -1298,7 +1298,7 @@
 	],
 	"bacteria-sarcastic":
 	[
-		{ "type": "music", "line": "Artemis's theme, sarcastic<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, sarcastic<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wow, like I've never heard that one before." },
@@ -1332,7 +1332,7 @@
 	],
 	"bacteria-antibiotics":
 	[
-		{ "type": "music", "line": "Artemis's theme, amused<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, amused<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm glad you asked! Yes. Everyone in the entire Bacteria Stories universe will die suddenly in a brutal war against antibiotics." },
@@ -1374,7 +1374,7 @@
 	
 	"theMall":
 	[
-		{ "type": "music", "line": "Artemis's theme, soft rock-style<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, soft rock-style<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Speaking of capitalism, that reminds me: I actually set foot in a mall the other day." },
@@ -1396,7 +1396,7 @@
 	],
 	"theMall-holes":
 	[
-		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, my jeans had embarrassing holes in the crotch, and as you can imagine, I don't feel comfortable displaying my underwear to this crowd." },
@@ -1419,7 +1419,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I'm glad the majority of my clothing purchases are t-shirts off the internet." },
 		
-		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, awkward<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh, believe me, mine would be too if most t-shirts I bought off the internet didn't awkwardly stretch in the chest area." },
@@ -1429,7 +1429,7 @@
 	],
 	"theMall-howItWent":
 	[
-		{ "type": "music", "line": "Artemis's theme, slightly hostile<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, slightly hostile<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anyway, it felt like every store I went to just... didn't want me there. All the women's clothes were super duper femme and meant for much skinnier people than me." },
@@ -1497,7 +1497,7 @@
 	],
 	"theMall-thrift":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Have you ever tried shopping at thrift stores instead?" },
@@ -1511,7 +1511,7 @@
 	
 	"jobInterviews":
 	[
-		{ "type": "music", "line": "Artemis's theme, monotonous<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, monotonous<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "artemis", "line": "That reminds me, I'm so glad I don't have to do job interviews anymore. Those things are almost as bad as a visit to the dentist's office." },
@@ -1544,7 +1544,7 @@
 	],
 	"jobInterviews-questions":
 	[
-		{ "type": "music", "line": "Artemis's theme, annoyed<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, annoyed<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I'm always so annoyed by the questions they ask. Like, where do I see myself in five years? The hell if I know. And what is my biggest weakness? Everyone knows that's actually supposed to be something that can be seen as a strength." },
@@ -1580,7 +1580,7 @@
 	],
 	"jobInterviews-passion":
 	[
-		{ "type": "music", "line": "Artemis's theme, annoyed<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, annoyed<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I hate how you always have to make yourself look so passionate about doing whatever menial work they want you to be doing. I mean, it's a job, and I can do it. They know it, and I know it. Why can't we just drop all pretense of caring?" },
@@ -1612,7 +1612,7 @@
 	],
 	"jobInterviews-chafing":
 	[
-		{ "type": "music", "line": "Artemis's theme, chafed<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, chafed<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The corporate world is so uncomfortably chafing. All those handshakes and all that doublespeak and all those made-up corporatese words. I wish they'd be a bit more real." },
@@ -1625,7 +1625,7 @@
 	
 	"roadTrip":
 	[
-		{ "type": "music", "line": "Zeff's theme, twangy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, twangy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "The road trip over here was a lot of fun." },
@@ -1709,7 +1709,7 @@
 	],
 	"roadTrip-pub":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, the restaurant and pub. It couldn't decide whether it wanted to be a 1950s malt shop diner or an Old West saloon, so it was this weird mix of waitresses in poodle skirts and cowboy hats serving sarsaparilla milkshakes." },
@@ -1769,7 +1769,7 @@
 	],
 	"roadTrip-anal":
 	[
-		{ "type": "music", "line": "Zeff's theme, flatulent<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, flatulent<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Anal Game? I'm almost afraid to ask." },
@@ -1778,14 +1778,14 @@
 		
 		{ "type": "unlockAchievement", "description": "Eww, toilet humour? What are you, five?" },
 		
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "showAvailableTopics" }
 	],
 	
 	"superpower":
 	[
-		{ "type": "music", "line": "Artemis's theme, heroic<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, heroic<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, riddle me this. If you had a superpower, what would it be?" },
@@ -1834,7 +1834,7 @@
 	],
 	"superpower-zeff":
 	[
-		{ "type": "music", "line": "Zeff's theme, heroic<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, heroic<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Why? What superpower do you wish you had?" },
@@ -1858,7 +1858,7 @@
 	],
 	"superpower-mundane":
 	[
-		{ "type": "music", "line": "Artemis's theme, mundane<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, mundane<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Well, I've never really considered myself superpowered. I'm more of a mundane human. It's boring, I know, but it's true." },
@@ -1869,7 +1869,7 @@
 	],
 	"superpower-demonstration":
 	[
-		{ "type": "music", "line": "Zeff's theme, mathemagical<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, mathemagical<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh yeah? Care to give me a demonstration?" },
@@ -1941,7 +1941,7 @@
 	],
 	"superpower-invisibility":
 	[
-		{ "type": "music", "line": "Artemis's theme, quiet<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, quiet<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Yeah. Hmm. I guess it would have to be invisibility. But it doesn't really make me feel powerful. It feels more like something out of my control." },
@@ -1951,7 +1951,7 @@
 	],
 	"superpower-zeffInvisible":
 	[
-		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I feel like it would be nice to be invisible for a change. That way, I could look and act however I wanted and no one would ever bother me for it." },
@@ -1978,7 +1978,7 @@
 	
 	"cyclists":
 	[
-		{ "type": "music", "line": "Artemis's theme, pissed off<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, pissed off<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I almost got hit by a car on my bike ride over here." },
@@ -2124,7 +2124,7 @@
 	
 	"terminalCity":
 	[
-		{ "type": "music", "line": "Artemis's theme, passive-aggressive<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, passive-aggressive<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "It feels kinda weird that this city's become so friendly, since AwesomeCon's been happening. You don't really see people wandering around being nice to each other on a regular day, that's for sure." },
@@ -2183,7 +2183,7 @@
 	
 	"diversity":
 	[
-		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, is it just me, or is AwesomeCon an overwhelmingly white convention? Besides myself, I think I could count the other people of colour I saw on one hand." },
@@ -2292,7 +2292,7 @@
 	],
 	"diversity-space":
 	[
-		{ "type": "music", "line": "Artemis's theme, outer space-like<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, outer space-like<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe you should tell them you're from outer space? That might shut them up." },
@@ -2352,7 +2352,7 @@
 	
 	"criticism":
 	[
-		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, irritable<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know what's really bizarre about being a webcomic artist who isn't a straight white guy? You don't just get criticism; you get annoying people constantly trying to help you." },
@@ -2409,7 +2409,7 @@
 	],
 	"criticism-pseudonym":
 	[
-		{ "type": "music", "line": "Zeff's theme, pensive<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, pensive<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, the same thing happened to me when I wrote some music and released it under a female pseudonym." },
@@ -2441,7 +2441,7 @@
 	
 	"ideas":
 	[
-		{ "type": "music", "line": "Artemis's theme, angsty<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, angsty<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, what if it's true and I'm really not good enough to make webcomics? I think about that all the time." },
@@ -2603,7 +2603,7 @@
 	
 	"artemisParents":
 	[
-		{ "type": "music", "line": "Artemis's theme, melancholy<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, melancholy<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "They grew up in the Philippines. They came here before I was born, though, so I've lived here my entire life." },
@@ -2740,7 +2740,7 @@
 	
 	"zeffParents":
 	[
-		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I can relate to wanting to be away from family. I'm living with my mom at the moment. I love her, but sometimes she can be a bit too much to take on a regular basis." },
@@ -2761,7 +2761,7 @@
 	],
 	"zeffParents-siblings":
 	[
-		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Do you have any siblings?" },
@@ -2867,7 +2867,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "This may sound a bit daft, but I don't see you as a person of colour. I see you as a person." },
 		
-		{ "type": "music", "line": "Artemis's theme, pissed off<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, pissed off<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's... that's well-meaning of you, but it feels like I'm trying to explain my experience and you're trying to erase it." },
@@ -2896,7 +2896,7 @@
 	
 	"religion":
 	[
-		{ "type": "music", "line": "Artemis's theme, skeptical<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, skeptical<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The thing is, I'm kinda allergic to the supernatural, and ideas about life after death and God and such." },
@@ -2910,7 +2910,7 @@
 	],
 	"religion-mom":
 	[
-		{ "type": "music", "line": "Zeff's theme, mystical<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, mystical<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "My mom was always into a lot of hippie new agey spirituality. She'd get really into a new belief system every year or so -- Buddhism, Taoism, Sufism, Christian mysticism, you name it." },
@@ -2921,7 +2921,7 @@
 	],
 	"religion-god":
 	[
-		{ "type": "music", "line": "Zeff's theme, mystical<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, mystical<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "What about you? Do you believe in some kind of God-like figure?" },
@@ -2955,7 +2955,7 @@
 	],
 	"religion-aunt":
 	[
-		{ "type": "music", "line": "Artemis's theme, skeptical<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, skeptical<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "I was talking to my super religious aunt about the story of Adam and Eve the other week. And it got me thinking about how I can't really relate to the message people seem to get from it." },
@@ -2970,7 +2970,7 @@
 	],
 	"religion-notSure":
 	[
-		{ "type": "music", "line": "Zeff's theme, skeptical<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, skeptical<br>♫♩࿔♩↕" },
 		
 		{ "type": "speech", "speaker": "zeff", "line": "I'm not entirely sure about that. Sometimes, I wonder if I really would be happier if I grew up in a simpler era, when my life and my path were all laid out for me." },
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
@@ -2983,7 +2983,7 @@
 	],
 	"religion-burned":
 	[
-		{ "type": "music", "line": "Artemis's theme, argumentative<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, argumentative<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "The problem with that is, I know damn well that if I grew up in a so-called simpler era, I'd be burned at the stake or worse. Things really weren't great for women at all, let alone women of colour, or women who just couldn't fit the standard ideal of femininity." },
@@ -3005,7 +3005,7 @@
 	
 	"zeffDream":
 	[
-		{ "type": "music", "line": "Zeff's theme, dreamy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, dreamy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, I had this dream last night. I was here at AwesomeCon, only for some reason, it actually looked more like a cross between my old high school and this casino I went to a couple of years ago, and the architecture was kind of hexagonal-shaped." },
@@ -3055,7 +3055,7 @@
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Actually, now that I think about it, there was also a giant tongue monster in the car too, singing along, and no one found this out of the ordinary." },
 		
-		{ "type": "music", "line": "Zeff's theme, dreamy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, dreamy<br>♫♩࿔♩↕" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Inquire further about the tongue monster", "leadsTo": "zeffDream-tongue" },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it doesn't sound like Zeff was paying attention to the road", "leadsTo": "zeffDream-road" },
@@ -3085,7 +3085,7 @@
 	],
 	"zeffDream-kissing":
 	[
-		{ "type": "music", "line": "Zeff's theme, with kissing noises<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, with kissing noises<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "And then, for some reason, the tongue monster and I wind up alone, and it starts kissing me. Like, everywhere. And then I wake up." },
@@ -3148,7 +3148,7 @@
 	
 	"mansplaining":
 	[
-		{ "type": "music", "line": "Artemis's theme, accusatory<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, accusatory<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Wait... I know who you are. You were that guy who had that long Twitter conversation with me about how I handled Gidget's mitosis scene in Bacteria Stories." },
@@ -3203,7 +3203,7 @@
 	
 	"harassment":
 	[
-		{ "type": "music", "line": "AwesomeCon, creeped out<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon, creeped out<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "(Take a deep breath.)" },
@@ -3367,7 +3367,7 @@
 	
 	"toxic":
 	[
-		{ "type": "music", "line": "AwesomeCon, hostile<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon, hostile<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, the more I think about it, the whole fan convention environment really is a toxic environment for women." },
@@ -3405,7 +3405,7 @@
 	],
 	"toxic-understand":
 	[
-		{ "type": "music", "line": "AwesomeCon, alien<br>♩♫♩♩♫♫" },
+		{ "type": "music", "line": "AwesomeCon, alien<br>♩♫★♩↑♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "Oh, sure, it's a choice. But that doesn't mean I understand it." },
@@ -3444,7 +3444,7 @@
 	
 	"cosplay":
 	[
-		{ "type": "music", "line": "Zeff's theme, sneaky<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, sneaky<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "So... yesterday, I, uh, cosplayed as Roberta St. Albert from SleuthQuest." },
@@ -3475,7 +3475,7 @@
 	],
 	"cosplay-crossDressing":
 	[
-		{ "type": "music", "line": "Zeff's theme, earnest<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, earnest<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "See, here's the thing. It wasn't really cross-dressing. I... I've been dressing like that, in private, for years." },
@@ -3542,7 +3542,7 @@
 	
 	"pronouns":
 	[
-		{ "type": "music", "line": "Zeff's theme<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "artemis", "line": "So... does this mean you identify as female? Should I use different pronouns for you?" },
@@ -3650,7 +3650,7 @@
 	],
 	"pronouns-artemis":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "While we're on the subject, do you have a pronoun preference other than #artemisSub# and #artemisObj#?" },
@@ -3734,7 +3734,7 @@
 	
 	"zeffChildhood":
 	[
-		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "It's just... I'm so scared, you know? To take that step and openly be who I am." },
@@ -3875,7 +3875,7 @@
 	
 	"beingSomeoneElse":
 	[
-		{ "type": "music", "line": "Artemis's theme, curious<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, curious<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Sometimes, I wonder what it would be like to be someone completely different, just for a day. Like, say, a straight white man." },
@@ -3902,7 +3902,7 @@
 	],
 	"beingSomeoneElse-cisgender":
 	[
-		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, melancholy<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know how much easier I have it than you, honestly. I'm pretty scrawny and kinda girly, as you can plainly see." },
@@ -3916,7 +3916,7 @@
 	],
 	"beingSomeoneElse-designed":
 	[
-		{ "type": "music", "line": "Zeff's theme, pensive<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, pensive<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know that the world is designed for anyone." },
@@ -3978,7 +3978,7 @@
 	
 	"crush":
 	[
-		{ "type": "music", "line": "Zeff's theme, romantic and overwrought<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, romantic and overwrought<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "So, this is kind of embarrassing to admit, but I've had a crush on you for like forever." },
@@ -3995,7 +3995,7 @@
 	],
 	"crush-whoa":
 	[
-		{ "type": "music", "line": "Artemis's theme, harsh and demanding<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, harsh and demanding<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "Whoa! Did you come here to try to hit on me? Because if that's what this is all about..." },
@@ -4005,7 +4005,7 @@
 	],
 	"crush-ass":
 	[
-		{ "type": "music", "line": "Zeff's theme, stuttering<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, stuttering<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "No! No, it's not like that at all! I know you barely even know me, but even so, I know you're totally, utterly out of my league!" },
@@ -4079,7 +4079,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "artemis", "line": "Thanks. That's, uh, very kind of you." },
 		
-		{ "type": "music", "line": "Zeff's theme, dialed back a bit<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, dialed back a bit<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "I mean, don't take it as me trying to hit on you or anything. I know women get hit on a lot at cons, and I really really don't want to be that person." },
@@ -4091,7 +4091,7 @@
 	],
 	"crush-loss":
 	[
-		{ "type": "music", "line": "Artemis's theme, stuttering<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, stuttering<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "artemis", "line": "I... I don't know what to say..." },
@@ -4106,7 +4106,7 @@
 	
 	"zeffLove":
 	[
-		{ "type": "music", "line": "Zeff's theme, filled with longing<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, filled with longing<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "Sometimes, I feel like I fall in love with almost everyone I know." },
@@ -4242,7 +4242,7 @@
 	
 	"crumpet":
 	[
-		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Actually, there was almost this one time..." },
@@ -4397,7 +4397,7 @@
 	],
 	"crumpet-scared":
 	[
-		{ "type": "music", "line": "Zeff's theme, timid<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, timid<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "But then... I got scared. I started to feel like I was boring to her. I started to worry that she'd find out what a loser I am, and then hate me." },
@@ -4450,7 +4450,7 @@
 	],
 	"crumpet-right":
 	[
-		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, maybe you're right. Maybe I should try and look her up and see what she's up to these days." },
@@ -4468,7 +4468,7 @@
 	
 	"artemisLove":
 	[
-		{ "type": "music", "line": "Artemis's theme, pensive<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, pensive<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "What were your past relationships like? Out of curiosity." },
@@ -4750,7 +4750,7 @@
 	
 	"pleasantSurprise":
 	[
-		{ "type": "music", "line": "Artemis's theme, pleasantly surprised<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, pleasantly surprised<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "happy" },
 		{ "type": "speech", "speaker": "artemis", "line": "You know, I didn't expect to have this much fun talking to someone I've never met before." },
@@ -4926,7 +4926,7 @@
 	
 	"gettingFood":
 	[
-		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, hopeful<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, I've been having such a great time talking to you, but I'm starting to get kind of hungry." },
@@ -5047,7 +5047,7 @@
 	
 	"disappointed":
 	[
-		{ "type": "music", "line": "Zeff's theme, disappointed<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, disappointed<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "sad" },
 		{ "type": "speech", "speaker": "zeff", "line": "You know, I have to admit, you kind of weren't who I was expecting you to be." },
@@ -5094,7 +5094,7 @@
 	
 	"artemisPissed":
 	[
-		{ "type": "music", "line": "Artemis's theme, angry<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, angry<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "What the hell is your problem?" },
@@ -5159,7 +5159,7 @@
 	
 	"ai":
 	[
-		{ "type": "music", "line": "Artemis's theme, glitchy<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme, glitchy<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "amused" },
 		{ "type": "speech", "speaker": "zeff", "line": "Do you ever have those conversations where you question whether the person you're talking to is actually a person, and not an AI simulation?" },
@@ -5251,7 +5251,7 @@
 	
 	"groundhogDay":
 	[
-		{ "type": "music", "line": "Zeff's theme, with skipping<br>♫♩♫♩♩" },
+		{ "type": "music", "line": "Zeff's theme, with skipping<br>♫♩࿔♩↕" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Look, this may sound really weird, but... I'm stuck in some kind of Groundhog Day time loop right now." },
@@ -5568,7 +5568,7 @@
 	
 	"roommates":
 	[
-		{ "type": "music", "line": "Artemis's theme<br>♩♪♩♪♫" },
+		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Friends of yours?" },
