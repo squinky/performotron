@@ -10,3 +10,14 @@
 
 // If you just want to run stuff on one machine, just use localhost.
 var socket = io.connect('http://localhost:8080');
+
+function flashScreen()
+{
+	$('#screen').css({
+		display: 'block',
+		opacity: 1,
+		'width':$(document).width(),
+		'height':$(document).height()
+	});
+	$('#screen').fadeOut("fast");
+}

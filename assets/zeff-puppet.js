@@ -5,5 +5,6 @@ socket.on('clearSpeeches', function (data)
 
 socket.on('updateZeffSpeech', function (data)
 {
+	flashScreen();
 	$("#zeffSpeech").append(data.line);
 });

@@ -5,5 +5,6 @@ socket.on('clearSpeeches', function (data)
 
 socket.on('updateArtemisSpeech', function (data)
 {
+	flashScreen();
 	$("#artemisSpeech").append(data.line);
 });

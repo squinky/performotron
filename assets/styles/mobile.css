@@ -49,3 +49,11 @@ a {
 	text-align: center;
 	padding: 20px;
 }
+
+#screen
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+}
