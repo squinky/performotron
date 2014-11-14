@@ -27,7 +27,7 @@
 		"aboutArtemis":
 		[
 			{ "type": "choice", "speaker": "zeff", "line": "Ask about the new job Artemis mentioned on Twitter recently", "leadsTo": "artemisJob" },
-			{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis is #artemisDet# real name", "leadsTo": "artemisName" },
+			{ "type": "choice", "speaker": "zeff", "line": "Ask if Artemis is #artemisDet# real name", "leadsTo": "artemisRealName" },
 			{ "type": "choice", "speaker": "zeff", "line": "Ask some questions about Bacteria Stories", "leadsTo": "bacteria" }
 		],
 		"travelStuff":
@@ -1099,7 +1099,7 @@
 		{ "type": "showAvailableTopics" }
 	],
 	
-	"artemisName":
+	"artemisRealName":
 	[
 		{ "type": "music", "line": "Artemis's theme<br>♩♪♠♯♫" },
 		
@@ -1110,12 +1110,12 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
 		{ "type": "speech", "speaker": "artemis", "line": "It's not the name I was born with, but I do consider it my real name." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Say you meant the name #artemisSub# was born with", "leadsTo": "artemisName-born" },
-		{ "type": "choice", "speaker": "zeff", "line": "Accept #artemisDet# answer", "leadsTo": "artemisName-okay" },
-		{ "type": "choice", "speaker": "artemis", "line": "Say you don't get why names one gives oneself aren't real", "leadsTo": "artemisName-real" },
-		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is #zeffDet# real name", "leadsTo": "artemisName-zeff" }
+		{ "type": "choice", "speaker": "zeff", "line": "Say you meant the name #artemisSub# was born with", "leadsTo": "artemisRealName-born" },
+		{ "type": "choice", "speaker": "zeff", "line": "Accept #artemisDet# answer", "leadsTo": "artemisRealName-okay" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you don't get why names one gives oneself aren't real", "leadsTo": "artemisRealName-real" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is #zeffDet# real name", "leadsTo": "artemisRealName-zeff" }
 	],
-	"artemisName-born":
+	"artemisRealName-born":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "Well, I meant the name you were born with." },
 		
@@ -1125,32 +1125,32 @@
 		
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-okay":
+	"artemisRealName-okay":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "Okay, then!" },
 		
-		{ "type": "choice", "speaker": "artemis", "line": "Say you don't get why names one gives oneself aren't real", "leadsTo": "artemisName-real" },
-		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is #zeffDet# real name", "leadsTo": "artemisName-zeff" },
+		{ "type": "choice", "speaker": "artemis", "line": "Say you don't get why names one gives oneself aren't real", "leadsTo": "artemisRealName-real" },
+		{ "type": "choice", "speaker": "artemis", "line": "Ask if Zeff is #zeffDet# real name", "leadsTo": "artemisRealName-zeff" },
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-real":
+	"artemisRealName-real":
 	[
 		{ "type": "speech", "speaker": "artemis", "line": "I don't get why the names we consider real are the names our parents gave us, and not the names we give ourselves." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Wonder if it's because names are usually something other people use", "leadsTo": "artemisName-other" },
-		{ "type": "choice", "speaker": "zeff", "line": "Concede that #artemisSub# might be right", "leadsTo": "artemisName-right" }
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder if it's because names are usually something other people use", "leadsTo": "artemisRealName-other" },
+		{ "type": "choice", "speaker": "zeff", "line": "Concede that #artemisSub# might be right", "leadsTo": "artemisRealName-right" }
 	],
-	"artemisName-other":
+	"artemisRealName-other":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "Maybe it's because names are something other people use more than you do? Just a thought." },
 		{ "type": "speech", "speaker": "artemis", "line": "I'll have you know that I use my name just as much as anyone else." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Granted, that could be because I have an inner monologue that speaks to me in the second person, but still." },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Ask what Artemis's inner monologue sounds like", "leadsTo": "artemisName-monologue" },
+		{ "type": "choice", "speaker": "zeff", "line": "Ask what Artemis's inner monologue sounds like", "leadsTo": "artemisRealName-monologue" },
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-monologue":
+	"artemisRealName-monologue":
 	[
 		{ "type": "speech", "speaker": "zeff", "line": "You can hear your own inner monologue? What does it sound like?" },
 		{ "type": "speech", "speaker": "artemis", "line": "Something along the lines of the following." },
@@ -1158,24 +1158,48 @@
 		
 		{ "type": "unlockAchievement", "description": "Talked to yourself in public" },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Laugh", "leadsTo": "artemisName-lol" },
+		{ "type": "choice", "speaker": "zeff", "line": "Laugh", "leadsTo": "artemisRealName-lol" },
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-right":
+	"artemisRealName-right":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
 		{ "type": "speech", "speaker": "zeff", "line": "You're right. I'm sorry. That was a really stupid question." },
 		
+		{ "type": "choice", "speaker": "artemis", "line": "Call out Zeff's use of ableist language", "leadsTo": "artemisRealName-ableist" },
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-lol":
+	"artemisRealName-ableist":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "annoyed" },
+		{ "type": "speech", "speaker": "artemis", "line": "'Stupid' is an ableist word, you know." },
+		
+		{ "type": "choice", "speaker": "zeff", "line": "Apologise profusely", "leadsTo": "artemisRealName-sorry" },
+		{ "type": "choice", "speaker": "zeff", "line": "Rephrase your statement", "leadsTo": "artemisRealName-rephrase" }
+	],
+	"artemisRealName-sorry":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh god, it is, isn't it? I'm so, so sorry. I'm such an idiot..." },
+		{ "type": "speech", "speaker": "zeff", "line": "...wait, that's ableist too, isn't it? I should really stop talking forever, shouldn't I?" },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisRealName-rephrase":
+	[
+		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
+		{ "type": "speech", "speaker": "zeff", "line": "Oh, right. I meant, it was a really ignorant question." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"artemisRealName-lol":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "happy" },
 		{ "type": "speech", "speaker": "zeff", "line": "(Laugh.)" },
 		
 		{ "type": "showAvailableTopics" }
 	],
-	"artemisName-zeff":
+	"artemisRealName-zeff":
 	[
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Why? Is Zeff your real name?" },
@@ -3381,7 +3405,7 @@
 	"toxic-choice":
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "embarrassed" },
-		{ "type": "speech", "speaker": "artemis", "line": "I wouldn't be so quick to judge. Some women like dressing to show some skin. It should be their choice." },
+		{ "type": "speech", "speaker": "zeff", "line": "I wouldn't be so quick to judge. Some women like dressing to show some skin. It should be their choice." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Point out that such a choice can't be independent of patriarchy", "leadsTo": "toxic-independent" },
 		{ "type": "choice", "speaker": "artemis", "line": "Say it's a choice you don't understand personally", "leadsTo": "toxic-understand" }
@@ -3460,7 +3484,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "I've never played SleuthQuest. Who's Roberta St. Albert?" },
 		{ "type": "emote", "speaker": "zeff", "emotion": "pleased" },
 		{ "type": "speech", "speaker": "zeff", "line": "Oh, she's the main villain who you spend the entire game searching for, visiting every country in the world in the process." },
-		{ "type": "speech", "speaker": "zeff", "line": "She's got long, flaming red hear and wears a little black dress, a fedora, and fishnets. You've probably seen her before; she's pretty recognisable and iconic." },
+		{ "type": "speech", "speaker": "zeff", "line": "She's got long, flaming red hair and wears a little black dress, a fedora, and fishnets. You've probably seen her before; she's pretty recognisable and iconic." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Wonder why cross-dressing is a big deal", "leadsTo": "cosplay-bigDeal" },
 		{ "type": "choice", "speaker": "zeff", "line": "Explain that it actually wasn't really cross-dressing", "leadsTo": "cosplay-crossDressing" }
@@ -3857,7 +3881,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "angry" },
 		{ "type": "speech", "speaker": "artemis", "line": "That's awful. What would possess anyone to be so hateful?" },
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
-		{ "type": "speech", "speaker": "artemis", "line": "Hell if I know. But if a guy as popular and well-loved as Jeremy gets that kind of crap, I can't even imagine what would happen to me." },
+		{ "type": "speech", "speaker": "zeff", "line": "Hell if I know. But if a guy as popular and well-loved as Jeremy gets that kind of crap, I can't even imagine what would happen to me." },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Ask if #zeffSub# ever got back in touch with Jeremy", "leadsTo": "zeffChildhood-backInTouch" },
 		{ "type": "showAvailableTopics" }
@@ -3886,7 +3910,8 @@
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask what #artemisSub# would be hoping to learn from the experiment", "leadsTo": "beingSomeoneElse-learn" },
 		{ "type": "choice", "speaker": "zeff", "line": "Ask if it would be like eighties body-swapping movies", "leadsTo": "beingSomeoneElse-bodySwapping" },
-		{ "type": "choice", "speaker": "zeff", "line": "Suggest controlling a volunteer via voice commands and hidden cameras", "leadsTo": "beingSomeoneElse-volunteer" }
+		{ "type": "choice", "speaker": "zeff", "line": "Suggest controlling a volunteer via voice commands and hidden cameras", "leadsTo": "beingSomeoneElse-volunteer" },
+		{ "type": "choice", "speaker": "zeff", "line": "Wonder what it would be like to be in a cisgender woman's body", "leadsTo": "beingSomeoneElse-cisgender" }
 	],
 	"beingSomeoneElse-learn":
 	[
@@ -3912,6 +3937,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Well, maybe that would be less disappointing than having people expect all these things out of me because I appear male and then get huffy when I can't live up to those expectations." },
 		{ "type": "speech", "speaker": "zeff", "line": "I don't know. That's why I want to know." },
 		
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest actually switching places", "leadsTo": "beingSomeoneElse-switcheroo" },
 		{ "type": "showAvailableTopics" }
 	],
 	"beingSomeoneElse-designed":
@@ -3952,6 +3978,7 @@
 		{ "type": "speech", "speaker": "artemis", "line": "And also if there were contracts stipulating that the other person couldn't just run off with your body forever... yeah, I'd be first in line to try that." },
 		
 		{ "type": "choice", "speaker": "zeff", "line": "Ask what if you liked someone else's body better", "leadsTo": "beingSomeoneElse-better" },
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest actually switching bodies", "leadsTo": "beingSomeoneElse-switcheroo" },
 		{ "type": "showAvailableTopics" }
 	],
 	"beingSomeoneElse-better":
@@ -3961,6 +3988,7 @@
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
 		{ "type": "speech", "speaker": "artemis", "line": "Possibly? But at the same time, I think I might feel better off for knowing, you know?" },
 		
+		{ "type": "choice", "speaker": "artemis", "line": "Suggest actually switching bodies", "leadsTo": "beingSomeoneElse-switcheroo" },
 		{ "type": "showAvailableTopics" }
 	],
 	"beingSomeoneElse-volunteer":
@@ -3969,9 +3997,21 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Hmm. Maybe you could get a straight white man to volunteer to obey your voice commands and carry a hidden camera around." },
 		{ "type": "speech", "speaker": "zeff", "line": "That might get you some of the effect you're hoping for." },
 		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
-		{ "type": "speech", "speaker": "artemis", "line": "You may be on to something, there. But I'd be missing a lot of tactile feedback if that were the case. " },
+		{ "type": "speech", "speaker": "artemis", "line": "You may be on to something, there. But I'd be missing a lot of tactile feedback if that were the case." },
 		{ "type": "speech", "speaker": "zeff", "line": "Hey, they might just have the technology you're looking for available to mass markets within a couple of years." },
 		{ "type": "speech", "speaker": "zeff", "line": "What with so many romantic relationships happening long distance and all, there's definitely demand for remote touchy feely technology." },
+		
+		{ "type": "showAvailableTopics" }
+	],
+	"beingSomeoneElse-switcheroo":
+	[
+		{ "type": "emote", "speaker": "artemis", "emotion": "amused" },
+		{ "type": "speech", "speaker": "artemis", "line": "Actually? I have an idea." },
+		{ "type": "speech", "speaker": "both", "line": "(Take off your wig and give it to the other puppet, then put on the other puppet's wig.)" },
+		{ "type": "speech", "speaker": "both", "line": "(Give your mobile device to the other puppet, and take the one that they give you.)" },
+		{ "type": "speech", "speaker": "both", "line": "(Now, switch seats with the other puppet.)" },
+		
+		{ "type": "unlockAchievement", "description": "Switched bodies" },
 		
 		{ "type": "showAvailableTopics" }
 	],
@@ -5325,6 +5365,7 @@
 		{ "type": "speech", "speaker": "zeff", "line": "Okay. I got this. Wait here." },
 		{ "type": "speech", "speaker": "zeff", "line": "(Get up and walk back to your starting position.)" },
 		
+		{ "type": "flushTopics" },
 		{ "type": "choice", "speaker": "zeff", "line": "Start over from the beginning", "leadsTo": "zeffIntro" }
 	],
 	"groundhogDay-exit":
