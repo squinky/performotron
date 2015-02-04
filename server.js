@@ -6,19 +6,19 @@ var app = express()
 server.listen(8080);
 
 app.get('/', function (req, res) {
-	res.sendfile(__dirname + '/director.html'); });
+	res.sendFile(__dirname + '/director.html'); });
 app.get('/projector', function (req, res) {
-	res.sendfile(__dirname + '/projector.html'); });
+	res.sendFile(__dirname + '/projector.html'); });
 app.get('/artemis-puppet', function (req, res) {
-	res.sendfile(__dirname + '/artemis-puppet.html'); });
+	res.sendFile(__dirname + '/artemis-puppet.html'); });
 app.get('/zeff-puppet', function (req, res) {
-	res.sendfile(__dirname + '/zeff-puppet.html'); });
+	res.sendFile(__dirname + '/zeff-puppet.html'); });
 app.get('/artemis-driver', function (req, res) {
-	res.sendfile(__dirname + '/artemis-driver.html'); });
+	res.sendFile(__dirname + '/artemis-driver.html'); });
 app.get('/zeff-driver', function (req, res) {
-	res.sendfile(__dirname + '/zeff-driver.html'); });
+	res.sendFile(__dirname + '/zeff-driver.html'); });
 app.get('/band', function (req, res) {
-	res.sendfile(__dirname + '/band.html'); });
+	res.sendFile(__dirname + '/band.html'); });
 app.use(express.static(__dirname + '/assets'));
 
 io.sockets.on('connection', function (socket)
