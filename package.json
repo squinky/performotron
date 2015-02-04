@@ -1,10 +1,22 @@
 {
-    "name": "PerformOTron",
-    "version": "0.0.1",
-    "description": "PerformOTron",
-    "dependencies": {
-        "socket.io": "latest",
-        "express": "latest"
-    },
-    "author": "squinky"
+  "name": "PerformOTron",
+  "version": "0.0.1",
+  "description": "The PerformOTron™ by Squinky.",
+  "author": "Squinky",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/squinky/performotron"
+  },
+  "bugs": {
+    "url": "https://github.com/squinky/performotron/issues"
+  },
+  "dependencies": {
+    "express": "^4.11.2",
+    "socket.io": "latest"
+  },
+  "license": "MIT"
 }
