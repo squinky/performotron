@@ -7,7 +7,8 @@ This is the Perform-O-Tron™, which powers the intentionally-awkward, computer-
 
 1. Designate any computer as the server. Download the source code to the project. Install <a href="http://www.nodejs.org/">node.js</a>.
 2. Create a local ad-hoc network on your computer or install a tunnel such as <a href="http://ngrok.com">ngrok</a>, to allow other devices to connect to the server. Edit assets/client.js accordingly.
-3. Run "node server.js".
+3. Run `npm install` to install all dependencies.
+3. Run `npm run start`.
 4. Open the url you defined in client.js (henceforth called [URL]) on any device connected to the server. This is your director's console. You get to control things from here and keep tabs on what's going on. Sorry the colour scheme is such an eyesore.
 5. Set up a stage that simulates some sort of a coffee shop. Two chairs and a table, or a couch and a table, or whatever. Stage the show in an actual coffee shop for maximum ambiance. Put two extra chairs behind the stage area and set up a little place slightly offstage to park yourself with your director's console.
 6. (optional) Open [URL]/projector and display it on a projector screen that the audience can see.
