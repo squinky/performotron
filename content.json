@@ -2900,8 +2900,8 @@
 		
 		{ "type": "unlockAchievement", "description": "Whitesplained" },
 		
-		{ "type": "choice", "speaker": "zeff", "line": "Apologise and stop", "leadsTo": "artemisParents-stop" },
-		{ "type": "choice", "speaker": "zeff", "line": "Try to explain yourself", "leadsTo": "artemisParents-explain" }
+		{ "type": "choice", "speaker": "zeff", "line": "Apologise and stop", "leadsTo": "dontSeeColour-stop" },
+		{ "type": "choice", "speaker": "zeff", "line": "Try to explain yourself", "leadsTo": "dontSeeColour-explain" }
 	],
 	"dontSeeColour-stop":
 	[
@@ -4615,7 +4615,7 @@
 	[
 		{ "type": "emote", "speaker": "zeff", "emotion": "neutral" },
 		{ "type": "speech", "speaker": "zeff", "line": "Sounds like a really great guy." },
-		{ "type": "speech", "speaker": "artemis", "line": "Why are you talking about him in the past tense, though? Something go wrong?" },
+		{ "type": "speech", "speaker": "zeff", "line": "Why are you talking about him in the past tense, though? Something go wrong?" },
 		
 		{ "type": "choice", "speaker": "artemis", "line": "Talk about complicating factors", "leadsTo": "artemisLove-complicating" }
 	],
